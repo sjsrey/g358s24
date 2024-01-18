@@ -1,0 +1,15 @@
+name: 385s24
+channels:
+  - conda-forge
+dependencies:
+  - python
+  # to run the code
+  - geopandas >=0.14
+  - scikit-learn
+  - seaborn >=0.13
+  - pysal
+  # infrastructure
+  - ipykernel
+  - jupyter-cache
+  - jupyterlab
+  - pip
