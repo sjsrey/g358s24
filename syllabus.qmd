@@ -1,0 +1,334 @@
+---
+title: "Geography 385 Spatial Data Analysis"
+subtitle: "Spring 2024"
+format:
+  html:
+    theme: cosmo 
+  pdf:
+    colorlinks: true
+---
+
+<hr>
+
+
+## Class Meetings
+
+| Meeting | Location | Time                    |
+|---------|----------|-------------------------|
+| Lecture | GMCS 307 | Tue & Thu 2:00 - 3:15pm |
+
+## Teaching Team 
+
+| Name                                                     | Office hours                                                                  | Location                                                                                                                      |
+|----------------------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [Sergio Rey](https://geography.sdsu.edu/people/bios/rey) | [Tue 9:00 - 10:00 (by appointment)](https://calendly.com/sjsrey/office-hours) | [PSFA 361G](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
+| Jin Huang                                                | [Fri 10:30am (virtual)](https://meet.google.com/wue-ipbb-jrr)                | [PSFA 361F](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
+
+
+
+## Introduction
+
+Welcome to 385: Spatial Data Analysis!
+
+
+The purpose of this course is to introduce you to methods of spatial
+data analysis. The focus is on both the conceptual and applied aspects
+of spatial statistical methods. We will place particular emphasis on
+the computational aspects of Exploratory Spatial Data Analysis (ESDA)
+methods for diﬀerent types of spatial data including point processes, lattice
+data, geostatistical data, network data, and spatial interaction.
+Throughout the course you will gain valuable hands-on experience with several
+specialized software packages for spatial data analysis. The overriding goal of
+the course is for you to acquire familiarity with the fundamental methodological
+and operational issues in the statistical analysis of geographic information and
+the ability to extend these methods in your own research.
+
+The course takes an explicitly computational thinking
+approach to its pedagogy. Students are introduced to computational
+concepts and tools that are increasingly important to research that
+engages with geospatial data. By adopting these tools, students acquire a deeper
+engagement with, and mastery of, the substantive concepts. Put differently,
+students will *learn to code*. But this is a means to the end goal: students
+will *code to learn* spatial data analysis.
+
+
+
+In the scope of a 15-week semester course we can only introduce a handful
+of the key concepts and methods relevant to the field of spatial data analysis. As
+such, the course is not intended as an exhaustive treatment. Instead,
+the goal is that students will acquire an understanding of the more
+common and useful methods and practices, and use the course as an entry
+point for further engagement with the field.
+
+## Prerequisites
+
+
+- [GEOG 101](https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&coid=31440) or [GEOG 102](https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&coid=31442) 
+- [STAT 250](https://catalog.sdsu.edu/preview_course_nopop.php?catoid=5&coid=33000) or comparable course in statistics.
+
+All students are required to complete the [prerequisite assessment quiz](https://sdsu.instructure.com/courses/133232/quizzes/261274 ) before 2024-01-30 2:00pm.
+
+## Computational Learning
+
+We will be using [open
+source](https://en.wikipedia.org/wiki/Open-source_software) geospatial
+software throughout the course together with [Jupyter
+Notebooks](https://jupyter.org), and [Python](https://python.org) as our
+scripting language.
+
+All software for the course will be made available through
+[JupyterHub](https://jupyter.org/) a web-based framework. Students
+wishing to install these materials on their own machines will be given
+instructions to do so, **but this is not required**.
+
+
+## Readings
+
+All required readings are available through the links listed
+below. Assigned readings should be completed before the date listed in
+the schedule (see below). Readings are a critical part of the
+discussions we will hold in class, and therefore being prepared for class
+means having completed the readings and thought about the
+content. It will be difficult to do well in this course without having
+completed the readings.
+
+| Abbrevation | Source                                                                                        |
+|-------------|-----------------------------------------------------------------------------------------------|
+| [GDA][gda]  | Tenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press. |
+| [GDS][gds]  | Rey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.   |
+
+
+## Schedule (Planned)
+
+| Week | Dates  | Topic                               | Reading           | Due        |
+|------|--------|-------------------------------------|-------------------|------------|
+| 1    | Jan-18 | Course Introduction                 |                   |            |
+| 2    | Jan-23 | *CSU Strike*                        |                   |            |
+|      | Jan-25 | *CSU Strike*                        |                   |            |
+| 3    | Jan-30 | Jupyter CodeSpace                   | GDA 1  GDS 2      | Quiz 1     |
+|      | Feb-01 | Python: Programming Concepts        | GDA 2             |            |
+| 4    | Feb-06 | Python: Scripting                   | GDA 2             | Quiz 2     |
+|      | Feb-08 | Python: Functions                   | GDA 2             | Exercise 1 |
+| 5    | Feb-13 | Python: Data Analysis/Visualization | GDA 3,4           | Quiz 3     |
+|      | Feb-15 | Python: Geographic Data             | GDA 5             |            |
+| 6    | Feb-20 | Geopandas                           | GDA 6             | Quiz 4     |
+|      | Feb-22 | Geoprocessing                       | GDA 6             |            |
+| 7    | Feb-27 | GeoSNAP                             |                   | Quiz 5     |
+|      | Feb-29 | PySAL                               | GDS 3             |            |
+| 8    | Mar-05 | GeoVisualization                    | GDS 5             | Quiz 6     |
+|      | Mar-07 | Spatial Weights                     | GDS 4             | Exercise 2 |
+| 9    | Mar-12 | Spatial Dependence                  | GDS 6             | Quiz 7     |
+|      | Mar-14 | Global Autocorrelation              | GDS 6             |            |
+| 10   | Mar-19 | Global Autocorrelation Tests        | GDS 6             | Quiz 8     |
+|      | Mar-21 | Local Autocorrelation               | GDS 7             |            |
+| 11   | Mar-26 | Local Autocorrelation Tests         | GDS 7             | Quiz 9     |
+|      | Mar-28 | Point Pattern Data                  | GDS 8             |            |
+| 12   | Apr-02 | Centrography                        | GDS 8             | Quiz 10    |
+|      | Apr-04 | Point Processes                     | GDS 8             | Exercise 3 |
+| 13   | Apr-09 | Quadrat Statistics                  | GDS 8             | Quiz 11    |
+|      | Apr-11 | Nearest Neighbor Statistics         | GDS 8             |            |
+| 14   | Apr-16 | Distance Based Statistics           | GDS 8             | Quiz 12    |
+|      | Apr-18 | Geostatistical Data                 | [DS 6.1-6.5][ds6] |            |
+| 15   | Apr-23 | Spatial Interpolation               | [DS 6.5][ds65]    | Quiz 13    |
+|      | Apr-25 | Kriging                             | [DS 6.7][ds67]                 |            |
+| 16   | Apr-30 | Next Steps in Spatial Data Analysis |                   | Quiz 14    |
+|      | May-02 | Final Review                        |                   | Exercise 4 |
+| 17   | May-07 | *Final Exam (1-3pm)*                |                   |            |
+
+
+
+[ds6]: https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm
+[ds65]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
+[ds67]: https://www.spatialanalysisonline.com/HTML/geostatistical_interpolation_m.htm
+
+
+[gda]: https://pythongis.org/index.html
+[gds]: https://geographicdata.science/book/intro.html 
+[gds1]: https://geographicdata.science/book/notebooks/01_geo_thinking.html
+[gds2]: https://geographicdata.science/book/notebooks/02_geospatial_computational_environment.html
+[gds3]: https://geographicdata.science/book/notebooks/03_spatial_data.html
+[gds8.1]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html
+[gds8.2]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#centrography
+[gds8.3]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#randomness-clustering
+[gds9]: https://geographicdata.science/book/notebooks/09_spatial_inequality.html
+[gds11]: https://geographicdata.science/book/notebooks/11_regression.html 
+[gdsii]: https://geographicdata.science/book/intro_part_ii.html
+[gds5]:  https://geographicdata.science/book/notebooks/05_choropleth.html
+[gds6.1]:  https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#understanding-spatial-autocorrelation
+[gds4]: https://geographicdata.science/book/notebooks/04_spatial_weights.html
+[gds5.1]:  https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#binary-case-join-counts
+[gds5.2]: https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#continuous-case-moran-plot-and-moran-s-i
+[gds6]: https://geographicdata.science/book/notebooks/07_local_autocorrelation.html
+[gsags]: https://www.spatialanalysisonline.com/HTML/geostatistical_interpolation_m.htm?zoom_highlightsub=geostatistical
+[gsakrg]: https://www.spatialanalysisonline.com/HTML/kriging_interpolation.htm 
+[gsaint]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
+[gsanet]: https://www.spatialanalysisonline.com/HTML/network_and_location_analysis.htm
+[gsareg]: https://www.spatialanalysisonline.com/HTML/regression_overview.htm?zoom_highlightsub=regression
+[sahmv]: https://www.statsref.com/HTML/multivariate_distributions.html?zoom_highlightsub=multivariate
+[sahcor]: https://www.statsref.com/HTML/correlation.html
+[sahinf]: https://www.statsref.com/HTML/simple_regression.html
+[python]: http://python.org
+
+
+
+## Grading
+
+
+
+GEOG385 uses [specification
+grading](https://www.insidehighered.com/views/2016/01/19/new-ways-grade-more-effectively-essay)
+in evaluating student work and in determining your final course grade.
+Your course grade will be based on the quality and quantity of the work
+that you submit that is evaluated to be of an acceptable level of
+quality. The acceptable level of quality demonstrates competency in the
+concepts and methods covered in the course.
+
+There is a two-step process for determination of your final course grade
+at the end of the quarter:
+
+1.  Using your quizzes and  exercises, your **base grade** is
+    determined.
+2.  Using your final exam results, determine if your base grade includes
+    a \"plus\", \"minus\", or level drop to form the course grade.
+
+For Step 1, the base grade is determined using the following
+specification:
+
+  Level   Hurdles
+  ------- -------------------------------------------------------------------------------------
+  A       Pass at least 12 of 14 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,
+  B       Pass at least 10 of 14 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises
+  C       Pass at least 8 of 14 quizzes and  earn \"Demonstrates Competency\" on 2 of 4 exercises
+  D       Pass at least 6 of 14 quizzes and  earn \"Demonstrates Competency\" on 1 of 4 exercises
+  F       Fail to clear D-level hurdles
+
+For Step 2, your final course grade is determined as follows:
+
+-   If you earn at least 85% on the final exam, you will obtain a "+" for your
+    grade. So  a B base grade would become a B+ course grade, and so on
+    (**Note: SDSU does not record A+ grades**).
+-   If you score between 70-85% on the final exam, your base grade
+    becomes your course grade.
+-   If you score between 50% and 69% on the final exam, you will obtain
+    a "-" for your grade. So an A base grade becomes an A-  course grade, a B
+    base grade becomes a B- course grade, and so on.
+-   If you score less than 50% on the final exam, your course grade will
+    drop one level: An A base grade becomes a final B course grade.
+
+## Quizzes
+
+Starting in week two, there will be a quiz due before a session that pertains to
+the background reading that is required before our work in class.  Quizzes are
+graded on a pass/fail basis.
+
+
+## Exercises
+
+Four exercises will be introduced in class and are to be completed outside of
+class meetings.
+
+Each exercise is graded using a **CRN** rubric that classifies work with
+marks of **C** (\"Demonstrates Competence\"), **R** (\"Needs
+Revision\"), or **N** (\"Not assessable\"):
+
+Of each exercise the following questions will be asked: Does the work
+demonstrate that the student understands the concepts? Does the work
+demonstrate competence and meet the expectations outlined in the
+exercise?
+
+If the answer is \"yes\" to both of the questions, a student passes the
+hurdle for that exercise.
+
+If the initial submission does not clear the hurdle, then a second
+question is asked: Is there evidence of partial understanding of the
+concepts? If the answer to this question is \"Yes\" the student can
+exchange one token to attempt a revision of their work. If the answer is
+\"No\", the student does not clear the hurdle for this exercise and will
+not have the opportunity to revise their work.
+
+
+## Final Exam
+
+A closed book, closed note, timed final exam will be given on **May 7
+(13:00-15:00)**. The exam will be based on a blend of previous quiz questions
+and additional questions that pertain to material covered in class.
+
+## Tokens
+
+Each student is provided with three tokens at the beginning of the
+semester.
+
+Using Tokens
+
+1.  One token can be used for a one-day extension for an exercise.
+
+2.  One token can be used to revise an exercise that was submitted
+    on-time but evaluated as \"Needing Revision\".
+
+3.  Two tokens can be used to request a make-up date for the final exam.
+   (**Requests required by 2024-04-15 17:00.**)
+
+
+Remaining Tokens
+
+Each token that remains unused after **2024-05-02** will be counted as a passed
+quiz. *Tokens cannot be exchanged with other students*.
+
+## Policies
+### Accommodations
+If you are a student with a disability and are in need of
+accommodations for this class, please contact Student Ability
+Success Center at (619) 594-6473 as soon as possible.  Please know
+accommodations are not retroactive, and I cannot provide
+accommodations based upon disability until I have received an
+accommodation letter from Student Ability Success Center.
+
+### Privacy and Intellectual Property
+Student Privacy and Intellectual Property: The Family Educational
+Rights and Privacy Act (FERPA) mandates the protection of student
+information, including contact information, grades, and graded
+assignments. I will use Canvas to communicate with you,
+and I will not post grades or leave graded assignments in public
+places. Students will be notified at the time of an assignment if
+copies of student work will be retained beyond the end of the semester
+or used as examples for future students or the wider public. Students
+maintain intellectual property rights to work products they create as
+part of this course unless they are formally notified otherwise.
+
+
+### Academic Integrity
+
+The SDSU student academic integrity policy lists violations in detail.
+These violations fall into eight broad areas that include but are not
+limited to: cheating, fabrication, plagiarism, facilitating academic
+misconduct, unauthorized collaboration, interference or sabotage,
+non-compliance with research regulations and retaliation. For more
+information about the SDSU student academic integrity policy, please see
+the following: <https://sacd.sdsu.edu/student-rights/academic-dishonesty>.
+
+
+### Code of Conduct
+
+As course instructor, I am dedicated to providing a harassment-free
+learning experience for all students, regardless of gender, sexual
+orientation, disability, physical appearance, body size, race, religion,
+or choice of operating system. All course participants are expected to
+show respect and courtesy to other students throughout the semester. As
+a learning community we do not tolerate harassment of participants in
+any form.
+
+-   All communication should be appropriate for a professional audience
+    including people of many different backgrounds. Sexual language and
+    imagery are not appropriate in this course.
+
+-   Be kind to others. Do not insult or put down other students. Behave
+    professionally. Remember that harassment and sexist, racist, or
+    exclusionary jokes are not appropriate for this course.
+
+-   Students violating these rules may be asked to leave the course, and
+    their violations will be reported to the SDSU administration.
+
+This code of conduct is an adaptation of the [SciPy 2018 Code of
+Conduct](https://scipy2018.scipy.org/ehome/299527/648147/index9a04.html).
+
+
