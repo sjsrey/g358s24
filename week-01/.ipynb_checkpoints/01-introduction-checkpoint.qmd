@@ -1,0 +1,390 @@
+---
+title: "Course Introduction"
+date: "August 21, 2023"
+format: 
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: false
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+  echo: true
+---
+
+# Welcome to Spatial Data Analysis!
+<br/>
+
+::: {.incremental}
+- Syllabus
+- Computational Environment(s)
+- Introductions
+:::
+
+# Syllabus
+
+## Introduction
+
+> This course introduces the fundamental concepts of spatial data analysis. Key fundamentals include spatial sampling, descriptive statistics for areal data, inferential statistics, use of maps in data analysis.
+
+## Approach
+
+> The course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts.
+
+## Scope
+
+> In the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field.
+
+
+
+## Prerequisites
+
+![](images/prerequisites.png)
+
+
+
+## Schedule, Reading, and Content
+
+All required readings are available through the links listed
+below. Assigned readings should be completed before the date listed in
+the schedule (see below). Readings are a critical part of the
+discussions we will hold in class, and therefore coming into class
+prepared means having completed the readings and thought about the
+content. It will be difficult to do well in this course without having
+completed the readings.
+
+
+## Readings
+
+| Abbrevation   | Source                                                                                        |
+| ------------- | --------------------------------------------------------------------------------------------- |
+| [GDA][gda]         | Tenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press. |
+| [GDS][gds]           | Rey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.   |
+
+
+[gda]: https://pythongis.org/index.html
+[gds]: https://geographicdata.science/book/intro.html 
+
+## Schedule (Planned)
+
+![](images/sched1.png)
+
+## Schedule (Planned)
+
+![](images/sched2.png)
+
+
+
+## Grading
+
+
+GEOG385 uses [specification
+grading](https://www.insidehighered.com/views/2016/01/19/new-ways-grade-more-effectively-essay)
+in evaluating student work and in determining your final course grade.
+Your course grade will be based on the quality and quantity of the work
+that you submit that is evaluated to be of an acceptable level of
+quality. The acceptable level of quality demonstrates competency in the
+concepts and methods covered in the course.
+
+## Specification Grading
+
+There is a two-step process for determination of your final course grade
+at the end of the quarter:
+
+1.  Using your quizzes, and exercises your **base grade** is
+    determined.
+2.  Using your final exam results, determine if your base grade includes
+    a \"plus\", \"minus\", or level drop to form the course grade.
+
+
+## Base Grade
+
+  Level   Hurdles
+  ------- -------------------------------------------------------------------------------------
+  A        Pass at least 13 of 15 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,
+  B       Pass at least 11 of 15 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises
+  C       Pass at least 9 of 15 quizzes and  earn \"Demonstrates Competency\" on 2 of 4 exercises
+  D       Pass at least 7 of 15 quizzes and  earn \"Demonstrates Competency\" on 1 of 4 exercises
+  F       Fail to clear D-level hurdles
+
+## Final Grade
+
+
+-   If you earn at least 85% on the final exam, you will obtain a + for your
+    grade. So  a B base grade would become becomes a B+ course grade, and so on
+    (**Note: SDSU does not record A+ grades**).
+-   If you score between 70-85% on the final exam, your base grade
+    becomes your course grade.
+-   If you score between 50% and 69% on the final exam, you will obtain
+    a - for your grade. So an A base grade becomes an A-  course grade, a B
+    base grade becomes a B- course grade, and so on.
+-   If you score less than 50% on the final exam, your course grade will
+    drop one level: An A base grade becomes a final B course grade.
+
+
+## Quizzes
+
+Quizzes are graded on a pass/fail basis. Starting in week two, there
+will be a quiz due before a session that pertains to the
+background reading that is required before our work in class.
+
+## Exercises
+
+Four exercises will be introduced in class and are to be completed outside of
+class meetings.
+
+Each exercise is graded using a **CRN** rubric that classifies work with
+marks of **C** (\"Demonstrates Competence\"), **R** (\"Needs
+Revision\"), or **N** (\"Not assessable\"):
+
+
+## Exercises
+
+Of each exercise the following questions will be asked: Does the work
+demonstrate that the student understands the concepts? Does the work
+demonstrate competence and meet the expectations outlined in the
+exercise?
+
+If the answer is \"yes\" to both of the questions, a student passes the
+hurdle for that exercise.
+
+## Exercises
+
+If the initial submission does not clear the hurdle, then a second
+question is asked: Is there evidence of partial understanding of the
+concepts? If the answer to this question is \"Yes\" the student can
+exchange one token to attempt a revision of their work. If the answer is
+\"No\", the student does not clear the hurdle for this exercise and will
+not have the opportunity to revise their work.
+
+
+
+## Final Exam
+
+A closed book, closed note, timed final exam will be given on **December 18
+(13:00-15:00)**. The exam will be based on a blend of previous quiz questions
+and additional questions that pertain to material covered in class.
+
+
+## Tokens
+
+Each student is provided with three tokens at the beginning of the
+semester.
+
+## Using Tokens
+
+1.  One token can be used for a one-day extension for an exercise.
+
+2.  One token can be used to revise an exercise that was submitted
+    on-time but evaluated as \"Needing Revision\".
+
+3.  Two tokens can be used to request a make-up date for the final exam.
+
+
+## Remaining Tokens
+
+Each token that remains unused after **2023-12-18** will be counted as a passed
+quiz. *Tokens cannot be exchanged with other students*.
+
+
+## Aministration
+
+
+## Accomodations
+If you are a student with a disability and are in need of
+accommodations for this class, please contact Student Ability
+Success Center at (619) 594-6473 as soon as possible.  Please know
+accommodations are not retroactive, and I cannot provide
+accommodations based upon disability until I have received an
+accommodation letter from Student Ability Success Center.
+
+## Privacy and Intellectual Property
+Student Privacy and Intellectual Property: The Family Educational
+Rights and Privacy Act (FERPA) mandates the protection of student
+information, including contact information, grades, and graded
+assignments. I will use [Canvas / Blackboard] to communicate with you,
+and I will not post grades or leave graded assignments in public
+places. Students will be notified at the time of an assignment if
+copies of student work will be retained beyond the end of the semester
+or used as examples for future students or the wider public. Students
+maintain intellectual property rights to work products they create as
+part of this course unless they are formally notified otherwise.
+
+
+## Academic Integrity
+
+The SDSU student academic integrity policy lists violations in detail.
+These violations fall into eight broad areas that include but are not
+limited to: cheating, fabrication, plagiarism, facilitating academic
+misconduct, unauthorized collaboration, interference or sabotage,
+non-compliance with research regulations and retaliation. For more
+information about the SDSU student academic integrity policy, please see
+the following: <http://www.sa.sdsu.edu/srr/index.html>.
+
+
+## Code of Conduct
+
+As course instructor, I am dedicated to providing a harassment-free
+learning experience for all students, regardless of gender, sexual
+orientation, disability, physical appearance, body size, race, religion,
+or choice of operating system. All course participants are expected to
+show respect and courtesy to other students throughout the semester. As
+a learning community we do not tolerate harassment of participants in
+any form.
+
+
+## Code of Conduct
+
+-   All communication should be appropriate for a professional audience
+    including people of many different backgrounds. Sexual language and
+    imagery are not appropriate in this course.
+
+-   Be kind to others. Do not insult or put down other students. Behave
+    professionally. Remember that harassment and sexist, racist, or
+    exclusionary jokes are not appropriate for this course.
+
+-   Students violating these rules may be asked to leave the course, and
+    their violations will be reported to the SDSU administration.
+
+This code of conduct is an adaptation of the [SciPy 2018 Code of
+Conduct](https://scipy2018.scipy.org/ehome/299527/648147/index9a04.html).
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Computer Applications
+
+## Computational Learning
+```{python}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Show me the code"
+#| code-block-background: true
+#| highlight-style: vim-dark
+
+import libpysal.examples
+import geopandas 
+
+# get path to built-in dataset for Mexico
+pth = libpysal.examples.get_path("mexicojoin.shp")
+# load the file with geopandas to create a GeoDataframe
+gdf = geopandas.read_file(pth)
+# call the plot method of the GeoDataFrame
+gdf.plot(edgecolor='white');
+```
+
+
+
+
+## Open Source
+
+
+![](images/pysal.png)
+
+
+## Server or Laptop
+
+You can choose to either use an account on our course [JupyterHub](https://jupyter.org/hub) or install the packages on your own laptop.
+
+Either way, you will be using Jupyter Notebooks for all computation:
+
+
+![](images/jupyter.png)
+
+
+
+# Introductions
+
+<!-- /Users/serge/Documents/p/pbpl273/20w/pp4gisprivate/content/lectures/lecture_01.md -->
+
+## My Program 
+
+<CENTER>
+<img src="images/cogs.png" alt="cogs" />
+</CENTER>
+
+[`url`](http://cogs.sdsu.edu)
+
+## Why am I here
+<CENTER>
+<img src="images/john_sinton.png" alt="ac_hotel" />
+</CENTER>
+
+
+
+## Why am I here
+
+<CENTER>
+<img src="images/atlantic_city.png" alt="ac_hotel" />
+</CENTER>
+
+
+## ['Trump turned this place into a ghost town']( https://www.theguardian.com/artanddesign/2019/apr/08/atlantic-city-trump-ghost-town-gambling-brian-rose-photographer)
+<CENTER>
+<img src="images/ac_hotel.png" alt="ac_hotel" />
+</CENTER>
+
+
+## Stockton and Atlantic City 
+
+![](images/ac_stockton.png)
+
+## Stockton and Atlantic City 
+
+![[Source](https://magicseaweed.com/photo/277698/album/f862aa6d699520cc347176933bf28573/)](images/ac_pier.png)
+
+
+## Stockton
+<CENTER>
+<img src="images/camp0.png" alt="ac_hotel" />
+</CENTER>
+
+
+## Stockton
+<CENTER>
+<img src="images/camp1.png" alt="ac_hotel" />
+</CENTER>
+
+
+## Stockton
+<CENTER>
+<img src="images/camp2.png" alt="ac_hotel" />
+</CENTER>
+
+
+## Stockton
+<CENTER>
+<img src="images/camp3.png" alt="ac_hotel" />
+</CENTER>
+
+
+
+## You
+
+Take a few minutes and let us know a bit about yourself
+
+- Name
+- Program/Concentration
+- Why you are here
+
+
+# Next Up
+</br>
+**Introduction to Jupyter**
+
+
+<!-- # An Include Follows -->
+
+<!-- {{< include shared/open_source.qmd >}} -->
+
