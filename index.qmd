@@ -76,10 +76,9 @@ software throughout the course together with [Jupyter
 Notebooks](https://jupyter.org), and [Python](https://python.org) as our
 scripting language.
 
-All software for the course will be made available through
-[JupyterHub](https://jupyter.org/) a web-based framework. Students
-wishing to install these materials on their own machines will be given
-instructions to do so, **but this is not required**.
+All software for the course will be made available through a web-based
+ framework. Students wishing to install these materials on their own machines
+ will be given instructions to do so, **but this is not required**.
 
 
 ## Readings
@@ -92,10 +91,10 @@ means having completed the readings and thought about the
 content. It will be difficult to do well in this course without having
 completed the readings.
 
-| Abbrevation | Source                                                                                        |
-|-------------|-----------------------------------------------------------------------------------------------|
-| [GDA][gda]  | Tenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press. |
-| [GDS][gds]  | Rey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.   |
+| Abbreviation | Source                                                                                        |
+|--------------|-----------------------------------------------------------------------------------------------|
+| [GDA][gda]   | Tenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press. |
+| [GDS][gds]   | Rey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.   |
 
 
 ## Schedule (Planned)
@@ -133,8 +132,9 @@ completed the readings.
 |      | Apr-25 | Geostatistical Data                 | [DS 6.1-6.5][ds6] |            |
 | 15   | Apr-30 | Spatial Interpolation               | [DS 6.5][ds65]    | Quiz 13    |
 |      | May-02 | Kriging                             | [DS 6.7][ds67]    | Exercise 4 |
-| 16   | May-07 | *Final Exam (1-3pm)                 |                   |            |
-				  				  
+| 16   | May-07 | *Final Exam (1-3pm)*                |                   |            |
+
+
 
 [ds6]: https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm
 [ds65]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
@@ -216,10 +216,10 @@ For Step 2, your final course grade is determined as follows:
 
 ## Quizzes
 
-Starting in week two, there will be a quiz due before a session that pertains to
-the background reading that is required before our work in class.  Quizzes are
-graded on a pass/fail basis.
 
+Starting in week three, there will be a quiz given during the first five minutes
+of the class meeting.  The quiz will cover the assigned reading that is required
+before our work in class.  Quizzes are graded on a pass/fail basis.
 
 ## Exercises
 

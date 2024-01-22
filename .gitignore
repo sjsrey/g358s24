@@ -1,2 +1,4 @@
 .jupyter-cache
 .ipynb_checkpoints
+
+/.quarto/
