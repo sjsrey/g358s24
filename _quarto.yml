@@ -25,7 +25,7 @@ format:
     bibliography: assets/references.bib
 
 website:
-  repo-url: https://github.com/sjsrey/g385s24/
+  repo-url: https://github.com/sjsrey/g358s24/
   favicon: assets/favicon.png
   repo-actions: [issue]
   twitter-card: false
@@ -41,7 +41,7 @@ website:
     logo: assets/logo.svg
     tools:
       - icon: github
-        href: https://github.com/sjsrey/g385s24
+        href: https://github.com/sjsrey/g358s24
     contents:
       - section: "Syllabus"
         contents:
