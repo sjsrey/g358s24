@@ -103,9 +103,9 @@ completed the readings.
 | Week | Dates  | Topic                               | Reading           | Due        |
 |------|--------|-------------------------------------|-------------------|------------|
 | 1    | Jan-18 | Course Introduction                 |                   |            |
-| 2    | Jan-23 | *CSU Strike*                        |                   |            |
-|      | Jan-25 | *CSU Strike*                        |                   |            |
-| 3    | Jan-30 | Jupyter CodeSpace                   | GDA 1  GDS 2      | Quiz 1     |
+| 2    | Jan-23 | Computational Environment I                       |                   |            |
+|      | Jan-25 | Computational Environment II                        |                   |            |
+| 3    | Jan-30 | Python: Introduction                   | GDA 1  GDS 2      | Quiz 1     |
 |      | Feb-01 | Python: Programming Concepts        | GDA 2             |            |
 | 4    | Feb-06 | Python: Scripting                   | GDA 2             | Quiz 2     |
 |      | Feb-08 | Python: Functions                   | GDA 2             | Exercise 1 |
