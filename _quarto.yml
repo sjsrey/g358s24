@@ -47,7 +47,11 @@ website:
         contents:
           - syllabus.qmd
       - text: "---"
-      - section: "Week 1"
+      - section: "Week 1 1/18"
         contents:
           - week-01/01-introduction.qmd
+
+      - section: "Week 2 1/23-1/24"
+        contents:
+          - week-02/files-dirs.qmd
       

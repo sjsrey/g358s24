@@ -1,0 +1,162 @@
+---
+title: "Introduction to Unix File System with Jupyter Lab"
+date: "January 24, 2024"
+format: 
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: false
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+  echo: true
+---
+# Overview {.slide: data-transition="none"}
+
+- Welcome to the lecture on Unix File System!
+- In this session, we'll learn about Unix, its file system, and how to work with it using Jupyter Lab.
+
+# Outline
+
+::: {.incremental}
+- File System Basics
+- Navigation
+- Creating and Managing Directories
+- File Operations
+- *Hands-on*
+::: 
+
+
+# File System Basics
+
+## What is Unix? {.slide: data-transition="none"}
+
+- Unix is a powerful operating system used in many fields, including data science and computer science.
+- Understanding its file system is crucial for efficient work.
+
+## Unix File System Basics {.slide: data-transition="none"}
+
+- The Unix file system is hierarchical.
+- It consists of directories and files organized in a tree-like structure.
+
+## Directory Structure {.slide: data-transition="none"}
+
+- The root directory is the top-level directory.
+- Home directories are where users have their own spaces.
+
+## Example
+
+```
+jupyter-student@geo-rey-srv2:~$ tree -L 1 /
+/
+├── bin -> usr/bin
+├── boot
+├── dev
+├── etc
+├── home
+├── home.orig
+├── lib -> usr/lib
+├── lib32 -> usr/lib32
+├── lib64 -> usr/lib64
+├── libx32 -> usr/libx32
+├── lost+found
+├── media
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── sbin -> usr/sbin
+├── snap
+├── software
+├── srv
+├── sys
+├── tmp
+├── usr
+├── var
+└── vmlinuz
+
+```
+
+## My Home
+
+![](images/home-jupyter.png)
+
+
+## All Home(s)
+
+![](images/allhome.png)
+
+
+## Paths {.slide: data-transition="none"}
+
+- Paths are used to specify the location of files and directories.
+- There are relative and absolute paths.
+
+
+# Navigation
+## Navigating the File System {.slide: data-transition="none"}
+
+- Learn how to change directories using `cd`.
+- Use `ls` to list the contents of a directory.
+
+## Finding the Current Directory {.slide: data-transition="none"}
+
+- Use `pwd` to find the current working directory.
+
+
+# Creating and Managing Directories
+
+## Creating and Managing Directories {.slide: data-transition="none"}
+
+- Learn how to create directories using `mkdir`.
+- Use `rmdir` and `rm -r` to remove directories.
+
+# File Operations
+
+## File Operations {.slide: data-transition="none"}
+
+- Creating files with `touch`.
+- Copying, moving, and deleting files.
+
+# Practical Exercises {.slide: data-transition="none"}
+
+- Let's put what we've learned into practice.
+- Hands-on exercises to reinforce your understanding.
+
+## Exercise 1 
+Using the **File Browser** in Jupyter Lab
+
+1. Create a New Folder called `handson` in your `home` directory
+2. Select the new folder in the File Browser
+3. From the Launcher create a new Markdown file with the name `README.md`
+4. Add some content (using Markdown) inside the `README.md` file
+5. Before using any unix commands, ask youself what the path is for the
+   `Readme.md` file. 
+
+
+## Exercise 2 
+Using the terminal, delete your handson directory and the files living in there
+
+
+## Exercise 3
+Using a terminal:
+
+1. Create a directory called `handson` in your `home` directory
+2. Select the new directory in the File Browser
+3. From the Launcher create a new Markdown file with the name `README.md`
+4. Add some content (using Markdown) inside the `README.md` file
+5. Before using any unix commands, ask youself what the path is for the
+   `Readme.md` file. 
+
+## Exercise 4
+
+Using a terminal:
+
+1. Create a directory called `week_2` inside your `handson` directory
+2. Copy the `README.md` file into the `week_2` directory.
+
+
+# Questions? {.slide: data-transition="none"}
