@@ -687,7 +687,7 @@
     "section": "What is Unix?",
     "text": "What is Unix?\n\nUnix is a powerful operating system used in many fields, including data science and computer science.\nUnderstanding its file system is crucial for efficient work.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -698,7 +698,7 @@
     "section": "Unix File System Basics",
     "text": "Unix File System Basics\n\nThe Unix file system is hierarchical.\nIt consists of directories and files organized in a tree-like structure.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -709,7 +709,7 @@
     "section": "Directory Structure",
     "text": "Directory Structure\n\nThe root directory is the top-level directory.\nHome directories are where users have their own spaces.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -720,7 +720,7 @@
     "section": "Where am I?",
     "text": "Where am I?\nUsing the File Browser\n\n\n\n\n\n\n\n\n\n\n\n(a) home\n\n\n\n\n\n\n\n\n\n\n\n(b) data\n\n\n\n\n\n\n\nFigure 1",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -731,7 +731,7 @@
     "section": "Where am I?",
     "text": "Where am I?\nUsing the terminal\n\n\n\n\n\n\n\n\n\n\n\n(a) terminal home\n\n\n\n\n\n\n\n\n\n\n\n(b) terminal pwd\n\n\n\n\n\n\n\nFigure 2",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -742,7 +742,7 @@
     "section": "Navigating the File System",
     "text": "Navigating the File System\n\nUse ls to list the contents of a directory.\nUse tree to list the hierarchical structure of the directory\nLearn how to change directories using cd.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -753,7 +753,7 @@
     "section": "ls",
     "text": "ls\nls lists the contents of the pwd",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -764,7 +764,7 @@
     "section": "tree",
     "text": "tree\ntree lists the directory structure/tree of the pwd",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -775,7 +775,7 @@
     "section": "First level tree of the root system",
     "text": "First level tree of the root system",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -786,7 +786,7 @@
     "section": "First level tree of the /home directory",
     "text": "First level tree of the /home directory",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -797,7 +797,7 @@
     "section": "My Home",
     "text": "My Home",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -808,7 +808,7 @@
     "section": "All Home(s)",
     "text": "All Home(s)",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -819,7 +819,7 @@
     "section": "Clearing the terminal",
     "text": "Clearing the terminal\n\nclear will clear the terminal",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -830,7 +830,7 @@
     "section": "history",
     "text": "history\nTo recall what you have done, use history",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -841,7 +841,7 @@
     "section": "Rerunning a command",
     "text": "Rerunning a command\nAfter using history you can rerun a command without having to retype it:\n\n\n\n\n\n\n\n\n\n\n\n(a) recall\n\n\n\n\n\n\n\n\n\n\n\n(b) result\n\n\n\n\n\n\n\nFigure 3",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -852,7 +852,7 @@
     "section": "Tab completion",
     "text": "Tab completion\nAnother efficiency feature is tab completion:\n\n\n\n\n\n\n\n\n\n\n\n(a) tab start\n\n\n\n\n\n\n\n\n\n\n\n(b) tab completion\n\n\n\n\n\n\n\nFigure 4",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -863,7 +863,7 @@
     "section": "Paths",
     "text": "Paths\n\nPaths are used to specify the location of files and directories.\nThere are relative and absolute paths.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -874,7 +874,7 @@
     "section": "cd change directory",
     "text": "cd change directory",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -885,7 +885,7 @@
     "section": "cd shortcuts",
     "text": "cd shortcuts\n\n\ncd .. moves up one directory to the parent of the current directory\ncd will move you back to your home",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -896,7 +896,7 @@
     "section": "Creating and Managing Directories",
     "text": "Creating and Managing Directories\n\nLearn how to create directories using mkdir.\nUse rmdir and rm -r to remove directories.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -907,7 +907,7 @@
     "section": "mkdir",
     "text": "mkdir\n\n\n\n\n\n\n\n\n\n\n\n(a) before\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) after\n\n\n\n\n\n\n\nFigure 5",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -918,7 +918,7 @@
     "section": "File Operations",
     "text": "File Operations\n\nCreating files with touch.\nCopying, moving, and deleting files.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -929,7 +929,7 @@
     "section": "Creating a file in a directory",
     "text": "Creating a file in a directory\ncd handson\ntouch data.txt\n\n\nFigure 6",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -940,7 +940,7 @@
     "section": "Creating a file in a directory (2)",
     "text": "Creating a file in a directory (2)\nYou can also create a file in the current directory by selecting the + in the toolbar and selecting Markdown File\n\n\nFigure 7: File Browser",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -951,7 +951,7 @@
     "section": "Creating a file in a directory (2)",
     "text": "Creating a file in a directory (2)\nYou can also create a file in the current directory by selecting the + in the toolbar and selecting Markdown File\n\n\nFigure 8: README.md",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -962,7 +962,7 @@
     "section": "Copying Files",
     "text": "Copying Files\ncp data.txt data.txt.bak\n\n\nFigure 9",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -973,7 +973,7 @@
     "section": "Deleting Files",
     "text": "Deleting Files\nrm data.txt\n\n\nFigure 10",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -984,7 +984,7 @@
     "section": "Copying Again",
     "text": "Copying Again\nLet’s restore our backup\n\n\nFigure 11",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -995,7 +995,7 @@
     "section": "Copying Between Directories",
     "text": "Copying Between Directories\n\n\nFigure 12",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -1006,7 +1006,7 @@
     "section": "Moving Files Between Directories",
     "text": "Moving Files Between Directories\n\n\nFigure 13",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -1017,7 +1017,7 @@
     "section": "Creating and Removing Directories",
     "text": "Creating and Removing Directories\n\n\nFigure 14",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -1028,7 +1028,7 @@
     "section": "Creating and Removing Directories",
     "text": "Creating and Removing Directories\n\n\nFigure 15",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -1039,7 +1039,7 @@
     "section": "Exercise 0",
     "text": "Exercise 0\n\nCreate a directory called notes\nIn that directory create a new jupyter notebook and rename it to files.ipynb\nPractice using Markdown in files.ipynb to structure your notes with headings\nPractice taking screenshots and dragging the images into your notebook.\nPractice formatting code in Markdown cells.\n\nYou will use this notebook to take notes on the remaining exercises.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -1050,7 +1050,7 @@
     "section": "Exercise 2",
     "text": "Exercise 2\nUsing the File Browser, delete your handson directory and the files living in there",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -1061,7 +1061,7 @@
     "section": "Exercise 3",
     "text": "Exercise 3\nUsing a terminal:\n\nCreate a directory called handson in your home directory\nSelect the new directory in the File Browser\nFrom the Launcher create a new Markdown file with the name README.md\nAdd some content (using Markdown) inside the README.md file\nBefore using any unix commands, ask youself what the path is for the README.md file.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -1072,7 +1072,7 @@
     "section": "Exercise 4",
     "text": "Exercise 4\nUsing a terminal:\n\nCreate a directory called week_2 inside your handson directory\nCopy the README.md file into the week_2 directory.",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   },
@@ -1083,7 +1083,7 @@
     "section": "Exercise 5",
     "text": "Exercise 5\nUsing a terminal\n\nCreate a directory called temp in the week_2 directory.\nCreate a file in the temp directory called data.txt\nDelete the directory temp in the week_2 directory",
     "crumbs": [
-      "Week 2 1/23-1/24",
+      "Week 2 1/23, 1/25",
       "Introduction to Unix File System with Jupyter Lab"
     ]
   }
