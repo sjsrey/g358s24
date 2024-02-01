@@ -58,3 +58,4 @@ website:
       - section: "Week 3 1/30, 2/01"
         contents:
           - week-03/python_intro.ipynb
+          - week-03/python_concepts.ipynb
