@@ -59,3 +59,9 @@ website:
         contents:
           - week-03/python_intro.ipynb
           - week-03/python_concepts.ipynb
+
+      - section: "Week 4 2/06, 2/08"
+        contents:
+          - week-04/scripts_and_functions.ipynb
+          - week-04/import_demo.ipynb
+          - week-04/distances.qmd
