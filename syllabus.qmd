@@ -103,15 +103,15 @@ completed the readings.
 | Week | Dates  | Topic                               | Reading           | Due        |
 |------|--------|-------------------------------------|-------------------|------------|
 | 1    | Jan-18 | Course Introduction                 |                   |            |
-| 2    | Jan-23 | Computational Environment I                       |                   |            |
-|      | Jan-25 | Computational Environment II                        |                   |            |
-| 3    | Jan-30 | Python: Introduction                   | GDA 1  GDS 2      | Quiz 1     |
+| 2    | Jan-23 | Computational Environment I         |                   |            |
+|      | Jan-25 | Computational Environment II        |                   |            |
+| 3    | Jan-30 | Python: Introduction                | GDA 1  GDS 2      | Quiz 1     |
 |      | Feb-01 | Python: Programming Concepts        | GDA 2             |            |
 | 4    | Feb-06 | Python: Scripting                   | GDA 2             | Quiz 2     |
-|      | Feb-08 | Python: Functions                   | GDA 2             | Exercise 1 |
-| 5    | Feb-13 | Python: Data Analysis/Visualization | GDA 3,4           | Quiz 3     |
-|      | Feb-15 | Python: Geographic Data             | GDA 5             |            |
-| 6    | Feb-20 | Geopandas                           | GDA 6             | Quiz 4     |
+|      | Feb-08 | Python: Functions                   | GDA 2             |            |
+| 5    | Feb-13 | Exericse 1 Collaboration            |                   | Exercise 1 |
+|      | Feb-15 | Python: Data Analysis/Visualization | GDA 3,4           | Quiz 3     |
+| 6    | Feb-20 | Geopandas                           | GDA 5             | Quiz 4     |
 |      | Feb-22 | Geoprocessing                       | GDA 6             |            |
 | 7    | Feb-27 | GeoSNAP                             |                   | Quiz 5     |
 |      | Feb-29 | PySAL                               | GDS 3             |            |
@@ -133,8 +133,10 @@ completed the readings.
 |      | Apr-25 | Geostatistical Data                 | [DS 6.1-6.5][ds6] |            |
 | 15   | Apr-30 | Spatial Interpolation               | [DS 6.5][ds65]    | Quiz 13    |
 |      | May-02 | Kriging                             | [DS 6.7][ds67]    | Exercise 4 |
-| 16   | May-07 | *Final Exam (1-3pm)                 |                   |            |
-				  				  
+| 16   | May-07 | *Final Exam (1-3pm)*                |                   |            |
+
+
+			  				  
 
 [ds6]: https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm
 [ds65]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
