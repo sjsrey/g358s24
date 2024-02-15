@@ -4,448 +4,706 @@
     "href": "syllabus.html#class-meetings",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Class Meetings",
-    "text": "Class Meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm"
+    "text": "Class Meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#teaching-team",
     "href": "syllabus.html#teaching-team",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Teaching Team",
-    "text": "Teaching Team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nTue 9:00 - 10:00 (by appointment)\nPSFA 361G\n\n\nJin Huang\nFri 10:30am (virtual)\nPSFA 361F"
+    "text": "Teaching Team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nTue 9:00 - 10:00 (by appointment)\nPSFA 361G\n\n\nJin Huang\nFri 10:30am (virtual)\nPSFA 361F",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#introduction",
     "href": "syllabus.html#introduction",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Introduction",
-    "text": "Introduction\nWelcome to 385: Spatial Data Analysis!\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for diﬀerent types of spatial data including point processes, lattice data, geostatistical data, network data, and spatial interaction. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research.\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts. Put differently, students will learn to code. But this is a means to the end goal: students will code to learn spatial data analysis.\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field."
+    "text": "Introduction\nWelcome to 385: Spatial Data Analysis!\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for diﬀerent types of spatial data including point processes, lattice data, geostatistical data, network data, and spatial interaction. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research.\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts. Put differently, students will learn to code. But this is a means to the end goal: students will code to learn spatial data analysis.\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#prerequisites",
     "href": "syllabus.html#prerequisites",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Prerequisites",
-    "text": "Prerequisites\n\nGEOG 101 or GEOG 102\nSTAT 250 or comparable course in statistics.\n\nAll students are required to complete the prerequisite assessment quiz before 2024-01-30 2:00pm."
+    "text": "Prerequisites\n\nGEOG 101 or GEOG 102\nSTAT 250 or comparable course in statistics.\n\nAll students are required to complete the prerequisite assessment quiz before 2024-01-30 2:00pm.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#computational-learning",
     "href": "syllabus.html#computational-learning",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Computational Learning",
-    "text": "Computational Learning\nWe will be using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through JupyterHub a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required."
+    "text": "Computational Learning\nWe will be using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through JupyterHub a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#readings",
     "href": "syllabus.html#readings",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Readings",
-    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore being prepared for class means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press."
+    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore being prepared for class means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#schedule-planned",
     "href": "syllabus.html#schedule-planned",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\nQuiz 3\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nGeoSNAP\n\nQuiz 5\n\n\n\nFeb-29\nPySAL\nGDS 3\n\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\nExercise 2\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\n\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-18\nNearest Neighbor Statistics\nGDS 8\n\n\n\n14\nApr-23\nDistance Based Statistics\nGDS 8\nQuiz 12\n\n\n\nApr-25\nGeostatistical Data\nDS 6.1-6.5\n\n\n\n15\nApr-30\nSpatial Interpolation\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nKriging\nDS 6.7\nExercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)"
+    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\nQuiz 3\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nGeoSNAP\n\nQuiz 5\n\n\n\nFeb-29\nPySAL\nGDS 3\n\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\nExercise 2\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\n\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-18\nNearest Neighbor Statistics\nGDS 8\n\n\n\n14\nApr-23\nDistance Based Statistics\nGDS 8\nQuiz 12\n\n\n\nApr-25\nGeostatistical Data\nDS 6.1-6.5\n\n\n\n15\nApr-30\nSpatial Interpolation\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nKriging\nDS 6.7\nExercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#grading",
     "href": "syllabus.html#grading",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Grading",
-    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 12 of 14 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 10 of 14 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 8 of 14 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 6 of 14 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 12 of 14 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 10 of 14 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 8 of 14 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 6 of 14 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#quizzes",
     "href": "syllabus.html#quizzes",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Quizzes",
-    "text": "Quizzes\nStarting in week two, there will be a quiz due before a session that pertains to the background reading that is required before our work in class. Quizzes are graded on a pass/fail basis."
+    "text": "Quizzes\nStarting in week two, there will be a quiz due before a session that pertains to the background reading that is required before our work in class. Quizzes are graded on a pass/fail basis.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#exercises",
     "href": "syllabus.html#exercises",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Exercises",
-    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise.\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work."
+    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise.\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#final-exam",
     "href": "syllabus.html#final-exam",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Final Exam",
-    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 7 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 7 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#tokens",
     "href": "syllabus.html#tokens",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Tokens",
-    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester.\nUsing Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam. (Requests required by 2024-04-15 17:00.)\n\nRemaining Tokens\nEach token that remains unused after 2024-05-02 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
+    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester.\nUsing Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam. (Requests required by 2024-04-15 17:00.)\n\nRemaining Tokens\nEach token that remains unused after 2024-05-02 will be counted as a passed quiz. Tokens cannot be exchanged with other students.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "syllabus.html#policies",
     "href": "syllabus.html#policies",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Policies",
-    "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+    "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
   },
   {
     "objectID": "week-04/import_demo.html",
     "href": "week-04/import_demo.html",
     "title": "Importing",
     "section": "",
-    "text": "import distances\n\n\np1 = [0, 0]\np2 = [5, 0]\np3 = [5, 5]\n\n\ndistances.euclidean(p1, p2)\n\n5.0\n\n\n\ndistances.manhattan(p1, p2)\n\n5\n\n\n\ndistances.distance_composite(p2, p3)\n\n5.0\n\n\n\nfrom distances import distance_composite\n\n\ndistance_composite(p1, p3)\n\n7.0710678118654755"
+    "text": "import distances\n\n\np1 = [0, 0]\np2 = [5, 0]\np3 = [5, 5]\n\n\ndistances.euclidean(p1, p2)\n\n5.0\n\n\n\ndistances.manhattan(p1, p2)\n\n5\n\n\n\ndistances.distance_composite(p2, p3)\n\n5.0\n\n\n\nfrom distances import distance_composite\n\n\ndistance_composite(p1, p3)\n\n7.0710678118654755",
+    "crumbs": [
+      "Week 4 2/06, 2/08",
+      "Importing"
+    ]
   },
   {
     "objectID": "week-03/python_intro.html",
     "href": "week-03/python_intro.html",
     "title": "Introduction to Python",
     "section": "",
-    "text": "its “free” (as in beer and as in speech)\nwidely used (QGIS, ArcGIS)\napproachable\nfun"
+    "text": "its “free” (as in beer and as in speech)\nwidely used (QGIS, ArcGIS)\napproachable\nfun\n\n\n\n\n\ninput (keyboard, file, network, sensor)\noutput: display data on screen, write to a file, ship over network\nmath: basic mathematical operations (add, subtract, multiply, divide)\nconditional execution: if something is true do something else\nrepetition: Perform some action repeatedly\n\n\n1 + 1\n\n2\n\n\n\nx = 1 + 1\n\n\n\n\n\n40 + 2\n\n42\n\n\n\n40 * 2\n\n80\n\n\n\n40 / 2\n\n20.0\n\n\n\n40 ** 2\n\n1600\n\n\n\n40**3\n\n64000\n\n\n\n\n\nWhat the program works with\n\n2\n\n2\n\n\n\ntype(2)\n\nint\n\n\n\ntype('42')\n\nstr\n\n\n\n'42'\n\n'42'\n\n\n\n2 * 3\n\n6\n\n\n\n2 * 'my name is serge'\n\n'my name is sergemy name is serge'\n\n\n\nname = 'serge'\n\n\nname\n\n'serge'\n\n\n\ntype(name)\n\nstr\n\n\n\nname = 10\n\n\nname\n\n10\n\n\n\nx = 10**2 + 50\n\n\nx\n\n150\n\n\n\nx = 10**(2 + 50)\n\n\nx\n\n10000000000000000000000000000000000000000000000000000\n\n\n\nf = 3.14\ntype(f)\n\nfloat\n\n\n\nprint('hi world')\n\nhi world\n\n\n\ntempF = 9 / 5 * 40 + 32\n\n\ntempF\n\n104.0\n\n\n\ndef tempF(c):\n    return 9/5 * c + 32\n\n\ntempF(32)\n\n89.6\n\n\n\n\n\n\nint: 7\nfloat: 7.23\nstr: ‘7.23’\nbool: True/False\n\n\nx = 5 &gt; 7\nx\n\nFalse\n\n\n\ntype(x)\n\nbool\n\n\n\ny = 10\n\n\ny\n\n10\n\n\n\nx * y\n\n0\n\n\n\nz = 10 &gt; 1\n\n\nz\n\nTrue\n\n\n\nz * y\n\n10\n\n\n\n\n\n\nx = 'Today is my birthday'\n\n\nx\n\n'Today is my birthday'\n\n\n\ntype(x)\n\nstr\n\n\n\nlen(x)\n\n20\n\n\n\nx.lower()\n\n'today is my birthday'\n\n\n\nx.upper()\n\n'TODAY IS MY BIRTHDAY'\n\n\n\nx.title()\n\n'Today Is My Birthday'\n\n\n\nx.center(50)\n\n'               Today is my birthday               '\n\n\n\nx.title().center(100)\n\n'                                        Today Is My Birthday                                        '\n\n\n\ndir(x)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.zfill(30)\n\n'0000000000Today is my birthday'\n\n\n\nx.zfill?\n\n\nSignature: x.zfill(width, /)\nDocstring:\nPad a numeric string with zeros on the left, to fill a field of the given width.\nThe string is never truncated.\nType:      builtin_function_or_method\n\n\n\n\nx.strip?\n\n\nSignature: x.strip(chars=None, /)\nDocstring:\nReturn a copy of the string with leading and trailing whitespace removed.\nIf chars is given and not None, remove characters in chars instead.\nType:      builtin_function_or_method\n\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.split()\n\n['Today', 'is', 'my', 'birthday']\n\n\n\nx.split?\n\n\nSignature: x.split(sep=None, maxsplit=-1)\nDocstring:\nReturn a list of the substrings in the string, using sep as the separator string.\n  sep\n    The separator used to split the string.\n    When set to None (the default value), will split on any whitespace\n    character (including \\\\n \\\\r \\\\t \\\\f and spaces) and will discard\n    empty strings from the result.\n  maxsplit\n    Maximum number of splits (starting from the left).\n    -1 (the default value) means no limit.\nNote, str.split() is mainly useful for data that has been intentionally\ndelimited.  With natural text that includes punctuation, consider using\nthe regular expression module.\nType:      builtin_function_or_method",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
   },
   {
     "objectID": "week-03/python_intro.html#why-python",
     "href": "week-03/python_intro.html#why-python",
     "title": "Introduction to Python",
     "section": "",
-    "text": "its “free” (as in beer and as in speech)\nwidely used (QGIS, ArcGIS)\napproachable\nfun"
+    "text": "its “free” (as in beer and as in speech)\nwidely used (QGIS, ArcGIS)\napproachable\nfun",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
   },
   {
     "objectID": "week-03/python_intro.html#what-is-a-program",
     "href": "week-03/python_intro.html#what-is-a-program",
     "title": "Introduction to Python",
-    "section": "What is a program?",
-    "text": "What is a program?\n\ninput (keyboard, file, network, sensor)\noutput: display data on screen, write to a file, ship over network\nmath: basic mathematical operations (add, subtract, multiply, divide)\nconditional execution: if something is true do something else\nrepetition: Perform some action repeatedly\n\n\n1 + 1\n\n2\n\n\n\nx = 1 + 1"
+    "section": "",
+    "text": "input (keyboard, file, network, sensor)\noutput: display data on screen, write to a file, ship over network\nmath: basic mathematical operations (add, subtract, multiply, divide)\nconditional execution: if something is true do something else\nrepetition: Perform some action repeatedly\n\n\n1 + 1\n\n2\n\n\n\nx = 1 + 1",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
   },
   {
     "objectID": "week-03/python_intro.html#operators",
     "href": "week-03/python_intro.html#operators",
     "title": "Introduction to Python",
-    "section": "Operators",
-    "text": "Operators\n\n40 + 2\n\n42\n\n\n\n40 * 2\n\n80\n\n\n\n40 / 2\n\n20.0\n\n\n\n40 ** 2\n\n1600\n\n\n\n40**3\n\n64000"
+    "section": "",
+    "text": "40 + 2\n\n42\n\n\n\n40 * 2\n\n80\n\n\n\n40 / 2\n\n20.0\n\n\n\n40 ** 2\n\n1600\n\n\n\n40**3\n\n64000",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
   },
   {
     "objectID": "week-03/python_intro.html#values",
     "href": "week-03/python_intro.html#values",
     "title": "Introduction to Python",
-    "section": "Values",
-    "text": "Values\nWhat the program works with\n\n2\n\n2\n\n\n\ntype(2)\n\nint\n\n\n\ntype('42')\n\nstr\n\n\n\n'42'\n\n'42'\n\n\n\n2 * 3\n\n6\n\n\n\n2 * 'my name is serge'\n\n'my name is sergemy name is serge'\n\n\n\nname = 'serge'\n\n\nname\n\n'serge'\n\n\n\ntype(name)\n\nstr\n\n\n\nname = 10\n\n\nname\n\n10\n\n\n\nx = 10**2 + 50\n\n\nx\n\n150\n\n\n\nx = 10**(2 + 50)\n\n\nx\n\n10000000000000000000000000000000000000000000000000000\n\n\n\nf = 3.14\ntype(f)\n\nfloat\n\n\n\nprint('hi world')\n\nhi world\n\n\n\ntempF = 9 / 5 * 40 + 32\n\n\ntempF\n\n104.0\n\n\n\ndef tempF(c):\n    return 9/5 * c + 32\n\n\ntempF(32)\n\n89.6"
+    "section": "",
+    "text": "What the program works with\n\n2\n\n2\n\n\n\ntype(2)\n\nint\n\n\n\ntype('42')\n\nstr\n\n\n\n'42'\n\n'42'\n\n\n\n2 * 3\n\n6\n\n\n\n2 * 'my name is serge'\n\n'my name is sergemy name is serge'\n\n\n\nname = 'serge'\n\n\nname\n\n'serge'\n\n\n\ntype(name)\n\nstr\n\n\n\nname = 10\n\n\nname\n\n10\n\n\n\nx = 10**2 + 50\n\n\nx\n\n150\n\n\n\nx = 10**(2 + 50)\n\n\nx\n\n10000000000000000000000000000000000000000000000000000\n\n\n\nf = 3.14\ntype(f)\n\nfloat\n\n\n\nprint('hi world')\n\nhi world\n\n\n\ntempF = 9 / 5 * 40 + 32\n\n\ntempF\n\n104.0\n\n\n\ndef tempF(c):\n    return 9/5 * c + 32\n\n\ntempF(32)\n\n89.6",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
   },
   {
     "objectID": "week-03/python_intro.html#data-types",
     "href": "week-03/python_intro.html#data-types",
     "title": "Introduction to Python",
-    "section": "Data Types",
-    "text": "Data Types\n\nint: 7\nfloat: 7.23\nstr: ‘7.23’\nbool: True/False\n\n\nx = 5 &gt; 7\nx\n\nFalse\n\n\n\ntype(x)\n\nbool\n\n\n\ny = 10\n\n\ny\n\n10\n\n\n\nx * y\n\n0\n\n\n\nz = 10 &gt; 1\n\n\nz\n\nTrue\n\n\n\nz * y\n\n10"
+    "section": "",
+    "text": "int: 7\nfloat: 7.23\nstr: ‘7.23’\nbool: True/False\n\n\nx = 5 &gt; 7\nx\n\nFalse\n\n\n\ntype(x)\n\nbool\n\n\n\ny = 10\n\n\ny\n\n10\n\n\n\nx * y\n\n0\n\n\n\nz = 10 &gt; 1\n\n\nz\n\nTrue\n\n\n\nz * y\n\n10",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
   },
   {
     "objectID": "week-03/python_intro.html#strings-str",
     "href": "week-03/python_intro.html#strings-str",
     "title": "Introduction to Python",
-    "section": "Strings (str)",
-    "text": "Strings (str)\n\nx = 'Today is my birthday'\n\n\nx\n\n'Today is my birthday'\n\n\n\ntype(x)\n\nstr\n\n\n\nlen(x)\n\n20\n\n\n\nx.lower()\n\n'today is my birthday'\n\n\n\nx.upper()\n\n'TODAY IS MY BIRTHDAY'\n\n\n\nx.title()\n\n'Today Is My Birthday'\n\n\n\nx.center(50)\n\n'               Today is my birthday               '\n\n\n\nx.title().center(100)\n\n'                                        Today Is My Birthday                                        '\n\n\n\ndir(x)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.zfill(30)\n\n'0000000000Today is my birthday'\n\n\n\nx.zfill?\n\n\nSignature: x.zfill(width, /)\nDocstring:\nPad a numeric string with zeros on the left, to fill a field of the given width.\nThe string is never truncated.\nType:      builtin_function_or_method\n\n\n\n\nx.strip?\n\n\nSignature: x.strip(chars=None, /)\nDocstring:\nReturn a copy of the string with leading and trailing whitespace removed.\nIf chars is given and not None, remove characters in chars instead.\nType:      builtin_function_or_method\n\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.split()\n\n['Today', 'is', 'my', 'birthday']\n\n\n\nx.split?\n\n\nSignature: x.split(sep=None, maxsplit=-1)\nDocstring:\nReturn a list of the substrings in the string, using sep as the separator string.\n  sep\n    The separator used to split the string.\n    When set to None (the default value), will split on any whitespace\n    character (including \\\\n \\\\r \\\\t \\\\f and spaces) and will discard\n    empty strings from the result.\n  maxsplit\n    Maximum number of splits (starting from the left).\n    -1 (the default value) means no limit.\nNote, str.split() is mainly useful for data that has been intentionally\ndelimited.  With natural text that includes punctuation, consider using\nthe regular expression module.\nType:      builtin_function_or_method"
+    "section": "",
+    "text": "x = 'Today is my birthday'\n\n\nx\n\n'Today is my birthday'\n\n\n\ntype(x)\n\nstr\n\n\n\nlen(x)\n\n20\n\n\n\nx.lower()\n\n'today is my birthday'\n\n\n\nx.upper()\n\n'TODAY IS MY BIRTHDAY'\n\n\n\nx.title()\n\n'Today Is My Birthday'\n\n\n\nx.center(50)\n\n'               Today is my birthday               '\n\n\n\nx.title().center(100)\n\n'                                        Today Is My Birthday                                        '\n\n\n\ndir(x)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.zfill(30)\n\n'0000000000Today is my birthday'\n\n\n\nx.zfill?\n\n\nSignature: x.zfill(width, /)\nDocstring:\nPad a numeric string with zeros on the left, to fill a field of the given width.\nThe string is never truncated.\nType:      builtin_function_or_method\n\n\n\n\nx.strip?\n\n\nSignature: x.strip(chars=None, /)\nDocstring:\nReturn a copy of the string with leading and trailing whitespace removed.\nIf chars is given and not None, remove characters in chars instead.\nType:      builtin_function_or_method\n\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.split()\n\n['Today', 'is', 'my', 'birthday']\n\n\n\nx.split?\n\n\nSignature: x.split(sep=None, maxsplit=-1)\nDocstring:\nReturn a list of the substrings in the string, using sep as the separator string.\n  sep\n    The separator used to split the string.\n    When set to None (the default value), will split on any whitespace\n    character (including \\\\n \\\\r \\\\t \\\\f and spaces) and will discard\n    empty strings from the result.\n  maxsplit\n    Maximum number of splits (starting from the left).\n    -1 (the default value) means no limit.\nNote, str.split() is mainly useful for data that has been intentionally\ndelimited.  With natural text that includes punctuation, consider using\nthe regular expression module.\nType:      builtin_function_or_method",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
   },
   {
-    "objectID": "week-02/test.html#why-1",
-    "href": "week-02/test.html#why-1",
-    "title": "Python: Introduction",
-    "section": "Why",
-    "text": "Why\n\n\nSimplicity: Python has a clean and readable syntax, making it easy to understand and learn for beginners.\nVersatility: Python can be used for a wide range of applications, including web development, data analysis, artificial intelligence, and more.\nLarge Community: Python has a vast and active community of developers who are always ready to help and share knowledge."
+    "objectID": "week-02/files.html",
+    "href": "week-02/files.html",
+    "title": "Notes on files and directories (Notebook)",
+    "section": "",
+    "text": "This is a test\n\n\nCode\nfor i in range(10):\n    print(i*i)\n\n\n0\n1\n4\n9\n16\n25\n36\n49\n64\n81"
   },
   {
-    "objectID": "week-02/test.html#why-2",
-    "href": "week-02/test.html#why-2",
-    "title": "Python: Introduction",
-    "section": "Why",
-    "text": "Why\n\n\nAbundance of Resources: There are numerous online tutorials, documentation, and learning materials available for Python, making it easier for students to find resources to enhance their learning.\nIndustry Demand: Python is one of the most popular programming languages in the industry, and learning it can open up a wide range of job opportunities.\nReadability: Python emphasizes code readability, which helps students develop good programming habits and write clean, maintainable code."
+    "objectID": "week-02/files.html#file-and-directory-notes",
+    "href": "week-02/files.html#file-and-directory-notes",
+    "title": "Notes on files and directories (Notebook)",
+    "section": "",
+    "text": "This is a test\n\n\nCode\nfor i in range(10):\n    print(i*i)\n\n\n0\n1\n4\n9\n16\n25\n36\n49\n64\n81"
   },
   {
-    "objectID": "week-02/test.html#why-3",
-    "href": "week-02/test.html#why-3",
-    "title": "Python: Introduction",
-    "section": "Why",
-    "text": "Why\n\n\nLibraries and Frameworks: Python has a rich ecosystem of libraries and frameworks that simplify complex tasks, allowing students to build powerful applications quickly.\nInteractivity: Python provides an interactive shell, allowing students to experiment and see immediate results, which enhances the learning experience.\nCross-platform Compatibility: Python is available on multiple platforms, including Windows, macOS, and Linux, making it accessible to students regardless of their operating system."
+    "objectID": "week-02/files.html#file-commands",
+    "href": "week-02/files.html#file-commands",
+    "title": "Notes on files and directories (Notebook)",
+    "section": "File Commands",
+    "text": "File Commands\n\ncat\ntouch"
   },
   {
-    "objectID": "week-02/test.html#why-most-importantly",
-    "href": "week-02/test.html#why-most-importantly",
-    "title": "Python: Introduction",
-    "section": "Why (Most Importantly)",
-    "text": "Why (Most Importantly)\n\nFun and Engaging: Python’s simplicity and versatility make it a fun language to learn, encouraging students to explore and experiment with programming concepts.\n\nOverall, Python is an excellent language for students to learn due to its simplicity, versatility, industry demand, and the abundance of resources available. It provides a solid foundation for learning programming concepts and opens up exciting opportunities in various fields."
+    "objectID": "week-02/jupyterhub.html",
+    "href": "week-02/jupyterhub.html",
+    "title": "Introduction to Computational Environment (Zoom)",
+    "section": "",
+    "text": "Introduction to Computational Environment (Zoom)\nRecording (SDSU Account Required)"
   },
   {
-    "objectID": "week-02/test.html#python-libraries-for-spatial-data-analysis",
-    "href": "week-02/test.html#python-libraries-for-spatial-data-analysis",
-    "title": "Python: Introduction",
-    "section": "Python Libraries for Spatial Data Analysis",
-    "text": "Python Libraries for Spatial Data Analysis"
+    "objectID": "week-01/01-introduction.html#introduction",
+    "href": "week-01/01-introduction.html#introduction",
+    "title": "Course Introduction",
+    "section": "Introduction",
+    "text": "Introduction\n\nThis course introduces the fundamental concepts of spatial data analysis. Key fundamentals include spatial sampling, descriptive statistics for areal data, inferential statistics, use of maps in data analysis.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/test.html#applications-in-spatial-data-analysis",
-    "href": "week-02/test.html#applications-in-spatial-data-analysis",
-    "title": "Python: Introduction",
-    "section": "Applications in Spatial Data Analysis",
-    "text": "Applications in Spatial Data Analysis"
+    "objectID": "week-01/01-introduction.html#approach",
+    "href": "week-01/01-introduction.html#approach",
+    "title": "Course Introduction",
+    "section": "Approach",
+    "text": "Approach\n\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#what-is-unix",
-    "href": "week-02/files-dirs.html#what-is-unix",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "What is Unix?",
-    "text": "What is Unix?\n\nUnix is a powerful operating system used in many fields, including data science and computer science.\nUnderstanding its file system is crucial for efficient work."
+    "objectID": "week-01/01-introduction.html#scope",
+    "href": "week-01/01-introduction.html#scope",
+    "title": "Course Introduction",
+    "section": "Scope",
+    "text": "Scope\n\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#unix-file-system-basics",
-    "href": "week-02/files-dirs.html#unix-file-system-basics",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Unix File System Basics",
-    "text": "Unix File System Basics\n\nThe Unix file system is hierarchical.\nIt consists of directories and files organized in a tree-like structure."
+    "objectID": "week-01/01-introduction.html#prerequisites",
+    "href": "week-01/01-introduction.html#prerequisites",
+    "title": "Course Introduction",
+    "section": "Prerequisites",
+    "text": "Prerequisites",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#directory-structure",
-    "href": "week-02/files-dirs.html#directory-structure",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Directory Structure",
-    "text": "Directory Structure\n\nThe root directory is the top-level directory.\nHome directories are where users have their own spaces."
+    "objectID": "week-01/01-introduction.html#schedule-reading-and-content",
+    "href": "week-01/01-introduction.html#schedule-reading-and-content",
+    "title": "Course Introduction",
+    "section": "Schedule, Reading, and Content",
+    "text": "Schedule, Reading, and Content\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore coming into class prepared means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#where-am-i",
-    "href": "week-02/files-dirs.html#where-am-i",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Where am I?",
-    "text": "Where am I?\nUsing the File Browser\n\n\n\n\n\n\n\n(a) home\n\n\n\n\nFigure 1:"
+    "objectID": "week-01/01-introduction.html#readings",
+    "href": "week-01/01-introduction.html#readings",
+    "title": "Course Introduction",
+    "section": "Readings",
+    "text": "Readings\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#where-am-i-1",
-    "href": "week-02/files-dirs.html#where-am-i-1",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Where am I?",
-    "text": "Where am I?\nUsing the terminal\n\n\n\n\n\n\n\n(a) terminal home\n\n\n\n\nFigure 2:"
+    "objectID": "week-01/01-introduction.html#schedule-planned",
+    "href": "week-01/01-introduction.html#schedule-planned",
+    "title": "Course Introduction",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#navigating-the-file-system",
-    "href": "week-02/files-dirs.html#navigating-the-file-system",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Navigating the File System",
-    "text": "Navigating the File System\n\nUse ls to list the contents of a directory.\nUse tree to list the hierarchical structure of the directory\nLearn how to change directories using cd."
+    "objectID": "week-01/01-introduction.html#schedule-planned-1",
+    "href": "week-01/01-introduction.html#schedule-planned-1",
+    "title": "Course Introduction",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#ls",
-    "href": "week-02/files-dirs.html#ls",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "ls",
-    "text": "ls\nls lists the contents of the pwd"
+    "objectID": "week-01/01-introduction.html#grading",
+    "href": "week-01/01-introduction.html#grading",
+    "title": "Course Introduction",
+    "section": "Grading",
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#tree",
-    "href": "week-02/files-dirs.html#tree",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "tree",
-    "text": "tree\ntree lists the directory structure/tree of the pwd"
+    "objectID": "week-01/01-introduction.html#specification-grading",
+    "href": "week-01/01-introduction.html#specification-grading",
+    "title": "Course Introduction",
+    "section": "Specification Grading",
+    "text": "Specification Grading\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes, and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#first-level-tree-of-the-root-system",
-    "href": "week-02/files-dirs.html#first-level-tree-of-the-root-system",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "First level tree of the root system",
-    "text": "First level tree of the root system"
+    "objectID": "week-01/01-introduction.html#base-grade",
+    "href": "week-01/01-introduction.html#base-grade",
+    "title": "Course Introduction",
+    "section": "Base Grade",
+    "text": "Base Grade\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 12 of 14 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 10 of 14 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 8 of 14 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 6 of 14 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#first-level-tree-of-the-home-directory",
-    "href": "week-02/files-dirs.html#first-level-tree-of-the-home-directory",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "First level tree of the /home directory",
-    "text": "First level tree of the /home directory"
+    "objectID": "week-01/01-introduction.html#final-grade",
+    "href": "week-01/01-introduction.html#final-grade",
+    "title": "Course Introduction",
+    "section": "Final Grade",
+    "text": "Final Grade\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#my-home",
-    "href": "week-02/files-dirs.html#my-home",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "My Home",
-    "text": "My Home"
+    "objectID": "week-01/01-introduction.html#quizzes",
+    "href": "week-01/01-introduction.html#quizzes",
+    "title": "Course Introduction",
+    "section": "Quizzes",
+    "text": "Quizzes\nStarting in week two, there will be a quiz due before a session that pertains to the background reading that is required before our work in class. Quizzes are graded on a pass/fail basis.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#all-homes",
-    "href": "week-02/files-dirs.html#all-homes",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "All Home(s)",
-    "text": "All Home(s)"
+    "objectID": "week-01/01-introduction.html#exercises",
+    "href": "week-01/01-introduction.html#exercises",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#clearing-the-terminal",
-    "href": "week-02/files-dirs.html#clearing-the-terminal",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Clearing the terminal",
-    "text": "Clearing the terminal\n\nclear will clear the terminal"
+    "objectID": "week-01/01-introduction.html#exercises-1",
+    "href": "week-01/01-introduction.html#exercises-1",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#history",
-    "href": "week-02/files-dirs.html#history",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "history",
-    "text": "history\nTo recall what you have done, use history"
+    "objectID": "week-01/01-introduction.html#exercises-2",
+    "href": "week-01/01-introduction.html#exercises-2",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#rerunning-a-command",
-    "href": "week-02/files-dirs.html#rerunning-a-command",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Rerunning a command",
-    "text": "Rerunning a command\nAfter using history you can rerun a command without having to retype it:\n\n\n\n\n\n\n\n(a) recall\n\n\n\n\nFigure 3:"
+    "objectID": "week-01/01-introduction.html#final-exam",
+    "href": "week-01/01-introduction.html#final-exam",
+    "title": "Course Introduction",
+    "section": "Final Exam",
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 7 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#tab-completion",
-    "href": "week-02/files-dirs.html#tab-completion",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Tab completion",
-    "text": "Tab completion\nAnother efficiency feature is tab completion:\n\n\n\n\n\n\n\n(a) tab start\n\n\n\n\nFigure 4:"
+    "objectID": "week-01/01-introduction.html#tokens",
+    "href": "week-01/01-introduction.html#tokens",
+    "title": "Course Introduction",
+    "section": "Tokens",
+    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#paths",
-    "href": "week-02/files-dirs.html#paths",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Paths",
-    "text": "Paths\n\nPaths are used to specify the location of files and directories.\nThere are relative and absolute paths."
+    "objectID": "week-01/01-introduction.html#using-tokens",
+    "href": "week-01/01-introduction.html#using-tokens",
+    "title": "Course Introduction",
+    "section": "Using Tokens",
+    "text": "Using Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam. (Requests required by 2024-04-15 17:00.)",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#cd-change-directory",
-    "href": "week-02/files-dirs.html#cd-change-directory",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "cd change directory",
-    "text": "cd change directory"
+    "objectID": "week-01/01-introduction.html#remaining-tokens",
+    "href": "week-01/01-introduction.html#remaining-tokens",
+    "title": "Course Introduction",
+    "section": "Remaining Tokens",
+    "text": "Remaining Tokens\nEach token that remains unused after 2024-05-02 will be counted as a passed quiz. Tokens cannot be exchanged with other students.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#cd-shortcuts",
-    "href": "week-02/files-dirs.html#cd-shortcuts",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "cd shortcuts",
-    "text": "cd shortcuts\n\n\ncd .. moves up one directory to the parent of the current directory\ncd will move you back to your home"
+    "objectID": "week-01/01-introduction.html#administration",
+    "href": "week-01/01-introduction.html#administration",
+    "title": "Course Introduction",
+    "section": "Administration",
+    "text": "Administration",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#creating-and-managing-directories-1",
-    "href": "week-02/files-dirs.html#creating-and-managing-directories-1",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Creating and Managing Directories",
-    "text": "Creating and Managing Directories\n\nLearn how to create directories using mkdir.\nUse rmdir and rm -r to remove directories."
+    "objectID": "week-01/01-introduction.html#accommodations",
+    "href": "week-01/01-introduction.html#accommodations",
+    "title": "Course Introduction",
+    "section": "Accommodations",
+    "text": "Accommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#mkdir",
-    "href": "week-02/files-dirs.html#mkdir",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "mkdir",
-    "text": "mkdir\n\n\n\n\n\n\n\n(a) before\n\n\n\n\nFigure 5:"
+    "objectID": "week-01/01-introduction.html#privacy-and-intellectual-property",
+    "href": "week-01/01-introduction.html#privacy-and-intellectual-property",
+    "title": "Course Introduction",
+    "section": "Privacy and Intellectual Property",
+    "text": "Privacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use [Canvas / Blackboard] to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#file-operations-1",
-    "href": "week-02/files-dirs.html#file-operations-1",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "File Operations",
-    "text": "File Operations\n\nCreating files with touch.\nCopying, moving, and deleting files."
+    "objectID": "week-01/01-introduction.html#academic-integrity",
+    "href": "week-01/01-introduction.html#academic-integrity",
+    "title": "Course Introduction",
+    "section": "Academic Integrity",
+    "text": "Academic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: http://www.sa.sdsu.edu/srr/index.html.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#creating-a-file-in-a-directory",
-    "href": "week-02/files-dirs.html#creating-a-file-in-a-directory",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Creating a file in a directory",
-    "text": "Creating a file in a directory\ncd handson\ntouch data.txt"
+    "objectID": "week-01/01-introduction.html#code-of-conduct",
+    "href": "week-01/01-introduction.html#code-of-conduct",
+    "title": "Course Introduction",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#creating-a-file-in-a-directory-2",
-    "href": "week-02/files-dirs.html#creating-a-file-in-a-directory-2",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Creating a file in a directory (2)",
-    "text": "Creating a file in a directory (2)\nYou can also create a file in the current directory by selecting the + in the toolbar and selecting Markdown File\n\nFigure 6: File Browser"
+    "objectID": "week-01/01-introduction.html#code-of-conduct-1",
+    "href": "week-01/01-introduction.html#code-of-conduct-1",
+    "title": "Course Introduction",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct.",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#creating-a-file-in-a-directory-2-1",
-    "href": "week-02/files-dirs.html#creating-a-file-in-a-directory-2-1",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Creating a file in a directory (2)",
-    "text": "Creating a file in a directory (2)\nYou can also create a file in the current directory by selecting the + in the toolbar and selecting Markdown File\n\nFigure 7: README.md"
+    "objectID": "week-01/01-introduction.html#computational-learning",
+    "href": "week-01/01-introduction.html#computational-learning",
+    "title": "Course Introduction",
+    "section": "Computational Learning",
+    "text": "Computational Learning\n\n\nShow me the code\nimport libpysal.examples\nimport geopandas \n\n# get path to built-in dataset for Mexico\npth = libpysal.examples.get_path(\"mexicojoin.shp\")\n# load the file with geopandas to create a GeoDataframe\ngdf = geopandas.read_file(pth)\n# call the plot method of the GeoDataFrame\ngdf.plot(edgecolor='white');",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#copying-files",
-    "href": "week-02/files-dirs.html#copying-files",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Copying Files",
-    "text": "Copying Files\ncp data.txt data.txt.bak"
+    "objectID": "week-01/01-introduction.html#open-source",
+    "href": "week-01/01-introduction.html#open-source",
+    "title": "Course Introduction",
+    "section": "Open Source",
+    "text": "Open Source",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#deleting-files",
-    "href": "week-02/files-dirs.html#deleting-files",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Deleting Files",
-    "text": "Deleting Files\nrm data.txt"
+    "objectID": "week-01/01-introduction.html#server-or-laptop",
+    "href": "week-01/01-introduction.html#server-or-laptop",
+    "title": "Course Introduction",
+    "section": "Server or Laptop",
+    "text": "Server or Laptop\nYou can choose to either use an account on our course JupyterHub or install the packages on your own laptop.\nEither way, you will be using Jupyter Notebooks for all computation:",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#copying-again",
-    "href": "week-02/files-dirs.html#copying-again",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Copying Again",
-    "text": "Copying Again\nLet’s restore our backup"
+    "objectID": "week-01/01-introduction.html#my-program",
+    "href": "week-01/01-introduction.html#my-program",
+    "title": "Course Introduction",
+    "section": "My Program",
+    "text": "My Program\n\n\n\nurl",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#copying-between-directories",
-    "href": "week-02/files-dirs.html#copying-between-directories",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Copying Between Directories",
-    "text": "Copying Between Directories"
+    "objectID": "week-01/01-introduction.html#why-am-i-here",
+    "href": "week-01/01-introduction.html#why-am-i-here",
+    "title": "Course Introduction",
+    "section": "Why am I here",
+    "text": "Why am I here",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#moving-files-between-directories",
-    "href": "week-02/files-dirs.html#moving-files-between-directories",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Moving Files Between Directories",
-    "text": "Moving Files Between Directories"
+    "objectID": "week-01/01-introduction.html#why-am-i-here-1",
+    "href": "week-01/01-introduction.html#why-am-i-here-1",
+    "title": "Course Introduction",
+    "section": "Why am I here",
+    "text": "Why am I here",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#creating-and-removing-directories",
-    "href": "week-02/files-dirs.html#creating-and-removing-directories",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Creating and Removing Directories",
-    "text": "Creating and Removing Directories"
+    "objectID": "week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
+    "href": "week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
+    "title": "Course Introduction",
+    "section": "‘Trump turned this place into a ghost town’",
+    "text": "‘Trump turned this place into a ghost town’",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#creating-and-removing-directories-1",
-    "href": "week-02/files-dirs.html#creating-and-removing-directories-1",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Creating and Removing Directories",
-    "text": "Creating and Removing Directories"
+    "objectID": "week-01/01-introduction.html#stockton-and-atlantic-city",
+    "href": "week-01/01-introduction.html#stockton-and-atlantic-city",
+    "title": "Course Introduction",
+    "section": "Stockton and Atlantic City",
+    "text": "Stockton and Atlantic City",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#exercise-0",
-    "href": "week-02/files-dirs.html#exercise-0",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Exercise 0",
-    "text": "Exercise 0\n\nCreate a directory called notes\nIn that directory create a new jupyter notebook and rename it to files.ipynb\nPractice using Markdown in files.ipynb to structure your notes with headings\nPractice taking screenshots and dragging the images into your notebook.\nPractice formatting code in Markdown cells.\n\nYou will use this notebook to take notes on the remaining exercises."
+    "objectID": "week-01/01-introduction.html#stockton-and-atlantic-city-1",
+    "href": "week-01/01-introduction.html#stockton-and-atlantic-city-1",
+    "title": "Course Introduction",
+    "section": "Stockton and Atlantic City",
+    "text": "Stockton and Atlantic City\n\nSource",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#exercise-2",
-    "href": "week-02/files-dirs.html#exercise-2",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Exercise 2",
-    "text": "Exercise 2\nUsing the File Browser, delete your handson directory and the files living in there"
+    "objectID": "week-01/01-introduction.html#stockton",
+    "href": "week-01/01-introduction.html#stockton",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#exercise-3",
-    "href": "week-02/files-dirs.html#exercise-3",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Exercise 3",
-    "text": "Exercise 3\nUsing a terminal:\n\nCreate a directory called handson in your home directory\nSelect the new directory in the File Browser\nFrom the Launcher create a new Markdown file with the name README.md\nAdd some content (using Markdown) inside the README.md file\nBefore using any unix commands, ask youself what the path is for the README.md file."
+    "objectID": "week-01/01-introduction.html#stockton-1",
+    "href": "week-01/01-introduction.html#stockton-1",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#exercise-4",
-    "href": "week-02/files-dirs.html#exercise-4",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Exercise 4",
-    "text": "Exercise 4\nUsing a terminal:\n\nCreate a directory called week_2 inside your handson directory\nCopy the README.md file into the week_2 directory."
+    "objectID": "week-01/01-introduction.html#stockton-2",
+    "href": "week-01/01-introduction.html#stockton-2",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
   },
   {
-    "objectID": "week-02/files-dirs.html#exercise-5",
-    "href": "week-02/files-dirs.html#exercise-5",
-    "title": "Introduction to Unix File System with Jupyter Lab",
-    "section": "Exercise 5",
-    "text": "Exercise 5\nUsing a terminal\n\nCreate a directory called temp in the week_2 directory.\nCreate a file in the temp directory called data.txt\nDelete the directory temp in the week_2 directory"
+    "objectID": "week-01/01-introduction.html#stockton-3",
+    "href": "week-01/01-introduction.html#stockton-3",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
+  },
+  {
+    "objectID": "week-01/01-introduction.html#you",
+    "href": "week-01/01-introduction.html#you",
+    "title": "Course Introduction",
+    "section": "You",
+    "text": "You\nTake a few minutes and let us know a bit about yourself\n\nName\nProgram/Concentration\nWhy you are here",
+    "crumbs": [
+      "Week 1 1/18",
+      "Course Introduction"
+    ]
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Spatial Data Analysis",
+    "section": "",
+    "text": "Attribution-ShareAlike 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public:\nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nAdditional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
   },
   {
     "objectID": "index.html#class-meetings",
@@ -494,7 +752,7 @@
     "href": "index.html#schedule-planned",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\n\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nGeoSNAP\n\nQuiz 5\n\n\n\nFeb-29\nPySAL\nGDS 3\n\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\nExercise 2\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\n\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-18\nNearest Neighbor Statistics\nGDS 8\n\n\n\n14\nApr-23\nDistance Based Statistics\nGDS 8\nQuiz 12\n\n\n\nApr-25\nGeostatistical Data\nDS 6.1-6.5\n\n\n\n15\nApr-30\nSpatial Interpolation\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nKriging\nDS 6.7\nExercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)"
+    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\nQuiz 3\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nGeoSNAP\n\nQuiz 5\n\n\n\nFeb-29\nPySAL\nGDS 3\n\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\nExercise 2\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\n\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-18\nNearest Neighbor Statistics\nGDS 8\n\n\n\n14\nApr-23\nDistance Based Statistics\nGDS 8\nQuiz 12\n\n\n\nApr-25\nGeostatistical Data\nDS 6.1-6.5\n\n\n\n15\nApr-30\nSpatial Interpolation\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nKriging\nDS 6.7\nExercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)"
   },
   {
     "objectID": "index.html#grading",
@@ -539,388 +797,520 @@
     "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
   },
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "Spatial Data Analysis",
-    "section": "",
-    "text": "Attribution-ShareAlike 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public:\nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nAdditional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
+    "objectID": "week-02/files-dirs.html#what-is-unix",
+    "href": "week-02/files-dirs.html#what-is-unix",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "What is Unix?",
+    "text": "What is Unix?\n\nUnix is a powerful operating system used in many fields, including data science and computer science.\nUnderstanding its file system is crucial for efficient work.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#introduction",
-    "href": "week-01/01-introduction.html#introduction",
-    "title": "Course Introduction",
-    "section": "Introduction",
-    "text": "Introduction\n\nThis course introduces the fundamental concepts of spatial data analysis. Key fundamentals include spatial sampling, descriptive statistics for areal data, inferential statistics, use of maps in data analysis."
+    "objectID": "week-02/files-dirs.html#unix-file-system-basics",
+    "href": "week-02/files-dirs.html#unix-file-system-basics",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Unix File System Basics",
+    "text": "Unix File System Basics\n\nThe Unix file system is hierarchical.\nIt consists of directories and files organized in a tree-like structure.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#approach",
-    "href": "week-01/01-introduction.html#approach",
-    "title": "Course Introduction",
-    "section": "Approach",
-    "text": "Approach\n\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts."
+    "objectID": "week-02/files-dirs.html#directory-structure",
+    "href": "week-02/files-dirs.html#directory-structure",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Directory Structure",
+    "text": "Directory Structure\n\nThe root directory is the top-level directory.\nHome directories are where users have their own spaces.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#scope",
-    "href": "week-01/01-introduction.html#scope",
-    "title": "Course Introduction",
-    "section": "Scope",
-    "text": "Scope\n\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field."
+    "objectID": "week-02/files-dirs.html#where-am-i",
+    "href": "week-02/files-dirs.html#where-am-i",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Where am I?",
+    "text": "Where am I?\nUsing the File Browser\n\n\n\n\n\n\n\n\n\n\n\n(a) home\n\n\n\n\n\n\n\n\n\n\n\n(b) data\n\n\n\n\n\n\n\nFigure 1",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#prerequisites",
-    "href": "week-01/01-introduction.html#prerequisites",
-    "title": "Course Introduction",
-    "section": "Prerequisites",
-    "text": "Prerequisites"
+    "objectID": "week-02/files-dirs.html#where-am-i-1",
+    "href": "week-02/files-dirs.html#where-am-i-1",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Where am I?",
+    "text": "Where am I?\nUsing the terminal\n\n\n\n\n\n\n\n\n\n\n\n(a) terminal home\n\n\n\n\n\n\n\n\n\n\n\n(b) terminal pwd\n\n\n\n\n\n\n\nFigure 2",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#schedule-reading-and-content",
-    "href": "week-01/01-introduction.html#schedule-reading-and-content",
-    "title": "Course Introduction",
-    "section": "Schedule, Reading, and Content",
-    "text": "Schedule, Reading, and Content\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore coming into class prepared means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings."
+    "objectID": "week-02/files-dirs.html#navigating-the-file-system",
+    "href": "week-02/files-dirs.html#navigating-the-file-system",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Navigating the File System",
+    "text": "Navigating the File System\n\nUse ls to list the contents of a directory.\nUse tree to list the hierarchical structure of the directory\nLearn how to change directories using cd.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#readings",
-    "href": "week-01/01-introduction.html#readings",
-    "title": "Course Introduction",
-    "section": "Readings",
-    "text": "Readings\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press."
+    "objectID": "week-02/files-dirs.html#ls",
+    "href": "week-02/files-dirs.html#ls",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "ls",
+    "text": "ls\nls lists the contents of the pwd",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#schedule-planned",
-    "href": "week-01/01-introduction.html#schedule-planned",
-    "title": "Course Introduction",
-    "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)"
+    "objectID": "week-02/files-dirs.html#tree",
+    "href": "week-02/files-dirs.html#tree",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "tree",
+    "text": "tree\ntree lists the directory structure/tree of the pwd",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#schedule-planned-1",
-    "href": "week-01/01-introduction.html#schedule-planned-1",
-    "title": "Course Introduction",
-    "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)"
+    "objectID": "week-02/files-dirs.html#first-level-tree-of-the-root-system",
+    "href": "week-02/files-dirs.html#first-level-tree-of-the-root-system",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "First level tree of the root system",
+    "text": "First level tree of the root system",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#grading",
-    "href": "week-01/01-introduction.html#grading",
-    "title": "Course Introduction",
-    "section": "Grading",
-    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course."
+    "objectID": "week-02/files-dirs.html#first-level-tree-of-the-home-directory",
+    "href": "week-02/files-dirs.html#first-level-tree-of-the-home-directory",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "First level tree of the /home directory",
+    "text": "First level tree of the /home directory",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#specification-grading",
-    "href": "week-01/01-introduction.html#specification-grading",
-    "title": "Course Introduction",
-    "section": "Specification Grading",
-    "text": "Specification Grading\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes, and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade."
+    "objectID": "week-02/files-dirs.html#my-home",
+    "href": "week-02/files-dirs.html#my-home",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "My Home",
+    "text": "My Home",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#base-grade",
-    "href": "week-01/01-introduction.html#base-grade",
-    "title": "Course Introduction",
-    "section": "Base Grade",
-    "text": "Base Grade\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 12 of 14 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 10 of 14 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 8 of 14 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 6 of 14 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles"
+    "objectID": "week-02/files-dirs.html#all-homes",
+    "href": "week-02/files-dirs.html#all-homes",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "All Home(s)",
+    "text": "All Home(s)",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#final-grade",
-    "href": "week-01/01-introduction.html#final-grade",
-    "title": "Course Introduction",
-    "section": "Final Grade",
-    "text": "Final Grade\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+    "objectID": "week-02/files-dirs.html#clearing-the-terminal",
+    "href": "week-02/files-dirs.html#clearing-the-terminal",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Clearing the terminal",
+    "text": "Clearing the terminal\n\nclear will clear the terminal",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#quizzes",
-    "href": "week-01/01-introduction.html#quizzes",
-    "title": "Course Introduction",
-    "section": "Quizzes",
-    "text": "Quizzes\nStarting in week two, there will be a quiz due before a session that pertains to the background reading that is required before our work in class. Quizzes are graded on a pass/fail basis."
+    "objectID": "week-02/files-dirs.html#history",
+    "href": "week-02/files-dirs.html#history",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "history",
+    "text": "history\nTo recall what you have done, use history",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#exercises",
-    "href": "week-01/01-introduction.html#exercises",
-    "title": "Course Introduction",
-    "section": "Exercises",
-    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):"
+    "objectID": "week-02/files-dirs.html#rerunning-a-command",
+    "href": "week-02/files-dirs.html#rerunning-a-command",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Rerunning a command",
+    "text": "Rerunning a command\nAfter using history you can rerun a command without having to retype it:\n\n\n\n\n\n\n\n\n\n\n\n(a) recall\n\n\n\n\n\n\n\n\n\n\n\n(b) result\n\n\n\n\n\n\n\nFigure 3",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#exercises-1",
-    "href": "week-01/01-introduction.html#exercises-1",
-    "title": "Course Introduction",
-    "section": "Exercises",
-    "text": "Exercises\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise."
+    "objectID": "week-02/files-dirs.html#tab-completion",
+    "href": "week-02/files-dirs.html#tab-completion",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Tab completion",
+    "text": "Tab completion\nAnother efficiency feature is tab completion:\n\n\n\n\n\n\n\n\n\n\n\n(a) tab start\n\n\n\n\n\n\n\n\n\n\n\n(b) tab completion\n\n\n\n\n\n\n\nFigure 4",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#exercises-2",
-    "href": "week-01/01-introduction.html#exercises-2",
-    "title": "Course Introduction",
-    "section": "Exercises",
-    "text": "Exercises\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work."
+    "objectID": "week-02/files-dirs.html#paths",
+    "href": "week-02/files-dirs.html#paths",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Paths",
+    "text": "Paths\n\nPaths are used to specify the location of files and directories.\nThere are relative and absolute paths.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#final-exam",
-    "href": "week-01/01-introduction.html#final-exam",
-    "title": "Course Introduction",
-    "section": "Final Exam",
-    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 7 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
+    "objectID": "week-02/files-dirs.html#cd-change-directory",
+    "href": "week-02/files-dirs.html#cd-change-directory",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "cd change directory",
+    "text": "cd change directory",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#tokens",
-    "href": "week-01/01-introduction.html#tokens",
-    "title": "Course Introduction",
-    "section": "Tokens",
-    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester."
+    "objectID": "week-02/files-dirs.html#cd-shortcuts",
+    "href": "week-02/files-dirs.html#cd-shortcuts",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "cd shortcuts",
+    "text": "cd shortcuts\n\n\ncd .. moves up one directory to the parent of the current directory\ncd will move you back to your home",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#using-tokens",
-    "href": "week-01/01-introduction.html#using-tokens",
-    "title": "Course Introduction",
-    "section": "Using Tokens",
-    "text": "Using Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam. (Requests required by 2024-04-15 17:00.)"
+    "objectID": "week-02/files-dirs.html#creating-and-managing-directories-1",
+    "href": "week-02/files-dirs.html#creating-and-managing-directories-1",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Creating and Managing Directories",
+    "text": "Creating and Managing Directories\n\nLearn how to create directories using mkdir.\nUse rmdir and rm -r to remove directories.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#remaining-tokens",
-    "href": "week-01/01-introduction.html#remaining-tokens",
-    "title": "Course Introduction",
-    "section": "Remaining Tokens",
-    "text": "Remaining Tokens\nEach token that remains unused after 2024-05-02 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
+    "objectID": "week-02/files-dirs.html#mkdir",
+    "href": "week-02/files-dirs.html#mkdir",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "mkdir",
+    "text": "mkdir\n\n\n\n\n\n\n\n\n\n\n\n(a) before\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) after\n\n\n\n\n\n\n\nFigure 5",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#administration",
-    "href": "week-01/01-introduction.html#administration",
-    "title": "Course Introduction",
-    "section": "Administration",
-    "text": "Administration"
+    "objectID": "week-02/files-dirs.html#file-operations-1",
+    "href": "week-02/files-dirs.html#file-operations-1",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "File Operations",
+    "text": "File Operations\n\nCreating files with touch.\nCopying, moving, and deleting files.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#accommodations",
-    "href": "week-01/01-introduction.html#accommodations",
-    "title": "Course Introduction",
-    "section": "Accommodations",
-    "text": "Accommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center."
+    "objectID": "week-02/files-dirs.html#creating-a-file-in-a-directory",
+    "href": "week-02/files-dirs.html#creating-a-file-in-a-directory",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Creating a file in a directory",
+    "text": "Creating a file in a directory\ncd handson\ntouch data.txt\n\n\nFigure 6",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#privacy-and-intellectual-property",
-    "href": "week-01/01-introduction.html#privacy-and-intellectual-property",
-    "title": "Course Introduction",
-    "section": "Privacy and Intellectual Property",
-    "text": "Privacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use [Canvas / Blackboard] to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise."
+    "objectID": "week-02/files-dirs.html#creating-a-file-in-a-directory-2",
+    "href": "week-02/files-dirs.html#creating-a-file-in-a-directory-2",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Creating a file in a directory (2)",
+    "text": "Creating a file in a directory (2)\nYou can also create a file in the current directory by selecting the + in the toolbar and selecting Markdown File\n\n\nFigure 7: File Browser",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#academic-integrity",
-    "href": "week-01/01-introduction.html#academic-integrity",
-    "title": "Course Introduction",
-    "section": "Academic Integrity",
-    "text": "Academic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: http://www.sa.sdsu.edu/srr/index.html."
+    "objectID": "week-02/files-dirs.html#creating-a-file-in-a-directory-2-1",
+    "href": "week-02/files-dirs.html#creating-a-file-in-a-directory-2-1",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Creating a file in a directory (2)",
+    "text": "Creating a file in a directory (2)\nYou can also create a file in the current directory by selecting the + in the toolbar and selecting Markdown File\n\n\nFigure 8: README.md",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#code-of-conduct",
-    "href": "week-01/01-introduction.html#code-of-conduct",
-    "title": "Course Introduction",
-    "section": "Code of Conduct",
-    "text": "Code of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form."
+    "objectID": "week-02/files-dirs.html#copying-files",
+    "href": "week-02/files-dirs.html#copying-files",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Copying Files",
+    "text": "Copying Files\ncp data.txt data.txt.bak\n\n\nFigure 9",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#code-of-conduct-1",
-    "href": "week-01/01-introduction.html#code-of-conduct-1",
-    "title": "Course Introduction",
-    "section": "Code of Conduct",
-    "text": "Code of Conduct\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+    "objectID": "week-02/files-dirs.html#deleting-files",
+    "href": "week-02/files-dirs.html#deleting-files",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Deleting Files",
+    "text": "Deleting Files\nrm data.txt\n\n\nFigure 10",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#computational-learning",
-    "href": "week-01/01-introduction.html#computational-learning",
-    "title": "Course Introduction",
-    "section": "Computational Learning",
-    "text": "Computational Learning\n\n\nShow me the code\nimport libpysal.examples\nimport geopandas \n\n# get path to built-in dataset for Mexico\npth = libpysal.examples.get_path(\"mexicojoin.shp\")\n# load the file with geopandas to create a GeoDataframe\ngdf = geopandas.read_file(pth)\n# call the plot method of the GeoDataFrame\ngdf.plot(edgecolor='white');"
+    "objectID": "week-02/files-dirs.html#copying-again",
+    "href": "week-02/files-dirs.html#copying-again",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Copying Again",
+    "text": "Copying Again\nLet’s restore our backup\n\n\nFigure 11",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#open-source",
-    "href": "week-01/01-introduction.html#open-source",
-    "title": "Course Introduction",
-    "section": "Open Source",
-    "text": "Open Source"
+    "objectID": "week-02/files-dirs.html#copying-between-directories",
+    "href": "week-02/files-dirs.html#copying-between-directories",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Copying Between Directories",
+    "text": "Copying Between Directories\n\n\nFigure 12",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#server-or-laptop",
-    "href": "week-01/01-introduction.html#server-or-laptop",
-    "title": "Course Introduction",
-    "section": "Server or Laptop",
-    "text": "Server or Laptop\nYou can choose to either use an account on our course JupyterHub or install the packages on your own laptop.\nEither way, you will be using Jupyter Notebooks for all computation:"
+    "objectID": "week-02/files-dirs.html#moving-files-between-directories",
+    "href": "week-02/files-dirs.html#moving-files-between-directories",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Moving Files Between Directories",
+    "text": "Moving Files Between Directories\n\n\nFigure 13",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#my-program",
-    "href": "week-01/01-introduction.html#my-program",
-    "title": "Course Introduction",
-    "section": "My Program",
-    "text": "My Program\n\n\n\nurl"
+    "objectID": "week-02/files-dirs.html#creating-and-removing-directories",
+    "href": "week-02/files-dirs.html#creating-and-removing-directories",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Creating and Removing Directories",
+    "text": "Creating and Removing Directories\n\n\nFigure 14",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#why-am-i-here",
-    "href": "week-01/01-introduction.html#why-am-i-here",
-    "title": "Course Introduction",
-    "section": "Why am I here",
-    "text": "Why am I here"
+    "objectID": "week-02/files-dirs.html#creating-and-removing-directories-1",
+    "href": "week-02/files-dirs.html#creating-and-removing-directories-1",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Creating and Removing Directories",
+    "text": "Creating and Removing Directories\n\n\nFigure 15",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#why-am-i-here-1",
-    "href": "week-01/01-introduction.html#why-am-i-here-1",
-    "title": "Course Introduction",
-    "section": "Why am I here",
-    "text": "Why am I here"
+    "objectID": "week-02/files-dirs.html#exercise-0",
+    "href": "week-02/files-dirs.html#exercise-0",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Exercise 0",
+    "text": "Exercise 0\n\nCreate a directory called notes\nIn that directory create a new jupyter notebook and rename it to files.ipynb\nPractice using Markdown in files.ipynb to structure your notes with headings\nPractice taking screenshots and dragging the images into your notebook.\nPractice formatting code in Markdown cells.\n\nYou will use this notebook to take notes on the remaining exercises.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
-    "href": "week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
-    "title": "Course Introduction",
-    "section": "‘Trump turned this place into a ghost town’",
-    "text": "‘Trump turned this place into a ghost town’"
+    "objectID": "week-02/files-dirs.html#exercise-2",
+    "href": "week-02/files-dirs.html#exercise-2",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Exercise 2",
+    "text": "Exercise 2\nUsing the File Browser, delete your handson directory and the files living in there",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#stockton-and-atlantic-city",
-    "href": "week-01/01-introduction.html#stockton-and-atlantic-city",
-    "title": "Course Introduction",
-    "section": "Stockton and Atlantic City",
-    "text": "Stockton and Atlantic City"
+    "objectID": "week-02/files-dirs.html#exercise-3",
+    "href": "week-02/files-dirs.html#exercise-3",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Exercise 3",
+    "text": "Exercise 3\nUsing a terminal:\n\nCreate a directory called handson in your home directory\nSelect the new directory in the File Browser\nFrom the Launcher create a new Markdown file with the name README.md\nAdd some content (using Markdown) inside the README.md file\nBefore using any unix commands, ask youself what the path is for the README.md file.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#stockton-and-atlantic-city-1",
-    "href": "week-01/01-introduction.html#stockton-and-atlantic-city-1",
-    "title": "Course Introduction",
-    "section": "Stockton and Atlantic City",
-    "text": "Stockton and Atlantic City\n\nSource"
+    "objectID": "week-02/files-dirs.html#exercise-4",
+    "href": "week-02/files-dirs.html#exercise-4",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Exercise 4",
+    "text": "Exercise 4\nUsing a terminal:\n\nCreate a directory called week_2 inside your handson directory\nCopy the README.md file into the week_2 directory.",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
-    "objectID": "week-01/01-introduction.html#stockton",
-    "href": "week-01/01-introduction.html#stockton",
-    "title": "Course Introduction",
-    "section": "Stockton",
-    "text": "Stockton"
-  },
-  {
-    "objectID": "week-01/01-introduction.html#stockton-1",
-    "href": "week-01/01-introduction.html#stockton-1",
-    "title": "Course Introduction",
-    "section": "Stockton",
-    "text": "Stockton"
-  },
-  {
-    "objectID": "week-01/01-introduction.html#stockton-2",
-    "href": "week-01/01-introduction.html#stockton-2",
-    "title": "Course Introduction",
-    "section": "Stockton",
-    "text": "Stockton"
-  },
-  {
-    "objectID": "week-01/01-introduction.html#stockton-3",
-    "href": "week-01/01-introduction.html#stockton-3",
-    "title": "Course Introduction",
-    "section": "Stockton",
-    "text": "Stockton"
-  },
-  {
-    "objectID": "week-01/01-introduction.html#you",
-    "href": "week-01/01-introduction.html#you",
-    "title": "Course Introduction",
-    "section": "You",
-    "text": "You\nTake a few minutes and let us know a bit about yourself\n\nName\nProgram/Concentration\nWhy you are here"
-  },
-  {
-    "objectID": "week-02/jupyterhub.html",
-    "href": "week-02/jupyterhub.html",
-    "title": "Introduction to Computational Environment (Zoom)",
-    "section": "",
-    "text": "Introduction to Computational Environment (Zoom)\nRecording (SDSU Account Required)"
-  },
-  {
-    "objectID": "week-02/files.html",
-    "href": "week-02/files.html",
-    "title": "Notes on files and directories (Notebook)",
-    "section": "",
-    "text": "This is a test\n\n\nCode\nfor i in range(10):\n    print(i*i)\n\n\n0\n1\n4\n9\n16\n25\n36\n49\n64\n81"
-  },
-  {
-    "objectID": "week-02/files.html#file-and-directory-notes",
-    "href": "week-02/files.html#file-and-directory-notes",
-    "title": "Notes on files and directories (Notebook)",
-    "section": "",
-    "text": "This is a test\n\n\nCode\nfor i in range(10):\n    print(i*i)\n\n\n0\n1\n4\n9\n16\n25\n36\n49\n64\n81"
-  },
-  {
-    "objectID": "week-02/files.html#file-commands",
-    "href": "week-02/files.html#file-commands",
-    "title": "Notes on files and directories (Notebook)",
-    "section": "File Commands",
-    "text": "File Commands\n\ncat\ntouch"
+    "objectID": "week-02/files-dirs.html#exercise-5",
+    "href": "week-02/files-dirs.html#exercise-5",
+    "title": "Introduction to Unix File System with Jupyter Lab",
+    "section": "Exercise 5",
+    "text": "Exercise 5\nUsing a terminal\n\nCreate a directory called temp in the week_2 directory.\nCreate a file in the temp directory called data.txt\nDelete the directory temp in the week_2 directory",
+    "crumbs": [
+      "Week 2 1/23, 1/25",
+      "Introduction to Unix File System with Jupyter Lab"
+    ]
   },
   {
     "objectID": "week-03/python_concepts.html",
     "href": "week-03/python_concepts.html",
     "title": "Python Programming Concepts",
     "section": "",
-    "text": "first_list = [ 1, 2, 4]\n\n\ntype(first_list)\n\nlist\n\n\n\ncounties = [ 'San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\ntype(counties)\n\nlist\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[1]\n\n'Orange'\n\n\n\ncounties[2]\n\n'Imperial'\n\n\n\ncounties[3]\n\n'Riverside'\n\n\n\ncounties[-1]\n\n'Riverside'\n\n\n\ncounties[-2]\n\n'Imperial'\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\nprint(counties)\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[-2:]\n\n['Imperial', 'Riverside']\n\n\n\ncounties[:2]\n\n['San Diego', 'Orange']\n\n\n\nlen(counties)\n\n4\n\n\n\ntype(counties)\n\nlist\n\n\n\ntype(counties[0])\n\nstr\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[0] = 'SD'\n\n\ncounties\n\n['SD', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0] = 10\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties.append(5000)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth=['LA', 'Ventura']\nnorth\n\n['LA', 'Ventura']\n\n\n\nc = counties.copy()\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nc.append(north)\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, ['LA', 'Ventura']]\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\ncounties.extend(north)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.count('Orange')\n\n1\n\n\n\ncounties.count('LAX')\n\n0\n\n\n\ncounties.index('Orange')\n\n1\n\n\n\ncounties.index('LAX')\n\nValueError: 'LAX' is not in list\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.reverse()\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ncounties.sort()\n\nTypeError: '&lt;' not supported between instances of 'int' and 'str'\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth = [ 'ventura', 'la']\n\n\nnorth\n\n['ventura', 'la']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['la', 'ventura']\n\n\n\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ element for element in counties]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ i for i in counties ]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ntype(counties[0])\n\nstr\n\n\n\n[ type(i) for i in counties ]\n\n[str, str, int, str, str, str, int]\n\n\n\n[ (i,type(i)) for i in counties ]\n\n[('Ventura', str),\n ('LA', str),\n (5000, int),\n ('Riverside', str),\n ('Imperial', str),\n ('Orange', str),\n (10, int)]\n\n\n\ncounties = ['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nsd = counties[0]\nsd\n\n'San Diego'\n\n\n\ntype(sd)\n\nstr\n\n\n\nsd.split()\n\n['San', 'Diego']\n\n\n\n[ i.split() for i in counties ]\n\n[['San', 'Diego'], ['Orange'], ['Los', 'Angeles'], ['Ventura']]"
+    "text": "first_list = [ 1, 2, 4]\n\n\ntype(first_list)\n\nlist\n\n\n\ncounties = [ 'San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\ntype(counties)\n\nlist\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[1]\n\n'Orange'\n\n\n\ncounties[2]\n\n'Imperial'\n\n\n\ncounties[3]\n\n'Riverside'\n\n\n\ncounties[-1]\n\n'Riverside'\n\n\n\ncounties[-2]\n\n'Imperial'\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\nprint(counties)\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[-2:]\n\n['Imperial', 'Riverside']\n\n\n\ncounties[:2]\n\n['San Diego', 'Orange']\n\n\n\nlen(counties)\n\n4\n\n\n\ntype(counties)\n\nlist\n\n\n\ntype(counties[0])\n\nstr\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[0] = 'SD'\n\n\ncounties\n\n['SD', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0] = 10\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties.append(5000)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth=['LA', 'Ventura']\nnorth\n\n['LA', 'Ventura']\n\n\n\nc = counties.copy()\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nc.append(north)\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, ['LA', 'Ventura']]\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\ncounties.extend(north)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.count('Orange')\n\n1\n\n\n\ncounties.count('LAX')\n\n0\n\n\n\ncounties.index('Orange')\n\n1\n\n\n\ncounties.index('LAX')\n\nValueError: 'LAX' is not in list\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.reverse()\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ncounties.sort()\n\nTypeError: '&lt;' not supported between instances of 'int' and 'str'\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth = [ 'ventura', 'la']\n\n\nnorth\n\n['ventura', 'la']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['la', 'ventura']\n\n\n\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ element for element in counties]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ i for i in counties ]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ntype(counties[0])\n\nstr\n\n\n\n[ type(i) for i in counties ]\n\n[str, str, int, str, str, str, int]\n\n\n\n[ (i,type(i)) for i in counties ]\n\n[('Ventura', str),\n ('LA', str),\n (5000, int),\n ('Riverside', str),\n ('Imperial', str),\n ('Orange', str),\n (10, int)]\n\n\n\ncounties = ['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nsd = counties[0]\nsd\n\n'San Diego'\n\n\n\ntype(sd)\n\nstr\n\n\n\nsd.split()\n\n['San', 'Diego']\n\n\n\n[ i.split() for i in counties ]\n\n[['San', 'Diego'], ['Orange'], ['Los', 'Angeles'], ['Ventura']]",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
     "objectID": "week-03/python_concepts.html#lists",
     "href": "week-03/python_concepts.html#lists",
     "title": "Python Programming Concepts",
     "section": "",
-    "text": "first_list = [ 1, 2, 4]\n\n\ntype(first_list)\n\nlist\n\n\n\ncounties = [ 'San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\ntype(counties)\n\nlist\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[1]\n\n'Orange'\n\n\n\ncounties[2]\n\n'Imperial'\n\n\n\ncounties[3]\n\n'Riverside'\n\n\n\ncounties[-1]\n\n'Riverside'\n\n\n\ncounties[-2]\n\n'Imperial'\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\nprint(counties)\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[-2:]\n\n['Imperial', 'Riverside']\n\n\n\ncounties[:2]\n\n['San Diego', 'Orange']\n\n\n\nlen(counties)\n\n4\n\n\n\ntype(counties)\n\nlist\n\n\n\ntype(counties[0])\n\nstr\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[0] = 'SD'\n\n\ncounties\n\n['SD', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0] = 10\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties.append(5000)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth=['LA', 'Ventura']\nnorth\n\n['LA', 'Ventura']\n\n\n\nc = counties.copy()\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nc.append(north)\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, ['LA', 'Ventura']]\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\ncounties.extend(north)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.count('Orange')\n\n1\n\n\n\ncounties.count('LAX')\n\n0\n\n\n\ncounties.index('Orange')\n\n1\n\n\n\ncounties.index('LAX')\n\nValueError: 'LAX' is not in list\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.reverse()\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ncounties.sort()\n\nTypeError: '&lt;' not supported between instances of 'int' and 'str'\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth = [ 'ventura', 'la']\n\n\nnorth\n\n['ventura', 'la']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['la', 'ventura']\n\n\n\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ element for element in counties]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ i for i in counties ]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ntype(counties[0])\n\nstr\n\n\n\n[ type(i) for i in counties ]\n\n[str, str, int, str, str, str, int]\n\n\n\n[ (i,type(i)) for i in counties ]\n\n[('Ventura', str),\n ('LA', str),\n (5000, int),\n ('Riverside', str),\n ('Imperial', str),\n ('Orange', str),\n (10, int)]\n\n\n\ncounties = ['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nsd = counties[0]\nsd\n\n'San Diego'\n\n\n\ntype(sd)\n\nstr\n\n\n\nsd.split()\n\n['San', 'Diego']\n\n\n\n[ i.split() for i in counties ]\n\n[['San', 'Diego'], ['Orange'], ['Los', 'Angeles'], ['Ventura']]"
+    "text": "first_list = [ 1, 2, 4]\n\n\ntype(first_list)\n\nlist\n\n\n\ncounties = [ 'San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\ntype(counties)\n\nlist\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[1]\n\n'Orange'\n\n\n\ncounties[2]\n\n'Imperial'\n\n\n\ncounties[3]\n\n'Riverside'\n\n\n\ncounties[-1]\n\n'Riverside'\n\n\n\ncounties[-2]\n\n'Imperial'\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\nprint(counties)\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[-2:]\n\n['Imperial', 'Riverside']\n\n\n\ncounties[:2]\n\n['San Diego', 'Orange']\n\n\n\nlen(counties)\n\n4\n\n\n\ntype(counties)\n\nlist\n\n\n\ntype(counties[0])\n\nstr\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[0] = 'SD'\n\n\ncounties\n\n['SD', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0] = 10\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties.append(5000)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth=['LA', 'Ventura']\nnorth\n\n['LA', 'Ventura']\n\n\n\nc = counties.copy()\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nc.append(north)\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, ['LA', 'Ventura']]\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\ncounties.extend(north)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.count('Orange')\n\n1\n\n\n\ncounties.count('LAX')\n\n0\n\n\n\ncounties.index('Orange')\n\n1\n\n\n\ncounties.index('LAX')\n\nValueError: 'LAX' is not in list\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.reverse()\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ncounties.sort()\n\nTypeError: '&lt;' not supported between instances of 'int' and 'str'\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth = [ 'ventura', 'la']\n\n\nnorth\n\n['ventura', 'la']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['la', 'ventura']\n\n\n\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ element for element in counties]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ i for i in counties ]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ntype(counties[0])\n\nstr\n\n\n\n[ type(i) for i in counties ]\n\n[str, str, int, str, str, str, int]\n\n\n\n[ (i,type(i)) for i in counties ]\n\n[('Ventura', str),\n ('LA', str),\n (5000, int),\n ('Riverside', str),\n ('Imperial', str),\n ('Orange', str),\n (10, int)]\n\n\n\ncounties = ['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nsd = counties[0]\nsd\n\n'San Diego'\n\n\n\ntype(sd)\n\nstr\n\n\n\nsd.split()\n\n['San', 'Diego']\n\n\n\n[ i.split() for i in counties ]\n\n[['San', 'Diego'], ['Orange'], ['Los', 'Angeles'], ['Ventura']]",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
     "objectID": "week-03/python_concepts.html#f-strings",
     "href": "week-03/python_concepts.html#f-strings",
     "title": "Python Programming Concepts",
     "section": "f-strings",
-    "text": "f-strings\n\nsd\n\n'San Diego'\n\n\n\nf\"The name of my favorite county is {sd}\"\n\n'The name of my favorite county is San Diego'\n\n\n\n[ f\"The county is {c}\" for c in counties]\n\n['The county is San Diego',\n 'The county is Orange',\n 'The county is Los Angeles',\n 'The county is Ventura']\n\n\n\n[ f\"The county is {c} and it is {len(c)} characters\" for c in counties]\n\n['The county is San Diego and it is 9 characters',\n 'The county is Orange and it is 6 characters',\n 'The county is Los Angeles and it is 11 characters',\n 'The county is Ventura and it is 7 characters']\n\n\n\npci = 18001.23\n\n\npci\n\n18001.23\n\n\n\nf\"The pci in this city is {pci}\"\n\n'The pci in this city is 18001.23'\n\n\n\nf\"The pci in this city is {pci:.0f}\"\n\n'The pci in this city is 18001'\n\n\n\nf\"The pci in this city is {pci:.1f}\"\n\n'The pci in this city is 18001.2'"
+    "text": "f-strings\n\nsd\n\n'San Diego'\n\n\n\nf\"The name of my favorite county is {sd}\"\n\n'The name of my favorite county is San Diego'\n\n\n\n[ f\"The county is {c}\" for c in counties]\n\n['The county is San Diego',\n 'The county is Orange',\n 'The county is Los Angeles',\n 'The county is Ventura']\n\n\n\n[ f\"The county is {c} and it is {len(c)} characters\" for c in counties]\n\n['The county is San Diego and it is 9 characters',\n 'The county is Orange and it is 6 characters',\n 'The county is Los Angeles and it is 11 characters',\n 'The county is Ventura and it is 7 characters']\n\n\n\npci = 18001.23\n\n\npci\n\n18001.23\n\n\n\nf\"The pci in this city is {pci}\"\n\n'The pci in this city is 18001.23'\n\n\n\nf\"The pci in this city is {pci:.0f}\"\n\n'The pci in this city is 18001'\n\n\n\nf\"The pci in this city is {pci:.1f}\"\n\n'The pci in this city is 18001.2'",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
     "objectID": "week-03/python_concepts.html#iteration",
     "href": "week-03/python_concepts.html#iteration",
     "title": "Python Programming Concepts",
     "section": "Iteration",
-    "text": "Iteration\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nfor county in counties:\n    print(county)\n\nSan Diego\nOrange\nLos Angeles\nVentura\n\n\n\nc = 0\nfor county in counties:\n    print(c, county)\n    c += 1\n\n0 San Diego\n1 Orange\n2 Los Angeles\n3 Ventura\n\n\n\nfor c, county in enumerate(counties):\n    print(c, county)\n\n0 San Diego\n1 Orange\n2 Los Angeles\n3 Ventura\n\n\n\nfor c, county in enumerate(counties):\n    print(c, county)\n    for char in county:\n        print(char)\n\n0 San Diego\nS\na\nn\n \nD\ni\ne\ng\no\n1 Orange\nO\nr\na\nn\ng\ne\n2 Los Angeles\nL\no\ns\n \nA\nn\ng\ne\nl\ne\ns\n3 Ventura\nV\ne\nn\nt\nu\nr\na"
+    "text": "Iteration\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nfor county in counties:\n    print(county)\n\nSan Diego\nOrange\nLos Angeles\nVentura\n\n\n\nc = 0\nfor county in counties:\n    print(c, county)\n    c += 1\n\n0 San Diego\n1 Orange\n2 Los Angeles\n3 Ventura\n\n\n\nfor c, county in enumerate(counties):\n    print(c, county)\n\n0 San Diego\n1 Orange\n2 Los Angeles\n3 Ventura\n\n\n\nfor c, county in enumerate(counties):\n    print(c, county)\n    for char in county:\n        print(char)\n\n0 San Diego\nS\na\nn\n \nD\ni\ne\ng\no\n1 Orange\nO\nr\na\nn\ng\ne\n2 Los Angeles\nL\no\ns\n \nA\nn\ng\ne\nl\ne\ns\n3 Ventura\nV\ne\nn\nt\nu\nr\na",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
     "objectID": "week-03/python_concepts.html#conditional-execution",
     "href": "week-03/python_concepts.html#conditional-execution",
     "title": "Python Programming Concepts",
     "section": "Conditional Execution",
-    "text": "Conditional Execution\n\n10 &gt; 5\n\nTrue\n\n\n\nif 10&gt;5:\n    print('10 is greater than 5')\n\n10 is greater than 5\n\n\n\na = 5\nb = 10\nif a&gt;b:\n    print(f'{a} is greater than {b}')\n\n\na = 5\nb = 10\nif a&lt;b:\n    print(f'{a} is less than {b}')\n\n5 is less than 10\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']"
+    "text": "Conditional Execution\n\n10 &gt; 5\n\nTrue\n\n\n\nif 10&gt;5:\n    print('10 is greater than 5')\n\n10 is greater than 5\n\n\n\na = 5\nb = 10\nif a&gt;b:\n    print(f'{a} is greater than {b}')\n\n\na = 5\nb = 10\nif a&lt;b:\n    print(f'{a} is less than {b}')\n\n5 is less than 10\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
     "objectID": "week-03/python_concepts.html#use-a-for-loop-with-an-if-statement-to-print-out-the-counties-with-multiple-word-names",
     "href": "week-03/python_concepts.html#use-a-for-loop-with-an-if-statement-to-print-out-the-counties-with-multiple-word-names",
     "title": "Python Programming Concepts",
     "section": "use a for loop with an if statement to print out the counties with multiple word names",
-    "text": "use a for loop with an if statement to print out the counties with multiple word names\n\nfor county in counties:\n    print(county.split())\n\n['San', 'Diego']\n['Orange']\n['Los', 'Angeles']\n['Ventura']\n\n\n\nfor county in counties:\n    if len(county.split()) == 2:\n        print(county)\n\nSan Diego\nLos Angeles\n\n\n\nfor county in counties:\n    if \" \" in county:\n        print(county)\n\nSan Diego\nLos Angeles"
+    "text": "use a for loop with an if statement to print out the counties with multiple word names\n\nfor county in counties:\n    print(county.split())\n\n['San', 'Diego']\n['Orange']\n['Los', 'Angeles']\n['Ventura']\n\n\n\nfor county in counties:\n    if len(county.split()) == 2:\n        print(county)\n\nSan Diego\nLos Angeles\n\n\n\nfor county in counties:\n    if \" \" in county:\n        print(county)\n\nSan Diego\nLos Angeles",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
     "objectID": "week-04/scripts_and_functions.html",
     "href": "week-04/scripts_and_functions.html",
     "title": "Functions",
     "section": "",
-    "text": "A function is a body of code that does something we need done, typically repeatedly\ndef hello():\n    print('hello world')\nhello()\n\nhello world"
+    "text": "A function is a body of code that does something we need done, typically repeatedly\ndef hello():\n    print('hello world')\nhello()\n\nhello world",
+    "crumbs": [
+      "Week 4 2/06, 2/08",
+      "Functions"
+    ]
   },
   {
     "objectID": "week-04/scripts_and_functions.html#returns",
     "href": "week-04/scripts_and_functions.html#returns",
     "title": "Functions",
     "section": "Returns",
-    "text": "Returns\n\ndef hello(message):\n    print(message)\n    return len(message)\n\n\nhello('serge')\n\nserge\n\n\n5\n\n\n\nlen('serge')\n\n5\n\n\n\nhello(42)\n\n42\n\n\nTypeError: object of type 'int' has no len()\n\n\n\nlen(10)\n\nTypeError: object of type 'int' has no len()\n\n\n\nhello('42')\n\n42\n\n\n2"
+    "text": "Returns\n\ndef hello(message):\n    print(message)\n    return len(message)\n\n\nhello('serge')\n\nserge\n\n\n5\n\n\n\nlen('serge')\n\n5\n\n\n\nhello(42)\n\n42\n\n\nTypeError: object of type 'int' has no len()\n\n\n\nlen(10)\n\nTypeError: object of type 'int' has no len()\n\n\n\nhello('42')\n\n42\n\n\n2",
+    "crumbs": [
+      "Week 4 2/06, 2/08",
+      "Functions"
+    ]
   },
   {
     "objectID": "week-04/scripts_and_functions.html#real-functions",
     "href": "week-04/scripts_and_functions.html#real-functions",
     "title": "Functions",
     "section": "“Real functions”",
-    "text": "“Real functions”\n\n\n\nimage.png\n\n\n\np3 = [0, 0]\np1 = [0, 5]\np2 = [10, 0]\n\n\n# distance between p1 and p2\nb = p2[0] - p3[0]\nb\n\n10\n\n\n\na = p1[1] - p3[1]\na\n\n5\n\n\n\n# c = sqrt(a**2 + b**2)\n\n\na**2\n\n25\n\n\n\nb**2\n\n100\n\n\n\n(a**2 + b**2)\n\n125\n\n\n\n(a**2 + b**2)**(1/2)\n\n11.180339887498949\n\n\n\ndef distance(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    return (dx**2 + dy**2)**(1/2)\n\n\np3 = [0, 0]\np1 = [0, 5]\np2 = [10, 0]\n\n\ndistance(p1, p3)\n\n5.0\n\n\n\ndistance(p2, p3)\n\n10.0\n\n\n\ndistance(p2, p1)\n\n11.180339887498949\n\n\n\ndistance(p1, p1)\n\n0.0\n\n\n\n\n\nimage.png\n\n\n\nimport numpy\ndef manhattan(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    adx = numpy.abs(dx)\n    ady = numpy.abs(dy)\n    return adx + ady\n    \n\n\np3 = [0, 0]\np1 = [0, 5]\np2 = [10, 0]\n\n\nmanhattan(p3, p2)\n\n10\n\n\n\nmanhattan(p3, p1)\n\n5\n\n\n\nmanhattan(p2, p1)\n\n15\n\n\n\ndistance(p2, p1)\n\n11.180339887498949\n\n\n\ndef euclidean(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    return (dx**2 + dy**2)**(1/2)\n\n\nimport numpy\ndef manhattan(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    adx = numpy.abs(dx)\n    ady = numpy.abs(dy)\n    return adx + ady\n    \n\n\neuclidean(p2, p1)\n\n11.180339887498949\n\n\n\nmanhattan(p2, p1)\n\n15\n\n\n\nmanhattan(p1, p2)\n\n15\n\n\n\neuclidean(p1, p2)\n\n11.180339887498949\n\n\n\nComposition\n\ndef distance_composite(pnt1, pnt2, metric='euclidean'):\n    if metric == 'euclidean':\n        return euclidean(pnt1, pnt2)\n    else:\n        return manhattan(pnt1, pnt2)\n\n\ndistance_composite(p1, p2, metric='euclidean')\n\n11.180339887498949\n\n\n\ndistance_composite(p1, p2, metric='manhattan')\n\n15\n\n\n\n\nAll-in-one function\n\ndef distance(pnt1, pnt2, metric='euclidean'):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    if metric == 'euclidean':\n        return (dx**2 + dy**2)**(1/2)\n    else:\n        adx = numpy.abs(dx)\n        ady = numpy.abs(dy)\n        return adx + ady\n        \n\n\ndistance(p1, p2, metric='manhattan')\n\n15\n\n\n\ndistance(p1, p2, metric='euclidean')\n\n11.180339887498949\n\n\n\ndistance(p1, p2)\n\n11.180339887498949"
+    "text": "“Real functions”\n\n\n\nimage.png\n\n\n\np3 = [0, 0]\np1 = [0, 5]\np2 = [10, 0]\n\n\n# distance between p1 and p2\nb = p2[0] - p3[0]\nb\n\n10\n\n\n\na = p1[1] - p3[1]\na\n\n5\n\n\n\n# c = sqrt(a**2 + b**2)\n\n\na**2\n\n25\n\n\n\nb**2\n\n100\n\n\n\n(a**2 + b**2)\n\n125\n\n\n\n(a**2 + b**2)**(1/2)\n\n11.180339887498949\n\n\n\ndef distance(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    return (dx**2 + dy**2)**(1/2)\n\n\np3 = [0, 0]\np1 = [0, 5]\np2 = [10, 0]\n\n\ndistance(p1, p3)\n\n5.0\n\n\n\ndistance(p2, p3)\n\n10.0\n\n\n\ndistance(p2, p1)\n\n11.180339887498949\n\n\n\ndistance(p1, p1)\n\n0.0\n\n\n\n\n\nimage.png\n\n\n\nimport numpy\ndef manhattan(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    adx = numpy.abs(dx)\n    ady = numpy.abs(dy)\n    return adx + ady\n    \n\n\np3 = [0, 0]\np1 = [0, 5]\np2 = [10, 0]\n\n\nmanhattan(p3, p2)\n\n10\n\n\n\nmanhattan(p3, p1)\n\n5\n\n\n\nmanhattan(p2, p1)\n\n15\n\n\n\ndistance(p2, p1)\n\n11.180339887498949\n\n\n\ndef euclidean(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    return (dx**2 + dy**2)**(1/2)\n\n\nimport numpy\ndef manhattan(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    adx = numpy.abs(dx)\n    ady = numpy.abs(dy)\n    return adx + ady\n    \n\n\neuclidean(p2, p1)\n\n11.180339887498949\n\n\n\nmanhattan(p2, p1)\n\n15\n\n\n\nmanhattan(p1, p2)\n\n15\n\n\n\neuclidean(p1, p2)\n\n11.180339887498949\n\n\n\nComposition\n\ndef distance_composite(pnt1, pnt2, metric='euclidean'):\n    if metric == 'euclidean':\n        return euclidean(pnt1, pnt2)\n    else:\n        return manhattan(pnt1, pnt2)\n\n\ndistance_composite(p1, p2, metric='euclidean')\n\n11.180339887498949\n\n\n\ndistance_composite(p1, p2, metric='manhattan')\n\n15\n\n\n\n\nAll-in-one function\n\ndef distance(pnt1, pnt2, metric='euclidean'):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    if metric == 'euclidean':\n        return (dx**2 + dy**2)**(1/2)\n    else:\n        adx = numpy.abs(dx)\n        ady = numpy.abs(dy)\n        return adx + ady\n        \n\n\ndistance(p1, p2, metric='manhattan')\n\n15\n\n\n\ndistance(p1, p2, metric='euclidean')\n\n11.180339887498949\n\n\n\ndistance(p1, p2)\n\n11.180339887498949",
+    "crumbs": [
+      "Week 4 2/06, 2/08",
+      "Functions"
+    ]
   },
   {
     "objectID": "week-04/distances.html",
     "href": "week-04/distances.html",
     "title": "distances.py",
     "section": "",
-    "text": "import numpy\n\ndef euclidean(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    return (dx**2 + dy**2) ** (1 / 2)\n\n\ndef manhattan(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    adx = numpy.abs(dx)\n    ady = numpy.abs(dy)\n    return adx + ady\n\n\ndef distance_composite(pnt1, pnt2, metric=\"euclidean\"):\n    if metric == \"euclidean\":\n        return euclidean(pnt1, pnt2)\n    else:\n        return manhattan(pnt1, pnt2)"
+    "text": "import numpy\n\ndef euclidean(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    return (dx**2 + dy**2) ** (1 / 2)\n\n\ndef manhattan(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    adx = numpy.abs(dx)\n    ady = numpy.abs(dy)\n    return adx + ady\n\n\ndef distance_composite(pnt1, pnt2, metric=\"euclidean\"):\n    if metric == \"euclidean\":\n        return euclidean(pnt1, pnt2)\n    else:\n        return manhattan(pnt1, pnt2)",
+    "crumbs": [
+      "Week 4 2/06, 2/08",
+      "distances.py"
+    ]
   }
 ]

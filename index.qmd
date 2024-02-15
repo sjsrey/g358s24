@@ -109,7 +109,7 @@ completed the readings.
 | 4    | Feb-06 | Python: Scripting                   | GDA 2             | Quiz 2     |
 |      | Feb-08 | Python: Functions                   | GDA 2             |            |
 | 5    | Feb-13 | Exericse 1 Collaboration            |                   | Exercise 1 |
-|      | Feb-15 | Python: Data Analysis/Visualization | GDA 3,4           |            |
+|      | Feb-15 | Python: Data Analysis/Visualization | GDA 3,4           | Quiz 3     |
 | 6    | Feb-20 | Geopandas                           | GDA 5             | Quiz 4     |
 |      | Feb-22 | Geoprocessing                       | GDA 6             |            |
 | 7    | Feb-27 | GeoSNAP                             |                   | Quiz 5     |
