@@ -65,3 +65,7 @@ website:
           - week-04/scripts_and_functions.ipynb
           - week-04/import_demo.ipynb
           - week-04/distances.qmd
+
+      - section: "Week 5 2/13, 2/15"
+        contents:
+          - week-05/pandas_intro.ipynb
