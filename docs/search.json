@@ -1,264 +1,5 @@
 [
   {
-    "objectID": "syllabus.html#class-meetings",
-    "href": "syllabus.html#class-meetings",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Class Meetings",
-    "text": "Class Meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#teaching-team",
-    "href": "syllabus.html#teaching-team",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Teaching Team",
-    "text": "Teaching Team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nTue 9:00 - 10:00 (by appointment)\nPSFA 361G\n\n\nJin Huang\nFri 10:30am (virtual)\nPSFA 361F",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#introduction",
-    "href": "syllabus.html#introduction",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Introduction",
-    "text": "Introduction\nWelcome to 385: Spatial Data Analysis!\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for diﬀerent types of spatial data including point processes, lattice data, geostatistical data, network data, and spatial interaction. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research.\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts. Put differently, students will learn to code. But this is a means to the end goal: students will code to learn spatial data analysis.\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#prerequisites",
-    "href": "syllabus.html#prerequisites",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Prerequisites",
-    "text": "Prerequisites\n\nGEOG 101 or GEOG 102\nSTAT 250 or comparable course in statistics.\n\nAll students are required to complete the prerequisite assessment quiz before 2024-01-30 2:00pm.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#computational-learning",
-    "href": "syllabus.html#computational-learning",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Computational Learning",
-    "text": "Computational Learning\nWe will be using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through JupyterHub a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#readings",
-    "href": "syllabus.html#readings",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Readings",
-    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore being prepared for class means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#schedule-planned",
-    "href": "syllabus.html#schedule-planned",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\nQuiz 3\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nGeoSNAP\n\nQuiz 5\n\n\n\nFeb-29\nPySAL\nGDS 3\n\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\nExercise 2\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\n\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-18\nNearest Neighbor Statistics\nGDS 8\n\n\n\n14\nApr-23\nDistance Based Statistics\nGDS 8\nQuiz 12\n\n\n\nApr-25\nGeostatistical Data\nDS 6.1-6.5\n\n\n\n15\nApr-30\nSpatial Interpolation\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nKriging\nDS 6.7\nExercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#grading",
-    "href": "syllabus.html#grading",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Grading",
-    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 12 of 14 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 10 of 14 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 8 of 14 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 6 of 14 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#quizzes",
-    "href": "syllabus.html#quizzes",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Quizzes",
-    "text": "Quizzes\nStarting in week two, there will be a quiz due before a session that pertains to the background reading that is required before our work in class. Quizzes are graded on a pass/fail basis.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#exercises",
-    "href": "syllabus.html#exercises",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Exercises",
-    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise.\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#final-exam",
-    "href": "syllabus.html#final-exam",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Final Exam",
-    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 7 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#tokens",
-    "href": "syllabus.html#tokens",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Tokens",
-    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester.\nUsing Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam. (Requests required by 2024-04-15 17:00.)\n\nRemaining Tokens\nEach token that remains unused after 2024-05-02 will be counted as a passed quiz. Tokens cannot be exchanged with other students.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#policies",
-    "href": "syllabus.html#policies",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Policies",
-    "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct.",
-    "crumbs": [
-      "Syllabus",
-      "Geography 385 Spatial Data Analysis"
-    ]
-  },
-  {
-    "objectID": "week-04/import_demo.html",
-    "href": "week-04/import_demo.html",
-    "title": "Importing",
-    "section": "",
-    "text": "import distances\n\n\np1 = [0, 0]\np2 = [5, 0]\np3 = [5, 5]\n\n\ndistances.euclidean(p1, p2)\n\n5.0\n\n\n\ndistances.manhattan(p1, p2)\n\n5\n\n\n\ndistances.distance_composite(p2, p3)\n\n5.0\n\n\n\nfrom distances import distance_composite\n\n\ndistance_composite(p1, p3)\n\n7.0710678118654755",
-    "crumbs": [
-      "Week 4 2/06, 2/08",
-      "Importing"
-    ]
-  },
-  {
-    "objectID": "week-03/python_intro.html",
-    "href": "week-03/python_intro.html",
-    "title": "Introduction to Python",
-    "section": "",
-    "text": "its “free” (as in beer and as in speech)\nwidely used (QGIS, ArcGIS)\napproachable\nfun\n\n\n\n\n\ninput (keyboard, file, network, sensor)\noutput: display data on screen, write to a file, ship over network\nmath: basic mathematical operations (add, subtract, multiply, divide)\nconditional execution: if something is true do something else\nrepetition: Perform some action repeatedly\n\n\n1 + 1\n\n2\n\n\n\nx = 1 + 1\n\n\n\n\n\n40 + 2\n\n42\n\n\n\n40 * 2\n\n80\n\n\n\n40 / 2\n\n20.0\n\n\n\n40 ** 2\n\n1600\n\n\n\n40**3\n\n64000\n\n\n\n\n\nWhat the program works with\n\n2\n\n2\n\n\n\ntype(2)\n\nint\n\n\n\ntype('42')\n\nstr\n\n\n\n'42'\n\n'42'\n\n\n\n2 * 3\n\n6\n\n\n\n2 * 'my name is serge'\n\n'my name is sergemy name is serge'\n\n\n\nname = 'serge'\n\n\nname\n\n'serge'\n\n\n\ntype(name)\n\nstr\n\n\n\nname = 10\n\n\nname\n\n10\n\n\n\nx = 10**2 + 50\n\n\nx\n\n150\n\n\n\nx = 10**(2 + 50)\n\n\nx\n\n10000000000000000000000000000000000000000000000000000\n\n\n\nf = 3.14\ntype(f)\n\nfloat\n\n\n\nprint('hi world')\n\nhi world\n\n\n\ntempF = 9 / 5 * 40 + 32\n\n\ntempF\n\n104.0\n\n\n\ndef tempF(c):\n    return 9/5 * c + 32\n\n\ntempF(32)\n\n89.6\n\n\n\n\n\n\nint: 7\nfloat: 7.23\nstr: ‘7.23’\nbool: True/False\n\n\nx = 5 &gt; 7\nx\n\nFalse\n\n\n\ntype(x)\n\nbool\n\n\n\ny = 10\n\n\ny\n\n10\n\n\n\nx * y\n\n0\n\n\n\nz = 10 &gt; 1\n\n\nz\n\nTrue\n\n\n\nz * y\n\n10\n\n\n\n\n\n\nx = 'Today is my birthday'\n\n\nx\n\n'Today is my birthday'\n\n\n\ntype(x)\n\nstr\n\n\n\nlen(x)\n\n20\n\n\n\nx.lower()\n\n'today is my birthday'\n\n\n\nx.upper()\n\n'TODAY IS MY BIRTHDAY'\n\n\n\nx.title()\n\n'Today Is My Birthday'\n\n\n\nx.center(50)\n\n'               Today is my birthday               '\n\n\n\nx.title().center(100)\n\n'                                        Today Is My Birthday                                        '\n\n\n\ndir(x)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.zfill(30)\n\n'0000000000Today is my birthday'\n\n\n\nx.zfill?\n\n\nSignature: x.zfill(width, /)\nDocstring:\nPad a numeric string with zeros on the left, to fill a field of the given width.\nThe string is never truncated.\nType:      builtin_function_or_method\n\n\n\n\nx.strip?\n\n\nSignature: x.strip(chars=None, /)\nDocstring:\nReturn a copy of the string with leading and trailing whitespace removed.\nIf chars is given and not None, remove characters in chars instead.\nType:      builtin_function_or_method\n\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.split()\n\n['Today', 'is', 'my', 'birthday']\n\n\n\nx.split?\n\n\nSignature: x.split(sep=None, maxsplit=-1)\nDocstring:\nReturn a list of the substrings in the string, using sep as the separator string.\n  sep\n    The separator used to split the string.\n    When set to None (the default value), will split on any whitespace\n    character (including \\\\n \\\\r \\\\t \\\\f and spaces) and will discard\n    empty strings from the result.\n  maxsplit\n    Maximum number of splits (starting from the left).\n    -1 (the default value) means no limit.\nNote, str.split() is mainly useful for data that has been intentionally\ndelimited.  With natural text that includes punctuation, consider using\nthe regular expression module.\nType:      builtin_function_or_method",
-    "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Introduction to Python"
-    ]
-  },
-  {
-    "objectID": "week-03/python_intro.html#why-python",
-    "href": "week-03/python_intro.html#why-python",
-    "title": "Introduction to Python",
-    "section": "",
-    "text": "its “free” (as in beer and as in speech)\nwidely used (QGIS, ArcGIS)\napproachable\nfun",
-    "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Introduction to Python"
-    ]
-  },
-  {
-    "objectID": "week-03/python_intro.html#what-is-a-program",
-    "href": "week-03/python_intro.html#what-is-a-program",
-    "title": "Introduction to Python",
-    "section": "",
-    "text": "input (keyboard, file, network, sensor)\noutput: display data on screen, write to a file, ship over network\nmath: basic mathematical operations (add, subtract, multiply, divide)\nconditional execution: if something is true do something else\nrepetition: Perform some action repeatedly\n\n\n1 + 1\n\n2\n\n\n\nx = 1 + 1",
-    "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Introduction to Python"
-    ]
-  },
-  {
-    "objectID": "week-03/python_intro.html#operators",
-    "href": "week-03/python_intro.html#operators",
-    "title": "Introduction to Python",
-    "section": "",
-    "text": "40 + 2\n\n42\n\n\n\n40 * 2\n\n80\n\n\n\n40 / 2\n\n20.0\n\n\n\n40 ** 2\n\n1600\n\n\n\n40**3\n\n64000",
-    "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Introduction to Python"
-    ]
-  },
-  {
-    "objectID": "week-03/python_intro.html#values",
-    "href": "week-03/python_intro.html#values",
-    "title": "Introduction to Python",
-    "section": "",
-    "text": "What the program works with\n\n2\n\n2\n\n\n\ntype(2)\n\nint\n\n\n\ntype('42')\n\nstr\n\n\n\n'42'\n\n'42'\n\n\n\n2 * 3\n\n6\n\n\n\n2 * 'my name is serge'\n\n'my name is sergemy name is serge'\n\n\n\nname = 'serge'\n\n\nname\n\n'serge'\n\n\n\ntype(name)\n\nstr\n\n\n\nname = 10\n\n\nname\n\n10\n\n\n\nx = 10**2 + 50\n\n\nx\n\n150\n\n\n\nx = 10**(2 + 50)\n\n\nx\n\n10000000000000000000000000000000000000000000000000000\n\n\n\nf = 3.14\ntype(f)\n\nfloat\n\n\n\nprint('hi world')\n\nhi world\n\n\n\ntempF = 9 / 5 * 40 + 32\n\n\ntempF\n\n104.0\n\n\n\ndef tempF(c):\n    return 9/5 * c + 32\n\n\ntempF(32)\n\n89.6",
-    "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Introduction to Python"
-    ]
-  },
-  {
-    "objectID": "week-03/python_intro.html#data-types",
-    "href": "week-03/python_intro.html#data-types",
-    "title": "Introduction to Python",
-    "section": "",
-    "text": "int: 7\nfloat: 7.23\nstr: ‘7.23’\nbool: True/False\n\n\nx = 5 &gt; 7\nx\n\nFalse\n\n\n\ntype(x)\n\nbool\n\n\n\ny = 10\n\n\ny\n\n10\n\n\n\nx * y\n\n0\n\n\n\nz = 10 &gt; 1\n\n\nz\n\nTrue\n\n\n\nz * y\n\n10",
-    "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Introduction to Python"
-    ]
-  },
-  {
-    "objectID": "week-03/python_intro.html#strings-str",
-    "href": "week-03/python_intro.html#strings-str",
-    "title": "Introduction to Python",
-    "section": "",
-    "text": "x = 'Today is my birthday'\n\n\nx\n\n'Today is my birthday'\n\n\n\ntype(x)\n\nstr\n\n\n\nlen(x)\n\n20\n\n\n\nx.lower()\n\n'today is my birthday'\n\n\n\nx.upper()\n\n'TODAY IS MY BIRTHDAY'\n\n\n\nx.title()\n\n'Today Is My Birthday'\n\n\n\nx.center(50)\n\n'               Today is my birthday               '\n\n\n\nx.title().center(100)\n\n'                                        Today Is My Birthday                                        '\n\n\n\ndir(x)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.zfill(30)\n\n'0000000000Today is my birthday'\n\n\n\nx.zfill?\n\n\nSignature: x.zfill(width, /)\nDocstring:\nPad a numeric string with zeros on the left, to fill a field of the given width.\nThe string is never truncated.\nType:      builtin_function_or_method\n\n\n\n\nx.strip?\n\n\nSignature: x.strip(chars=None, /)\nDocstring:\nReturn a copy of the string with leading and trailing whitespace removed.\nIf chars is given and not None, remove characters in chars instead.\nType:      builtin_function_or_method\n\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.split()\n\n['Today', 'is', 'my', 'birthday']\n\n\n\nx.split?\n\n\nSignature: x.split(sep=None, maxsplit=-1)\nDocstring:\nReturn a list of the substrings in the string, using sep as the separator string.\n  sep\n    The separator used to split the string.\n    When set to None (the default value), will split on any whitespace\n    character (including \\\\n \\\\r \\\\t \\\\f and spaces) and will discard\n    empty strings from the result.\n  maxsplit\n    Maximum number of splits (starting from the left).\n    -1 (the default value) means no limit.\nNote, str.split() is mainly useful for data that has been intentionally\ndelimited.  With natural text that includes punctuation, consider using\nthe regular expression module.\nType:      builtin_function_or_method",
-    "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Introduction to Python"
-    ]
-  },
-  {
-    "objectID": "week-02/files.html",
-    "href": "week-02/files.html",
-    "title": "Notes on files and directories (Notebook)",
-    "section": "",
-    "text": "This is a test\n\n\nCode\nfor i in range(10):\n    print(i*i)\n\n\n0\n1\n4\n9\n16\n25\n36\n49\n64\n81"
-  },
-  {
-    "objectID": "week-02/files.html#file-and-directory-notes",
-    "href": "week-02/files.html#file-and-directory-notes",
-    "title": "Notes on files and directories (Notebook)",
-    "section": "",
-    "text": "This is a test\n\n\nCode\nfor i in range(10):\n    print(i*i)\n\n\n0\n1\n4\n9\n16\n25\n36\n49\n64\n81"
-  },
-  {
-    "objectID": "week-02/files.html#file-commands",
-    "href": "week-02/files.html#file-commands",
-    "title": "Notes on files and directories (Notebook)",
-    "section": "File Commands",
-    "text": "File Commands\n\ncat\ntouch"
-  },
-  {
-    "objectID": "week-02/jupyterhub.html",
-    "href": "week-02/jupyterhub.html",
-    "title": "Introduction to Computational Environment (Zoom)",
-    "section": "",
-    "text": "Introduction to Computational Environment (Zoom)\nRecording (SDSU Account Required)"
-  },
-  {
     "objectID": "week-01/01-introduction.html#introduction",
     "href": "week-01/01-introduction.html#introduction",
     "title": "Course Introduction",
@@ -699,102 +440,77 @@
     ]
   },
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "Spatial Data Analysis",
+    "objectID": "week-03/python_concepts.html",
+    "href": "week-03/python_concepts.html",
+    "title": "Python Programming Concepts",
     "section": "",
-    "text": "Attribution-ShareAlike 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public:\nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nAdditional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
+    "text": "first_list = [ 1, 2, 4]\n\n\ntype(first_list)\n\nlist\n\n\n\ncounties = [ 'San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\ntype(counties)\n\nlist\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[1]\n\n'Orange'\n\n\n\ncounties[2]\n\n'Imperial'\n\n\n\ncounties[3]\n\n'Riverside'\n\n\n\ncounties[-1]\n\n'Riverside'\n\n\n\ncounties[-2]\n\n'Imperial'\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\nprint(counties)\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[-2:]\n\n['Imperial', 'Riverside']\n\n\n\ncounties[:2]\n\n['San Diego', 'Orange']\n\n\n\nlen(counties)\n\n4\n\n\n\ntype(counties)\n\nlist\n\n\n\ntype(counties[0])\n\nstr\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[0] = 'SD'\n\n\ncounties\n\n['SD', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0] = 10\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties.append(5000)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth=['LA', 'Ventura']\nnorth\n\n['LA', 'Ventura']\n\n\n\nc = counties.copy()\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nc.append(north)\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, ['LA', 'Ventura']]\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\ncounties.extend(north)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.count('Orange')\n\n1\n\n\n\ncounties.count('LAX')\n\n0\n\n\n\ncounties.index('Orange')\n\n1\n\n\n\ncounties.index('LAX')\n\nValueError: 'LAX' is not in list\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.reverse()\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ncounties.sort()\n\nTypeError: '&lt;' not supported between instances of 'int' and 'str'\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth = [ 'ventura', 'la']\n\n\nnorth\n\n['ventura', 'la']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['la', 'ventura']\n\n\n\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ element for element in counties]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ i for i in counties ]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ntype(counties[0])\n\nstr\n\n\n\n[ type(i) for i in counties ]\n\n[str, str, int, str, str, str, int]\n\n\n\n[ (i,type(i)) for i in counties ]\n\n[('Ventura', str),\n ('LA', str),\n (5000, int),\n ('Riverside', str),\n ('Imperial', str),\n ('Orange', str),\n (10, int)]\n\n\n\ncounties = ['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nsd = counties[0]\nsd\n\n'San Diego'\n\n\n\ntype(sd)\n\nstr\n\n\n\nsd.split()\n\n['San', 'Diego']\n\n\n\n[ i.split() for i in counties ]\n\n[['San', 'Diego'], ['Orange'], ['Los', 'Angeles'], ['Ventura']]",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
-    "objectID": "index.html#class-meetings",
-    "href": "index.html#class-meetings",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Class Meetings",
-    "text": "Class Meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm"
+    "objectID": "week-03/python_concepts.html#lists",
+    "href": "week-03/python_concepts.html#lists",
+    "title": "Python Programming Concepts",
+    "section": "",
+    "text": "first_list = [ 1, 2, 4]\n\n\ntype(first_list)\n\nlist\n\n\n\ncounties = [ 'San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\ntype(counties)\n\nlist\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[1]\n\n'Orange'\n\n\n\ncounties[2]\n\n'Imperial'\n\n\n\ncounties[3]\n\n'Riverside'\n\n\n\ncounties[-1]\n\n'Riverside'\n\n\n\ncounties[-2]\n\n'Imperial'\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\nprint(counties)\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[-2:]\n\n['Imperial', 'Riverside']\n\n\n\ncounties[:2]\n\n['San Diego', 'Orange']\n\n\n\nlen(counties)\n\n4\n\n\n\ntype(counties)\n\nlist\n\n\n\ntype(counties[0])\n\nstr\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[0] = 'SD'\n\n\ncounties\n\n['SD', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0] = 10\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties.append(5000)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth=['LA', 'Ventura']\nnorth\n\n['LA', 'Ventura']\n\n\n\nc = counties.copy()\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nc.append(north)\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, ['LA', 'Ventura']]\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\ncounties.extend(north)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.count('Orange')\n\n1\n\n\n\ncounties.count('LAX')\n\n0\n\n\n\ncounties.index('Orange')\n\n1\n\n\n\ncounties.index('LAX')\n\nValueError: 'LAX' is not in list\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.reverse()\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ncounties.sort()\n\nTypeError: '&lt;' not supported between instances of 'int' and 'str'\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth = [ 'ventura', 'la']\n\n\nnorth\n\n['ventura', 'la']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['la', 'ventura']\n\n\n\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ element for element in counties]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ i for i in counties ]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ntype(counties[0])\n\nstr\n\n\n\n[ type(i) for i in counties ]\n\n[str, str, int, str, str, str, int]\n\n\n\n[ (i,type(i)) for i in counties ]\n\n[('Ventura', str),\n ('LA', str),\n (5000, int),\n ('Riverside', str),\n ('Imperial', str),\n ('Orange', str),\n (10, int)]\n\n\n\ncounties = ['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nsd = counties[0]\nsd\n\n'San Diego'\n\n\n\ntype(sd)\n\nstr\n\n\n\nsd.split()\n\n['San', 'Diego']\n\n\n\n[ i.split() for i in counties ]\n\n[['San', 'Diego'], ['Orange'], ['Los', 'Angeles'], ['Ventura']]",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
-    "objectID": "index.html#teaching-team",
-    "href": "index.html#teaching-team",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Teaching Team",
-    "text": "Teaching Team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nTue 9:00 - 10:00 (by appointment)\nPSFA 361G\n\n\nJin Huang\nFri 10:30am (virtual)\nPSFA 361F"
+    "objectID": "week-03/python_concepts.html#f-strings",
+    "href": "week-03/python_concepts.html#f-strings",
+    "title": "Python Programming Concepts",
+    "section": "f-strings",
+    "text": "f-strings\n\nsd\n\n'San Diego'\n\n\n\nf\"The name of my favorite county is {sd}\"\n\n'The name of my favorite county is San Diego'\n\n\n\n[ f\"The county is {c}\" for c in counties]\n\n['The county is San Diego',\n 'The county is Orange',\n 'The county is Los Angeles',\n 'The county is Ventura']\n\n\n\n[ f\"The county is {c} and it is {len(c)} characters\" for c in counties]\n\n['The county is San Diego and it is 9 characters',\n 'The county is Orange and it is 6 characters',\n 'The county is Los Angeles and it is 11 characters',\n 'The county is Ventura and it is 7 characters']\n\n\n\npci = 18001.23\n\n\npci\n\n18001.23\n\n\n\nf\"The pci in this city is {pci}\"\n\n'The pci in this city is 18001.23'\n\n\n\nf\"The pci in this city is {pci:.0f}\"\n\n'The pci in this city is 18001'\n\n\n\nf\"The pci in this city is {pci:.1f}\"\n\n'The pci in this city is 18001.2'",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Introduction",
-    "text": "Introduction\nWelcome to 385: Spatial Data Analysis!\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for diﬀerent types of spatial data including point processes, lattice data, geostatistical data, network data, and spatial interaction. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research.\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts. Put differently, students will learn to code. But this is a means to the end goal: students will code to learn spatial data analysis.\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field."
+    "objectID": "week-03/python_concepts.html#iteration",
+    "href": "week-03/python_concepts.html#iteration",
+    "title": "Python Programming Concepts",
+    "section": "Iteration",
+    "text": "Iteration\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nfor county in counties:\n    print(county)\n\nSan Diego\nOrange\nLos Angeles\nVentura\n\n\n\nc = 0\nfor county in counties:\n    print(c, county)\n    c += 1\n\n0 San Diego\n1 Orange\n2 Los Angeles\n3 Ventura\n\n\n\nfor c, county in enumerate(counties):\n    print(c, county)\n\n0 San Diego\n1 Orange\n2 Los Angeles\n3 Ventura\n\n\n\nfor c, county in enumerate(counties):\n    print(c, county)\n    for char in county:\n        print(char)\n\n0 San Diego\nS\na\nn\n \nD\ni\ne\ng\no\n1 Orange\nO\nr\na\nn\ng\ne\n2 Los Angeles\nL\no\ns\n \nA\nn\ng\ne\nl\ne\ns\n3 Ventura\nV\ne\nn\nt\nu\nr\na",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
-    "objectID": "index.html#prerequisites",
-    "href": "index.html#prerequisites",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Prerequisites",
-    "text": "Prerequisites\n\nGEOG 101 or GEOG 102\nSTAT 250 or comparable course in statistics.\n\nAll students are required to complete the prerequisite assessment quiz before 2024-01-30 2:00pm."
+    "objectID": "week-03/python_concepts.html#conditional-execution",
+    "href": "week-03/python_concepts.html#conditional-execution",
+    "title": "Python Programming Concepts",
+    "section": "Conditional Execution",
+    "text": "Conditional Execution\n\n10 &gt; 5\n\nTrue\n\n\n\nif 10&gt;5:\n    print('10 is greater than 5')\n\n10 is greater than 5\n\n\n\na = 5\nb = 10\nif a&gt;b:\n    print(f'{a} is greater than {b}')\n\n\na = 5\nb = 10\nif a&lt;b:\n    print(f'{a} is less than {b}')\n\n5 is less than 10\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
-    "objectID": "index.html#computational-learning",
-    "href": "index.html#computational-learning",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Computational Learning",
-    "text": "Computational Learning\nWe will be using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required."
+    "objectID": "week-03/python_concepts.html#use-a-for-loop-with-an-if-statement-to-print-out-the-counties-with-multiple-word-names",
+    "href": "week-03/python_concepts.html#use-a-for-loop-with-an-if-statement-to-print-out-the-counties-with-multiple-word-names",
+    "title": "Python Programming Concepts",
+    "section": "use a for loop with an if statement to print out the counties with multiple word names",
+    "text": "use a for loop with an if statement to print out the counties with multiple word names\n\nfor county in counties:\n    print(county.split())\n\n['San', 'Diego']\n['Orange']\n['Los', 'Angeles']\n['Ventura']\n\n\n\nfor county in counties:\n    if len(county.split()) == 2:\n        print(county)\n\nSan Diego\nLos Angeles\n\n\n\nfor county in counties:\n    if \" \" in county:\n        print(county)\n\nSan Diego\nLos Angeles",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Python Programming Concepts"
+    ]
   },
   {
-    "objectID": "index.html#readings",
-    "href": "index.html#readings",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Readings",
-    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore being prepared for class means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\nAbbreviation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press."
-  },
-  {
-    "objectID": "index.html#schedule-planned",
-    "href": "index.html#schedule-planned",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\nQuiz 3\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nGeoSNAP\n\nQuiz 5\n\n\n\nFeb-29\nPySAL\nGDS 3\n\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\nExercise 2\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\n\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-18\nNearest Neighbor Statistics\nGDS 8\n\n\n\n14\nApr-23\nDistance Based Statistics\nGDS 8\nQuiz 12\n\n\n\nApr-25\nGeostatistical Data\nDS 6.1-6.5\n\n\n\n15\nApr-30\nSpatial Interpolation\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nKriging\nDS 6.7\nExercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)"
-  },
-  {
-    "objectID": "index.html#grading",
-    "href": "index.html#grading",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Grading",
-    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 12 of 14 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 10 of 14 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 8 of 14 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 6 of 14 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
-  },
-  {
-    "objectID": "index.html#quizzes",
-    "href": "index.html#quizzes",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Quizzes",
-    "text": "Quizzes\nStarting in week three, there will be a quiz given during the first five minutes of the class meeting. The quiz will cover the assigned reading that is required before our work in class. Quizzes are graded on a pass/fail basis."
-  },
-  {
-    "objectID": "index.html#exercises",
-    "href": "index.html#exercises",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Exercises",
-    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise.\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work."
-  },
-  {
-    "objectID": "index.html#final-exam",
-    "href": "index.html#final-exam",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Final Exam",
-    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 7 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
-  },
-  {
-    "objectID": "index.html#tokens",
-    "href": "index.html#tokens",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Tokens",
-    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester.\nUsing Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam. (Requests required by 2024-04-15 17:00.)\n\nRemaining Tokens\nEach token that remains unused after 2024-05-02 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
-  },
-  {
-    "objectID": "index.html#policies",
-    "href": "index.html#policies",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "Policies",
-    "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+    "objectID": "week-02/jupyterhub.html",
+    "href": "week-02/jupyterhub.html",
+    "title": "Introduction to Computational Environment (Zoom)",
+    "section": "",
+    "text": "Introduction to Computational Environment (Zoom)\nRecording (SDSU Account Required)"
   },
   {
     "objectID": "week-02/files-dirs.html#what-is-unix",
@@ -1204,102 +920,237 @@
     ]
   },
   {
-    "objectID": "week-03/python_concepts.html",
-    "href": "week-03/python_concepts.html",
-    "title": "Python Programming Concepts",
-    "section": "",
-    "text": "first_list = [ 1, 2, 4]\n\n\ntype(first_list)\n\nlist\n\n\n\ncounties = [ 'San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\ntype(counties)\n\nlist\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[1]\n\n'Orange'\n\n\n\ncounties[2]\n\n'Imperial'\n\n\n\ncounties[3]\n\n'Riverside'\n\n\n\ncounties[-1]\n\n'Riverside'\n\n\n\ncounties[-2]\n\n'Imperial'\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\nprint(counties)\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[-2:]\n\n['Imperial', 'Riverside']\n\n\n\ncounties[:2]\n\n['San Diego', 'Orange']\n\n\n\nlen(counties)\n\n4\n\n\n\ntype(counties)\n\nlist\n\n\n\ntype(counties[0])\n\nstr\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[0] = 'SD'\n\n\ncounties\n\n['SD', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0] = 10\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties.append(5000)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth=['LA', 'Ventura']\nnorth\n\n['LA', 'Ventura']\n\n\n\nc = counties.copy()\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nc.append(north)\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, ['LA', 'Ventura']]\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\ncounties.extend(north)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.count('Orange')\n\n1\n\n\n\ncounties.count('LAX')\n\n0\n\n\n\ncounties.index('Orange')\n\n1\n\n\n\ncounties.index('LAX')\n\nValueError: 'LAX' is not in list\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.reverse()\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ncounties.sort()\n\nTypeError: '&lt;' not supported between instances of 'int' and 'str'\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth = [ 'ventura', 'la']\n\n\nnorth\n\n['ventura', 'la']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['la', 'ventura']\n\n\n\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ element for element in counties]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ i for i in counties ]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ntype(counties[0])\n\nstr\n\n\n\n[ type(i) for i in counties ]\n\n[str, str, int, str, str, str, int]\n\n\n\n[ (i,type(i)) for i in counties ]\n\n[('Ventura', str),\n ('LA', str),\n (5000, int),\n ('Riverside', str),\n ('Imperial', str),\n ('Orange', str),\n (10, int)]\n\n\n\ncounties = ['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nsd = counties[0]\nsd\n\n'San Diego'\n\n\n\ntype(sd)\n\nstr\n\n\n\nsd.split()\n\n['San', 'Diego']\n\n\n\n[ i.split() for i in counties ]\n\n[['San', 'Diego'], ['Orange'], ['Los', 'Angeles'], ['Ventura']]",
+    "objectID": "index.html#class-meetings",
+    "href": "index.html#class-meetings",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Class Meetings",
+    "text": "Class Meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm"
+  },
+  {
+    "objectID": "index.html#teaching-team",
+    "href": "index.html#teaching-team",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Teaching Team",
+    "text": "Teaching Team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nTue 9:00 - 10:00 (by appointment)\nPSFA 361G\n\n\nJin Huang\nFri 10:30am (virtual)\nPSFA 361F"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Introduction",
+    "text": "Introduction\nWelcome to 385: Spatial Data Analysis!\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for diﬀerent types of spatial data including point processes, lattice data, geostatistical data, network data, and spatial interaction. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research.\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts. Put differently, students will learn to code. But this is a means to the end goal: students will code to learn spatial data analysis.\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field."
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nGEOG 101 or GEOG 102\nSTAT 250 or comparable course in statistics.\n\nAll students are required to complete the prerequisite assessment quiz before 2024-01-30 2:00pm."
+  },
+  {
+    "objectID": "index.html#computational-learning",
+    "href": "index.html#computational-learning",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Computational Learning",
+    "text": "Computational Learning\nWe will be using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required."
+  },
+  {
+    "objectID": "index.html#readings",
+    "href": "index.html#readings",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Readings",
+    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore being prepared for class means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\nAbbreviation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press."
+  },
+  {
+    "objectID": "index.html#schedule-planned",
+    "href": "index.html#schedule-planned",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\nQuiz 3\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nGeoSNAP\n\nQuiz 5\n\n\n\nFeb-29\nPySAL\nGDS 3\n\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\nExercise 2\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\n\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-18\nNearest Neighbor Statistics\nGDS 8\n\n\n\n14\nApr-23\nDistance Based Statistics\nGDS 8\nQuiz 12\n\n\n\nApr-25\nGeostatistical Data\nDS 6.1-6.5\n\n\n\n15\nApr-30\nSpatial Interpolation\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nKriging\nDS 6.7\nExercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)"
+  },
+  {
+    "objectID": "index.html#grading",
+    "href": "index.html#grading",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Grading",
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 12 of 14 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 10 of 14 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 8 of 14 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 6 of 14 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+  },
+  {
+    "objectID": "index.html#quizzes",
+    "href": "index.html#quizzes",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Quizzes",
+    "text": "Quizzes\nStarting in week three, there will be a quiz given during the first five minutes of the class meeting. The quiz will cover the assigned reading that is required before our work in class. Quizzes are graded on a pass/fail basis."
+  },
+  {
+    "objectID": "index.html#exercises",
+    "href": "index.html#exercises",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Exercises",
+    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise.\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work."
+  },
+  {
+    "objectID": "index.html#final-exam",
+    "href": "index.html#final-exam",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Final Exam",
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 7 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
+  },
+  {
+    "objectID": "index.html#tokens",
+    "href": "index.html#tokens",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Tokens",
+    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester.\nUsing Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam. (Requests required by 2024-04-15 17:00.)\n\nRemaining Tokens\nEach token that remains unused after 2024-05-02 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
+  },
+  {
+    "objectID": "index.html#policies",
+    "href": "index.html#policies",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Policies",
+    "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+  },
+  {
+    "objectID": "syllabus.html#class-meetings",
+    "href": "syllabus.html#class-meetings",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Class Meetings",
+    "text": "Class Meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nGMCS 307\nTue & Thu 2:00 - 3:15pm",
     "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Python Programming Concepts"
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
     ]
   },
   {
-    "objectID": "week-03/python_concepts.html#lists",
-    "href": "week-03/python_concepts.html#lists",
-    "title": "Python Programming Concepts",
-    "section": "",
-    "text": "first_list = [ 1, 2, 4]\n\n\ntype(first_list)\n\nlist\n\n\n\ncounties = [ 'San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\ntype(counties)\n\nlist\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[1]\n\n'Orange'\n\n\n\ncounties[2]\n\n'Imperial'\n\n\n\ncounties[3]\n\n'Riverside'\n\n\n\ncounties[-1]\n\n'Riverside'\n\n\n\ncounties[-2]\n\n'Imperial'\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\nprint(counties)\n\n['San Diego', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[-2:]\n\n['Imperial', 'Riverside']\n\n\n\ncounties[:2]\n\n['San Diego', 'Orange']\n\n\n\nlen(counties)\n\n4\n\n\n\ntype(counties)\n\nlist\n\n\n\ntype(counties[0])\n\nstr\n\n\n\ncounties[0]\n\n'San Diego'\n\n\n\ncounties[0] = 'SD'\n\n\ncounties\n\n['SD', 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties[0] = 10\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside']\n\n\n\ncounties.append(5000)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth=['LA', 'Ventura']\nnorth\n\n['LA', 'Ventura']\n\n\n\nc = counties.copy()\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nc.append(north)\n\n\nc\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, ['LA', 'Ventura']]\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000]\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\ncounties.extend(north)\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.count('Orange')\n\n1\n\n\n\ncounties.count('LAX')\n\n0\n\n\n\ncounties.index('Orange')\n\n1\n\n\n\ncounties.index('LAX')\n\nValueError: 'LAX' is not in list\n\n\n\ncounties\n\n[10, 'Orange', 'Imperial', 'Riverside', 5000, 'LA', 'Ventura']\n\n\n\ncounties.reverse()\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ncounties.sort()\n\nTypeError: '&lt;' not supported between instances of 'int' and 'str'\n\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['LA', 'Ventura']\n\n\n\nnorth = [ 'ventura', 'la']\n\n\nnorth\n\n['ventura', 'la']\n\n\n\nnorth.sort()\n\n\nnorth\n\n['la', 'ventura']\n\n\n\n\n\ncounties\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ element for element in counties]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\n[ i for i in counties ]\n\n['Ventura', 'LA', 5000, 'Riverside', 'Imperial', 'Orange', 10]\n\n\n\ntype(counties[0])\n\nstr\n\n\n\n[ type(i) for i in counties ]\n\n[str, str, int, str, str, str, int]\n\n\n\n[ (i,type(i)) for i in counties ]\n\n[('Ventura', str),\n ('LA', str),\n (5000, int),\n ('Riverside', str),\n ('Imperial', str),\n ('Orange', str),\n (10, int)]\n\n\n\ncounties = ['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nsd = counties[0]\nsd\n\n'San Diego'\n\n\n\ntype(sd)\n\nstr\n\n\n\nsd.split()\n\n['San', 'Diego']\n\n\n\n[ i.split() for i in counties ]\n\n[['San', 'Diego'], ['Orange'], ['Los', 'Angeles'], ['Ventura']]",
+    "objectID": "syllabus.html#teaching-team",
+    "href": "syllabus.html#teaching-team",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Teaching Team",
+    "text": "Teaching Team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nTue 9:00 - 10:00 (by appointment)\nPSFA 361G\n\n\nJin Huang\nFri 10:30am (virtual)\nPSFA 361F",
     "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Python Programming Concepts"
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
     ]
   },
   {
-    "objectID": "week-03/python_concepts.html#f-strings",
-    "href": "week-03/python_concepts.html#f-strings",
-    "title": "Python Programming Concepts",
-    "section": "f-strings",
-    "text": "f-strings\n\nsd\n\n'San Diego'\n\n\n\nf\"The name of my favorite county is {sd}\"\n\n'The name of my favorite county is San Diego'\n\n\n\n[ f\"The county is {c}\" for c in counties]\n\n['The county is San Diego',\n 'The county is Orange',\n 'The county is Los Angeles',\n 'The county is Ventura']\n\n\n\n[ f\"The county is {c} and it is {len(c)} characters\" for c in counties]\n\n['The county is San Diego and it is 9 characters',\n 'The county is Orange and it is 6 characters',\n 'The county is Los Angeles and it is 11 characters',\n 'The county is Ventura and it is 7 characters']\n\n\n\npci = 18001.23\n\n\npci\n\n18001.23\n\n\n\nf\"The pci in this city is {pci}\"\n\n'The pci in this city is 18001.23'\n\n\n\nf\"The pci in this city is {pci:.0f}\"\n\n'The pci in this city is 18001'\n\n\n\nf\"The pci in this city is {pci:.1f}\"\n\n'The pci in this city is 18001.2'",
+    "objectID": "syllabus.html#introduction",
+    "href": "syllabus.html#introduction",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Introduction",
+    "text": "Introduction\nWelcome to 385: Spatial Data Analysis!\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for diﬀerent types of spatial data including point processes, lattice data, geostatistical data, network data, and spatial interaction. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research.\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts. Put differently, students will learn to code. But this is a means to the end goal: students will code to learn spatial data analysis.\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field.",
     "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Python Programming Concepts"
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
     ]
   },
   {
-    "objectID": "week-03/python_concepts.html#iteration",
-    "href": "week-03/python_concepts.html#iteration",
-    "title": "Python Programming Concepts",
-    "section": "Iteration",
-    "text": "Iteration\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']\n\n\n\nfor county in counties:\n    print(county)\n\nSan Diego\nOrange\nLos Angeles\nVentura\n\n\n\nc = 0\nfor county in counties:\n    print(c, county)\n    c += 1\n\n0 San Diego\n1 Orange\n2 Los Angeles\n3 Ventura\n\n\n\nfor c, county in enumerate(counties):\n    print(c, county)\n\n0 San Diego\n1 Orange\n2 Los Angeles\n3 Ventura\n\n\n\nfor c, county in enumerate(counties):\n    print(c, county)\n    for char in county:\n        print(char)\n\n0 San Diego\nS\na\nn\n \nD\ni\ne\ng\no\n1 Orange\nO\nr\na\nn\ng\ne\n2 Los Angeles\nL\no\ns\n \nA\nn\ng\ne\nl\ne\ns\n3 Ventura\nV\ne\nn\nt\nu\nr\na",
+    "objectID": "syllabus.html#prerequisites",
+    "href": "syllabus.html#prerequisites",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nGEOG 101 or GEOG 102\nSTAT 250 or comparable course in statistics.\n\nAll students are required to complete the prerequisite assessment quiz before 2024-01-30 2:00pm.",
     "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Python Programming Concepts"
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
     ]
   },
   {
-    "objectID": "week-03/python_concepts.html#conditional-execution",
-    "href": "week-03/python_concepts.html#conditional-execution",
-    "title": "Python Programming Concepts",
-    "section": "Conditional Execution",
-    "text": "Conditional Execution\n\n10 &gt; 5\n\nTrue\n\n\n\nif 10&gt;5:\n    print('10 is greater than 5')\n\n10 is greater than 5\n\n\n\na = 5\nb = 10\nif a&gt;b:\n    print(f'{a} is greater than {b}')\n\n\na = 5\nb = 10\nif a&lt;b:\n    print(f'{a} is less than {b}')\n\n5 is less than 10\n\n\n\ncounties\n\n['San Diego', 'Orange', 'Los Angeles', 'Ventura']",
+    "objectID": "syllabus.html#computational-learning",
+    "href": "syllabus.html#computational-learning",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Computational Learning",
+    "text": "Computational Learning\nWe will be using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through JupyterHub a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required.",
     "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Python Programming Concepts"
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
     ]
   },
   {
-    "objectID": "week-03/python_concepts.html#use-a-for-loop-with-an-if-statement-to-print-out-the-counties-with-multiple-word-names",
-    "href": "week-03/python_concepts.html#use-a-for-loop-with-an-if-statement-to-print-out-the-counties-with-multiple-word-names",
-    "title": "Python Programming Concepts",
-    "section": "use a for loop with an if statement to print out the counties with multiple word names",
-    "text": "use a for loop with an if statement to print out the counties with multiple word names\n\nfor county in counties:\n    print(county.split())\n\n['San', 'Diego']\n['Orange']\n['Los', 'Angeles']\n['Ventura']\n\n\n\nfor county in counties:\n    if len(county.split()) == 2:\n        print(county)\n\nSan Diego\nLos Angeles\n\n\n\nfor county in counties:\n    if \" \" in county:\n        print(county)\n\nSan Diego\nLos Angeles",
+    "objectID": "syllabus.html#readings",
+    "href": "syllabus.html#readings",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Readings",
+    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore being prepared for class means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.",
     "crumbs": [
-      "Week 3 1/30, 2/01",
-      "Python Programming Concepts"
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
     ]
   },
   {
-    "objectID": "week-04/scripts_and_functions.html",
-    "href": "week-04/scripts_and_functions.html",
-    "title": "Functions",
-    "section": "",
-    "text": "A function is a body of code that does something we need done, typically repeatedly\ndef hello():\n    print('hello world')\nhello()\n\nhello world",
+    "objectID": "syllabus.html#schedule-planned",
+    "href": "syllabus.html#schedule-planned",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\nQuiz 3\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nGeoSNAP\n\nQuiz 5\n\n\n\nFeb-29\nPySAL\nGDS 3\n\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\nExercise 2\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\n\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-18\nNearest Neighbor Statistics\nGDS 8\n\n\n\n14\nApr-23\nDistance Based Statistics\nGDS 8\nQuiz 12\n\n\n\nApr-25\nGeostatistical Data\nDS 6.1-6.5\n\n\n\n15\nApr-30\nSpatial Interpolation\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nKriging\nDS 6.7\nExercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)",
     "crumbs": [
-      "Week 4 2/06, 2/08",
-      "Functions"
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
     ]
   },
   {
-    "objectID": "week-04/scripts_and_functions.html#returns",
-    "href": "week-04/scripts_and_functions.html#returns",
-    "title": "Functions",
-    "section": "Returns",
-    "text": "Returns\n\ndef hello(message):\n    print(message)\n    return len(message)\n\n\nhello('serge')\n\nserge\n\n\n5\n\n\n\nlen('serge')\n\n5\n\n\n\nhello(42)\n\n42\n\n\nTypeError: object of type 'int' has no len()\n\n\n\nlen(10)\n\nTypeError: object of type 'int' has no len()\n\n\n\nhello('42')\n\n42\n\n\n2",
+    "objectID": "syllabus.html#grading",
+    "href": "syllabus.html#grading",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Grading",
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 12 of 14 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 10 of 14 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 8 of 14 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 6 of 14 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade.",
     "crumbs": [
-      "Week 4 2/06, 2/08",
-      "Functions"
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
     ]
   },
   {
-    "objectID": "week-04/scripts_and_functions.html#real-functions",
-    "href": "week-04/scripts_and_functions.html#real-functions",
-    "title": "Functions",
-    "section": "“Real functions”",
-    "text": "“Real functions”\n\n\n\nimage.png\n\n\n\np3 = [0, 0]\np1 = [0, 5]\np2 = [10, 0]\n\n\n# distance between p1 and p2\nb = p2[0] - p3[0]\nb\n\n10\n\n\n\na = p1[1] - p3[1]\na\n\n5\n\n\n\n# c = sqrt(a**2 + b**2)\n\n\na**2\n\n25\n\n\n\nb**2\n\n100\n\n\n\n(a**2 + b**2)\n\n125\n\n\n\n(a**2 + b**2)**(1/2)\n\n11.180339887498949\n\n\n\ndef distance(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    return (dx**2 + dy**2)**(1/2)\n\n\np3 = [0, 0]\np1 = [0, 5]\np2 = [10, 0]\n\n\ndistance(p1, p3)\n\n5.0\n\n\n\ndistance(p2, p3)\n\n10.0\n\n\n\ndistance(p2, p1)\n\n11.180339887498949\n\n\n\ndistance(p1, p1)\n\n0.0\n\n\n\n\n\nimage.png\n\n\n\nimport numpy\ndef manhattan(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    adx = numpy.abs(dx)\n    ady = numpy.abs(dy)\n    return adx + ady\n    \n\n\np3 = [0, 0]\np1 = [0, 5]\np2 = [10, 0]\n\n\nmanhattan(p3, p2)\n\n10\n\n\n\nmanhattan(p3, p1)\n\n5\n\n\n\nmanhattan(p2, p1)\n\n15\n\n\n\ndistance(p2, p1)\n\n11.180339887498949\n\n\n\ndef euclidean(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    return (dx**2 + dy**2)**(1/2)\n\n\nimport numpy\ndef manhattan(pnt1, pnt2):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    adx = numpy.abs(dx)\n    ady = numpy.abs(dy)\n    return adx + ady\n    \n\n\neuclidean(p2, p1)\n\n11.180339887498949\n\n\n\nmanhattan(p2, p1)\n\n15\n\n\n\nmanhattan(p1, p2)\n\n15\n\n\n\neuclidean(p1, p2)\n\n11.180339887498949\n\n\n\nComposition\n\ndef distance_composite(pnt1, pnt2, metric='euclidean'):\n    if metric == 'euclidean':\n        return euclidean(pnt1, pnt2)\n    else:\n        return manhattan(pnt1, pnt2)\n\n\ndistance_composite(p1, p2, metric='euclidean')\n\n11.180339887498949\n\n\n\ndistance_composite(p1, p2, metric='manhattan')\n\n15\n\n\n\n\nAll-in-one function\n\ndef distance(pnt1, pnt2, metric='euclidean'):\n    dx = pnt1[0] - pnt2[0]\n    dy = pnt1[1] - pnt2[1]\n    if metric == 'euclidean':\n        return (dx**2 + dy**2)**(1/2)\n    else:\n        adx = numpy.abs(dx)\n        ady = numpy.abs(dy)\n        return adx + ady\n        \n\n\ndistance(p1, p2, metric='manhattan')\n\n15\n\n\n\ndistance(p1, p2, metric='euclidean')\n\n11.180339887498949\n\n\n\ndistance(p1, p2)\n\n11.180339887498949",
+    "objectID": "syllabus.html#quizzes",
+    "href": "syllabus.html#quizzes",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Quizzes",
+    "text": "Quizzes\nStarting in week two, there will be a quiz due before a session that pertains to the background reading that is required before our work in class. Quizzes are graded on a pass/fail basis.",
     "crumbs": [
-      "Week 4 2/06, 2/08",
-      "Functions"
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#exercises",
+    "href": "syllabus.html#exercises",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Exercises",
+    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise.\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#final-exam",
+    "href": "syllabus.html#final-exam",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Final Exam",
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on May 7 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#tokens",
+    "href": "syllabus.html#tokens",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Tokens",
+    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester.\nUsing Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam. (Requests required by 2024-04-15 17:00.)\n\nRemaining Tokens\nEach token that remains unused after 2024-05-02 will be counted as a passed quiz. Tokens cannot be exchanged with other students.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#policies",
+    "href": "syllabus.html#policies",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Policies",
+    "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct.",
+    "crumbs": [
+      "Syllabus",
+      "Geography 385 Spatial Data Analysis"
     ]
   },
   {
@@ -1314,45 +1165,207 @@
     ]
   },
   {
+    "objectID": "week-04/import_demo.html",
+    "href": "week-04/import_demo.html",
+    "title": "Importing",
+    "section": "",
+    "text": "import distances\n\n\np1 = [0, 0]\np2 = [5, 0]\np3 = [5, 5]\n\n\ndistances.euclidean(p1, p2)\n\n5.0\n\n\n\ndistances.manhattan(p1, p2)\n\n5\n\n\n\ndistances.distance_composite(p2, p3)\n\n5.0\n\n\n\nfrom distances import distance_composite\n\n\ndistance_composite(p1, p3)\n\n7.0710678118654755",
+    "crumbs": [
+      "Week 4 2/06, 2/08",
+      "Importing"
+    ]
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Spatial Data Analysis",
+    "section": "",
+    "text": "Attribution-ShareAlike 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public:\nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nAdditional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
+  },
+  {
+    "objectID": "week-02/files.html",
+    "href": "week-02/files.html",
+    "title": "Notes on files and directories (Notebook)",
+    "section": "",
+    "text": "This is a test\n\n\nCode\nfor i in range(10):\n    print(i*i)\n\n\n0\n1\n4\n9\n16\n25\n36\n49\n64\n81"
+  },
+  {
+    "objectID": "week-02/files.html#file-and-directory-notes",
+    "href": "week-02/files.html#file-and-directory-notes",
+    "title": "Notes on files and directories (Notebook)",
+    "section": "",
+    "text": "This is a test\n\n\nCode\nfor i in range(10):\n    print(i*i)\n\n\n0\n1\n4\n9\n16\n25\n36\n49\n64\n81"
+  },
+  {
+    "objectID": "week-02/files.html#file-commands",
+    "href": "week-02/files.html#file-commands",
+    "title": "Notes on files and directories (Notebook)",
+    "section": "File Commands",
+    "text": "File Commands\n\ncat\ntouch"
+  },
+  {
+    "objectID": "week-03/python_intro.html",
+    "href": "week-03/python_intro.html",
+    "title": "Introduction to Python",
+    "section": "",
+    "text": "its “free” (as in beer and as in speech)\nwidely used (QGIS, ArcGIS)\napproachable\nfun\n\n\n\n\n\ninput (keyboard, file, network, sensor)\noutput: display data on screen, write to a file, ship over network\nmath: basic mathematical operations (add, subtract, multiply, divide)\nconditional execution: if something is true do something else\nrepetition: Perform some action repeatedly\n\n\n1 + 1\n\n2\n\n\n\nx = 1 + 1\n\n\n\n\n\n40 + 2\n\n42\n\n\n\n40 * 2\n\n80\n\n\n\n40 / 2\n\n20.0\n\n\n\n40 ** 2\n\n1600\n\n\n\n40**3\n\n64000\n\n\n\n\n\nWhat the program works with\n\n2\n\n2\n\n\n\ntype(2)\n\nint\n\n\n\ntype('42')\n\nstr\n\n\n\n'42'\n\n'42'\n\n\n\n2 * 3\n\n6\n\n\n\n2 * 'my name is serge'\n\n'my name is sergemy name is serge'\n\n\n\nname = 'serge'\n\n\nname\n\n'serge'\n\n\n\ntype(name)\n\nstr\n\n\n\nname = 10\n\n\nname\n\n10\n\n\n\nx = 10**2 + 50\n\n\nx\n\n150\n\n\n\nx = 10**(2 + 50)\n\n\nx\n\n10000000000000000000000000000000000000000000000000000\n\n\n\nf = 3.14\ntype(f)\n\nfloat\n\n\n\nprint('hi world')\n\nhi world\n\n\n\ntempF = 9 / 5 * 40 + 32\n\n\ntempF\n\n104.0\n\n\n\ndef tempF(c):\n    return 9/5 * c + 32\n\n\ntempF(32)\n\n89.6\n\n\n\n\n\n\nint: 7\nfloat: 7.23\nstr: ‘7.23’\nbool: True/False\n\n\nx = 5 &gt; 7\nx\n\nFalse\n\n\n\ntype(x)\n\nbool\n\n\n\ny = 10\n\n\ny\n\n10\n\n\n\nx * y\n\n0\n\n\n\nz = 10 &gt; 1\n\n\nz\n\nTrue\n\n\n\nz * y\n\n10\n\n\n\n\n\n\nx = 'Today is my birthday'\n\n\nx\n\n'Today is my birthday'\n\n\n\ntype(x)\n\nstr\n\n\n\nlen(x)\n\n20\n\n\n\nx.lower()\n\n'today is my birthday'\n\n\n\nx.upper()\n\n'TODAY IS MY BIRTHDAY'\n\n\n\nx.title()\n\n'Today Is My Birthday'\n\n\n\nx.center(50)\n\n'               Today is my birthday               '\n\n\n\nx.title().center(100)\n\n'                                        Today Is My Birthday                                        '\n\n\n\ndir(x)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.zfill(30)\n\n'0000000000Today is my birthday'\n\n\n\nx.zfill?\n\n\nSignature: x.zfill(width, /)\nDocstring:\nPad a numeric string with zeros on the left, to fill a field of the given width.\nThe string is never truncated.\nType:      builtin_function_or_method\n\n\n\n\nx.strip?\n\n\nSignature: x.strip(chars=None, /)\nDocstring:\nReturn a copy of the string with leading and trailing whitespace removed.\nIf chars is given and not None, remove characters in chars instead.\nType:      builtin_function_or_method\n\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.split()\n\n['Today', 'is', 'my', 'birthday']\n\n\n\nx.split?\n\n\nSignature: x.split(sep=None, maxsplit=-1)\nDocstring:\nReturn a list of the substrings in the string, using sep as the separator string.\n  sep\n    The separator used to split the string.\n    When set to None (the default value), will split on any whitespace\n    character (including \\\\n \\\\r \\\\t \\\\f and spaces) and will discard\n    empty strings from the result.\n  maxsplit\n    Maximum number of splits (starting from the left).\n    -1 (the default value) means no limit.\nNote, str.split() is mainly useful for data that has been intentionally\ndelimited.  With natural text that includes punctuation, consider using\nthe regular expression module.\nType:      builtin_function_or_method",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
+  },
+  {
+    "objectID": "week-03/python_intro.html#why-python",
+    "href": "week-03/python_intro.html#why-python",
+    "title": "Introduction to Python",
+    "section": "",
+    "text": "its “free” (as in beer and as in speech)\nwidely used (QGIS, ArcGIS)\napproachable\nfun",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
+  },
+  {
+    "objectID": "week-03/python_intro.html#what-is-a-program",
+    "href": "week-03/python_intro.html#what-is-a-program",
+    "title": "Introduction to Python",
+    "section": "",
+    "text": "input (keyboard, file, network, sensor)\noutput: display data on screen, write to a file, ship over network\nmath: basic mathematical operations (add, subtract, multiply, divide)\nconditional execution: if something is true do something else\nrepetition: Perform some action repeatedly\n\n\n1 + 1\n\n2\n\n\n\nx = 1 + 1",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
+  },
+  {
+    "objectID": "week-03/python_intro.html#operators",
+    "href": "week-03/python_intro.html#operators",
+    "title": "Introduction to Python",
+    "section": "",
+    "text": "40 + 2\n\n42\n\n\n\n40 * 2\n\n80\n\n\n\n40 / 2\n\n20.0\n\n\n\n40 ** 2\n\n1600\n\n\n\n40**3\n\n64000",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
+  },
+  {
+    "objectID": "week-03/python_intro.html#values",
+    "href": "week-03/python_intro.html#values",
+    "title": "Introduction to Python",
+    "section": "",
+    "text": "What the program works with\n\n2\n\n2\n\n\n\ntype(2)\n\nint\n\n\n\ntype('42')\n\nstr\n\n\n\n'42'\n\n'42'\n\n\n\n2 * 3\n\n6\n\n\n\n2 * 'my name is serge'\n\n'my name is sergemy name is serge'\n\n\n\nname = 'serge'\n\n\nname\n\n'serge'\n\n\n\ntype(name)\n\nstr\n\n\n\nname = 10\n\n\nname\n\n10\n\n\n\nx = 10**2 + 50\n\n\nx\n\n150\n\n\n\nx = 10**(2 + 50)\n\n\nx\n\n10000000000000000000000000000000000000000000000000000\n\n\n\nf = 3.14\ntype(f)\n\nfloat\n\n\n\nprint('hi world')\n\nhi world\n\n\n\ntempF = 9 / 5 * 40 + 32\n\n\ntempF\n\n104.0\n\n\n\ndef tempF(c):\n    return 9/5 * c + 32\n\n\ntempF(32)\n\n89.6",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
+  },
+  {
+    "objectID": "week-03/python_intro.html#data-types",
+    "href": "week-03/python_intro.html#data-types",
+    "title": "Introduction to Python",
+    "section": "",
+    "text": "int: 7\nfloat: 7.23\nstr: ‘7.23’\nbool: True/False\n\n\nx = 5 &gt; 7\nx\n\nFalse\n\n\n\ntype(x)\n\nbool\n\n\n\ny = 10\n\n\ny\n\n10\n\n\n\nx * y\n\n0\n\n\n\nz = 10 &gt; 1\n\n\nz\n\nTrue\n\n\n\nz * y\n\n10",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
+  },
+  {
+    "objectID": "week-03/python_intro.html#strings-str",
+    "href": "week-03/python_intro.html#strings-str",
+    "title": "Introduction to Python",
+    "section": "",
+    "text": "x = 'Today is my birthday'\n\n\nx\n\n'Today is my birthday'\n\n\n\ntype(x)\n\nstr\n\n\n\nlen(x)\n\n20\n\n\n\nx.lower()\n\n'today is my birthday'\n\n\n\nx.upper()\n\n'TODAY IS MY BIRTHDAY'\n\n\n\nx.title()\n\n'Today Is My Birthday'\n\n\n\nx.center(50)\n\n'               Today is my birthday               '\n\n\n\nx.title().center(100)\n\n'                                        Today Is My Birthday                                        '\n\n\n\ndir(x)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.zfill(30)\n\n'0000000000Today is my birthday'\n\n\n\nx.zfill?\n\n\nSignature: x.zfill(width, /)\nDocstring:\nPad a numeric string with zeros on the left, to fill a field of the given width.\nThe string is never truncated.\nType:      builtin_function_or_method\n\n\n\n\nx.strip?\n\n\nSignature: x.strip(chars=None, /)\nDocstring:\nReturn a copy of the string with leading and trailing whitespace removed.\nIf chars is given and not None, remove characters in chars instead.\nType:      builtin_function_or_method\n\n\n\n\nx\n\n'Today is my birthday'\n\n\n\nx.split()\n\n['Today', 'is', 'my', 'birthday']\n\n\n\nx.split?\n\n\nSignature: x.split(sep=None, maxsplit=-1)\nDocstring:\nReturn a list of the substrings in the string, using sep as the separator string.\n  sep\n    The separator used to split the string.\n    When set to None (the default value), will split on any whitespace\n    character (including \\\\n \\\\r \\\\t \\\\f and spaces) and will discard\n    empty strings from the result.\n  maxsplit\n    Maximum number of splits (starting from the left).\n    -1 (the default value) means no limit.\nNote, str.split() is mainly useful for data that has been intentionally\ndelimited.  With natural text that includes punctuation, consider using\nthe regular expression module.\nType:      builtin_function_or_method",
+    "crumbs": [
+      "Week 3 1/30, 2/01",
+      "Introduction to Python"
+    ]
+  },
+  {
     "objectID": "week-05/pandas_intro.html",
     "href": "week-05/pandas_intro.html",
     "title": "Introduction to Pandas",
     "section": "",
-    "text": "import pandas as pd\nimport numpy as np"
+    "text": "import pandas as pd\nimport numpy as np",
+    "crumbs": [
+      "Week 5 2/13, 2/15",
+      "Introduction to Pandas"
+    ]
   },
   {
     "objectID": "week-05/pandas_intro.html#pandas",
     "href": "week-05/pandas_intro.html#pandas",
     "title": "Introduction to Pandas",
     "section": "Pandas",
-    "text": "Pandas\n\nSeries\nDataFrame\n\n\ns = pd.Series([1, 3, 5, np.nan, 6, 8])\n\n\ns\n\n0    1.0\n1    3.0\n2    5.0\n3    NaN\n4    6.0\n5    8.0\ndtype: float64\n\n\n\ndates = pd.date_range(\"20130101\", periods=6)\n\n\ndates\n\nDatetimeIndex(['2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04',\n               '2013-01-05', '2013-01-06'],\n              dtype='datetime64[ns]', freq='D')\n\n\n\ndf = pd.DataFrame(np.random.rand(6,4), index=dates,\n                  columns=list(\"ABCD\"))\n\n\ndf\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\npd.DataFrame(np.random.rand(6,4),\n                  columns=list(\"ABCD\"))\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n0\n0.370312\n0.766785\n0.856606\n0.574230\n\n\n1\n0.477143\n0.770306\n0.154779\n0.427858\n\n\n2\n0.604037\n0.747945\n0.132992\n0.262011\n\n\n3\n0.671085\n0.679174\n0.381207\n0.954910\n\n\n4\n0.662184\n0.029351\n0.363693\n0.170847\n\n\n5\n0.760570\n0.711854\n0.091584\n0.687423\n\n\n\n\n\n\n\n\nnp.random.rand(3, 2)\n\narray([[0.31089479, 0.7735978 ],\n       [0.82751496, 0.83485609],\n       [0.86671021, 0.99840853]])\n\n\n\nnp.random.rand?\n\n\nDocstring:\nrand(d0, d1, ..., dn)\nRandom values in a given shape.\n.. note::\n    This is a convenience function for users porting code from Matlab,\n    and wraps `random_sample`. That function takes a\n    tuple to specify the size of the output, which is consistent with\n    other NumPy functions like `numpy.zeros` and `numpy.ones`.\nCreate an array of the given shape and populate it with\nrandom samples from a uniform distribution\nover ``[0, 1)``.\nParameters\n----------\nd0, d1, ..., dn : int, optional\n    The dimensions of the returned array, must be non-negative.\n    If no argument is given a single Python float is returned.\nReturns\n-------\nout : ndarray, shape ``(d0, d1, ..., dn)``\n    Random values.\nSee Also\n--------\nrandom\nExamples\n--------\n&gt;&gt;&gt; np.random.rand(3,2)\narray([[ 0.14022471,  0.96360618],  #random\n       [ 0.37601032,  0.25528411],  #random\n       [ 0.49313049,  0.94909878]]) #random\nType:      builtin_function_or_method\n\n\n\n\ndf\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\ndf.dtypes\n\nA    float64\nB    float64\nC    float64\nD    float64\ndtype: object\n\n\n\ndf2 = pd.DataFrame(\n    {\n        \"A\": 1.0,\n        \"B\": pd.Timestamp(\"20130102\"),\n        \"C\": pd.Series(1, index=list(range(4)), dtype='float32'),\n        \"D\": np.array([3] * 4, dtype='int32'),\n        \"E\": pd.Categorical(['test', 'train', 'test', 'train']),\n        \"F\": 'foo',\n    }\n)\n       \n                       \n        \n\n\ndf2\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\nF\n\n\n\n\n0\n1.0\n2013-01-02\n1.0\n3\ntest\nfoo\n\n\n1\n1.0\n2013-01-02\n1.0\n3\ntrain\nfoo\n\n\n2\n1.0\n2013-01-02\n1.0\n3\ntest\nfoo\n\n\n3\n1.0\n2013-01-02\n1.0\n3\ntrain\nfoo\n\n\n\n\n\n\n\n\ndf2.dtypes\n\nA          float64\nB    datetime64[s]\nC          float32\nD            int32\nE         category\nF           object\ndtype: object\n\n\n\ndf.head()\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n\n\n\n\n\n\ndf.tail()\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\ndf.index\n\nDatetimeIndex(['2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04',\n               '2013-01-05', '2013-01-06'],\n              dtype='datetime64[ns]', freq='D')\n\n\n\ndf2.index\n\nIndex([0, 1, 2, 3], dtype='int64')\n\n\n\ndf\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\ndf.describe()\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\ncount\n6.000000\n6.000000\n6.000000\n6.000000\n\n\nmean\n0.627357\n0.427315\n0.274303\n0.594351\n\n\nstd\n0.305672\n0.255655\n0.254303\n0.226134\n\n\nmin\n0.123874\n0.127217\n0.000828\n0.384033\n\n\n25%\n0.514365\n0.202903\n0.092312\n0.464364\n\n\n50%\n0.640363\n0.459740\n0.255408\n0.476319\n\n\n75%\n0.870639\n0.622610\n0.360297\n0.778844\n\n\nmax\n0.939781\n0.723002\n0.700967\n0.889367\n\n\n\n\n\n\n\n\ndf.sort_values(by='B')\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n\n\n\n\n\n\ndf.sort_values(by='B', ascending=False)\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033"
+    "text": "Pandas\n\nSeries\nDataFrame\n\n\ns = pd.Series([1, 3, 5, np.nan, 6, 8])\n\n\ns\n\n0    1.0\n1    3.0\n2    5.0\n3    NaN\n4    6.0\n5    8.0\ndtype: float64\n\n\n\ndates = pd.date_range(\"20130101\", periods=6)\n\n\ndates\n\nDatetimeIndex(['2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04',\n               '2013-01-05', '2013-01-06'],\n              dtype='datetime64[ns]', freq='D')\n\n\n\ndf = pd.DataFrame(np.random.rand(6,4), index=dates,\n                  columns=list(\"ABCD\"))\n\n\ndf\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\n\npd.DataFrame(np.random.rand(6,4),\n                  columns=list(\"ABCD\"))\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n0\n0.370312\n0.766785\n0.856606\n0.574230\n\n\n1\n0.477143\n0.770306\n0.154779\n0.427858\n\n\n2\n0.604037\n0.747945\n0.132992\n0.262011\n\n\n3\n0.671085\n0.679174\n0.381207\n0.954910\n\n\n4\n0.662184\n0.029351\n0.363693\n0.170847\n\n\n5\n0.760570\n0.711854\n0.091584\n0.687423\n\n\n\n\n\n\n\n\n\nnp.random.rand(3, 2)\n\narray([[0.31089479, 0.7735978 ],\n       [0.82751496, 0.83485609],\n       [0.86671021, 0.99840853]])\n\n\n\nnp.random.rand?\n\n\nDocstring:\nrand(d0, d1, ..., dn)\nRandom values in a given shape.\n.. note::\n    This is a convenience function for users porting code from Matlab,\n    and wraps `random_sample`. That function takes a\n    tuple to specify the size of the output, which is consistent with\n    other NumPy functions like `numpy.zeros` and `numpy.ones`.\nCreate an array of the given shape and populate it with\nrandom samples from a uniform distribution\nover ``[0, 1)``.\nParameters\n----------\nd0, d1, ..., dn : int, optional\n    The dimensions of the returned array, must be non-negative.\n    If no argument is given a single Python float is returned.\nReturns\n-------\nout : ndarray, shape ``(d0, d1, ..., dn)``\n    Random values.\nSee Also\n--------\nrandom\nExamples\n--------\n&gt;&gt;&gt; np.random.rand(3,2)\narray([[ 0.14022471,  0.96360618],  #random\n       [ 0.37601032,  0.25528411],  #random\n       [ 0.49313049,  0.94909878]]) #random\nType:      builtin_function_or_method\n\n\n\n\ndf\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\n\ndf.dtypes\n\nA    float64\nB    float64\nC    float64\nD    float64\ndtype: object\n\n\n\ndf2 = pd.DataFrame(\n    {\n        \"A\": 1.0,\n        \"B\": pd.Timestamp(\"20130102\"),\n        \"C\": pd.Series(1, index=list(range(4)), dtype='float32'),\n        \"D\": np.array([3] * 4, dtype='int32'),\n        \"E\": pd.Categorical(['test', 'train', 'test', 'train']),\n        \"F\": 'foo',\n    }\n)\n       \n                       \n        \n\n\ndf2\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\nF\n\n\n\n\n0\n1.0\n2013-01-02\n1.0\n3\ntest\nfoo\n\n\n1\n1.0\n2013-01-02\n1.0\n3\ntrain\nfoo\n\n\n2\n1.0\n2013-01-02\n1.0\n3\ntest\nfoo\n\n\n3\n1.0\n2013-01-02\n1.0\n3\ntrain\nfoo\n\n\n\n\n\n\n\n\n\ndf2.dtypes\n\nA          float64\nB    datetime64[s]\nC          float32\nD            int32\nE         category\nF           object\ndtype: object\n\n\n\ndf.head()\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n\n\n\n\n\n\n\ndf.tail()\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\n\ndf.index\n\nDatetimeIndex(['2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04',\n               '2013-01-05', '2013-01-06'],\n              dtype='datetime64[ns]', freq='D')\n\n\n\ndf2.index\n\nIndex([0, 1, 2, 3], dtype='int64')\n\n\n\ndf\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\n\ndf.describe()\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\ncount\n6.000000\n6.000000\n6.000000\n6.000000\n\n\nmean\n0.627357\n0.427315\n0.274303\n0.594351\n\n\nstd\n0.305672\n0.255655\n0.254303\n0.226134\n\n\nmin\n0.123874\n0.127217\n0.000828\n0.384033\n\n\n25%\n0.514365\n0.202903\n0.092312\n0.464364\n\n\n50%\n0.640363\n0.459740\n0.255408\n0.476319\n\n\n75%\n0.870639\n0.622610\n0.360297\n0.778844\n\n\nmax\n0.939781\n0.723002\n0.700967\n0.889367\n\n\n\n\n\n\n\n\n\ndf.sort_values(by='B')\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n\n\n\n\n\n\n\ndf.sort_values(by='B', ascending=False)\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033",
+    "crumbs": [
+      "Week 5 2/13, 2/15",
+      "Introduction to Pandas"
+    ]
   },
   {
     "objectID": "week-05/pandas_intro.html#selection",
     "href": "week-05/pandas_intro.html#selection",
     "title": "Introduction to Pandas",
     "section": "selection",
-    "text": "selection\n\ndf['C']\n\n2013-01-01    0.229421\n2013-01-02    0.000828\n2013-01-03    0.700967\n2013-01-04    0.386597\n2013-01-05    0.281396\n2013-01-06    0.046609\nFreq: D, Name: C, dtype: float64\n\n\n\ndf[['C', 'D']]\n\n\n\n\n\n\n\n\nC\nD\n\n\n\n\n2013-01-01\n0.229421\n0.465291\n\n\n2013-01-02\n0.000828\n0.889367\n\n\n2013-01-03\n0.700967\n0.384033\n\n\n2013-01-04\n0.386597\n0.487347\n\n\n2013-01-05\n0.281396\n0.464055\n\n\n2013-01-06\n0.046609\n0.876010\n\n\n\n\n\n\n\n\ndf[['D', 'C']]\n\n\n\n\n\n\n\n\nD\nC\n\n\n\n\n2013-01-01\n0.465291\n0.229421\n\n\n2013-01-02\n0.889367\n0.000828\n\n\n2013-01-03\n0.384033\n0.700967\n\n\n2013-01-04\n0.487347\n0.386597\n\n\n2013-01-05\n0.464055\n0.281396\n\n\n2013-01-06\n0.876010\n0.046609\n\n\n\n\n\n\n\n\ndf\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\ndf[0:3] # selection by location\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n\n\n\n\n\n\n# select by label\ndf.loc[:, ['A', 'C']]\n\n\n\n\n\n\n\n\nA\nC\n\n\n\n\n2013-01-01\n0.501461\n0.229421\n\n\n2013-01-02\n0.939781\n0.000828\n\n\n2013-01-03\n0.918302\n0.700967\n\n\n2013-01-04\n0.727648\n0.386597\n\n\n2013-01-05\n0.553077\n0.281396\n\n\n2013-01-06\n0.123874\n0.046609\n\n\n\n\n\n\n\n\ndf.loc[dates[0]] # return the records that match the first datestam\n\nA    0.501461\nB    0.130345\nC    0.229421\nD    0.465291\nName: 2013-01-01 00:00:00, dtype: float64\n\n\n\ndates[0]\n\nTimestamp('2013-01-01 00:00:00')\n\n\n\ntype(dates)\n\npandas.core.indexes.datetimes.DatetimeIndex\n\n\n\ndf.loc[dates[0], ['A','C']]\n\nA    0.501461\nC    0.229421\nName: 2013-01-01 00:00:00, dtype: float64"
+    "text": "selection\n\ndf['C']\n\n2013-01-01    0.229421\n2013-01-02    0.000828\n2013-01-03    0.700967\n2013-01-04    0.386597\n2013-01-05    0.281396\n2013-01-06    0.046609\nFreq: D, Name: C, dtype: float64\n\n\n\ndf[['C', 'D']]\n\n\n\n\n\n\n\n\n\nC\nD\n\n\n\n\n2013-01-01\n0.229421\n0.465291\n\n\n2013-01-02\n0.000828\n0.889367\n\n\n2013-01-03\n0.700967\n0.384033\n\n\n2013-01-04\n0.386597\n0.487347\n\n\n2013-01-05\n0.281396\n0.464055\n\n\n2013-01-06\n0.046609\n0.876010\n\n\n\n\n\n\n\n\n\ndf[['D', 'C']]\n\n\n\n\n\n\n\n\n\nD\nC\n\n\n\n\n2013-01-01\n0.465291\n0.229421\n\n\n2013-01-02\n0.889367\n0.000828\n\n\n2013-01-03\n0.384033\n0.700967\n\n\n2013-01-04\n0.487347\n0.386597\n\n\n2013-01-05\n0.464055\n0.281396\n\n\n2013-01-06\n0.876010\n0.046609\n\n\n\n\n\n\n\n\n\ndf\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\n\ndf[0:3] # selection by location\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n\n\n\n\n\n\n\n# select by label\ndf.loc[:, ['A', 'C']]\n\n\n\n\n\n\n\n\n\nA\nC\n\n\n\n\n2013-01-01\n0.501461\n0.229421\n\n\n2013-01-02\n0.939781\n0.000828\n\n\n2013-01-03\n0.918302\n0.700967\n\n\n2013-01-04\n0.727648\n0.386597\n\n\n2013-01-05\n0.553077\n0.281396\n\n\n2013-01-06\n0.123874\n0.046609\n\n\n\n\n\n\n\n\n\ndf.loc[dates[0]] # return the records that match the first datestam\n\nA    0.501461\nB    0.130345\nC    0.229421\nD    0.465291\nName: 2013-01-01 00:00:00, dtype: float64\n\n\n\ndates[0]\n\nTimestamp('2013-01-01 00:00:00')\n\n\n\ntype(dates)\n\npandas.core.indexes.datetimes.DatetimeIndex\n\n\n\ndf.loc[dates[0], ['A','C']]\n\nA    0.501461\nC    0.229421\nName: 2013-01-01 00:00:00, dtype: float64",
+    "crumbs": [
+      "Week 5 2/13, 2/15",
+      "Introduction to Pandas"
+    ]
   },
   {
     "objectID": "week-05/pandas_intro.html#boolean-indexing",
     "href": "week-05/pandas_intro.html#boolean-indexing",
     "title": "Introduction to Pandas",
     "section": "Boolean indexing",
-    "text": "Boolean indexing\n\ndf\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\ndf['B']\n\n2013-01-01    0.130345\n2013-01-02    0.723002\n2013-01-03    0.127217\n2013-01-04    0.420577\n2013-01-05    0.663846\n2013-01-06    0.498903\nFreq: D, Name: B, dtype: float64\n\n\n\ndf.B\n\n2013-01-01    0.130345\n2013-01-02    0.723002\n2013-01-03    0.127217\n2013-01-04    0.420577\n2013-01-05    0.663846\n2013-01-06    0.498903\nFreq: D, Name: B, dtype: float64\n\n\n\ndf.B &gt; .5\n\n2013-01-01    False\n2013-01-02     True\n2013-01-03    False\n2013-01-04    False\n2013-01-05     True\n2013-01-06    False\nFreq: D, Name: B, dtype: bool\n\n\n\ndf[df.B &gt; .5]\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n\n\n\n\n\n\ndf2 = df.copy()\ndf2\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\ndf2['E'] = ['one', 'one', 'two', 'three', 'four', 'three']\ndf2\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\none\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\none\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\ntwo\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\nthree\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\nfour\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\nthree\n\n\n\n\n\n\n\n\ndf2['E'].isin([\"one\", \"two\"])\n\n2013-01-01     True\n2013-01-02     True\n2013-01-03     True\n2013-01-04    False\n2013-01-05    False\n2013-01-06    False\nFreq: D, Name: E, dtype: bool\n\n\n\ndf2[df2['E'].isin([\"one\", \"two\"])]\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\none\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\none\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\ntwo\n\n\n\n\n\n\n\n\ndf2[df2['E'].isin([\"one\", \"two\", 'four'])]\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\none\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\none\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\ntwo\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\nfour\n\n\n\n\n\n\n\n\ndf2[~df2['E'].isin([\"one\", \"two\", 'four'])]\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\nthree\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\nthree"
+    "text": "Boolean indexing\n\ndf\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\n\ndf['B']\n\n2013-01-01    0.130345\n2013-01-02    0.723002\n2013-01-03    0.127217\n2013-01-04    0.420577\n2013-01-05    0.663846\n2013-01-06    0.498903\nFreq: D, Name: B, dtype: float64\n\n\n\ndf.B\n\n2013-01-01    0.130345\n2013-01-02    0.723002\n2013-01-03    0.127217\n2013-01-04    0.420577\n2013-01-05    0.663846\n2013-01-06    0.498903\nFreq: D, Name: B, dtype: float64\n\n\n\ndf.B &gt; .5\n\n2013-01-01    False\n2013-01-02     True\n2013-01-03    False\n2013-01-04    False\n2013-01-05     True\n2013-01-06    False\nFreq: D, Name: B, dtype: bool\n\n\n\ndf[df.B &gt; .5]\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n\n\n\n\n\n\n\ndf2 = df.copy()\ndf2\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\n\n\n\n\n\n\n\n\n\ndf2['E'] = ['one', 'one', 'two', 'three', 'four', 'three']\ndf2\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\none\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\none\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\ntwo\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\nthree\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\nfour\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\nthree\n\n\n\n\n\n\n\n\n\ndf2['E'].isin([\"one\", \"two\"])\n\n2013-01-01     True\n2013-01-02     True\n2013-01-03     True\n2013-01-04    False\n2013-01-05    False\n2013-01-06    False\nFreq: D, Name: E, dtype: bool\n\n\n\ndf2[df2['E'].isin([\"one\", \"two\"])]\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\none\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\none\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\ntwo\n\n\n\n\n\n\n\n\n\ndf2[df2['E'].isin([\"one\", \"two\", 'four'])]\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\none\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\none\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\ntwo\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\nfour\n\n\n\n\n\n\n\n\n\ndf2[~df2['E'].isin([\"one\", \"two\", 'four'])]\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\nthree\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\nthree",
+    "crumbs": [
+      "Week 5 2/13, 2/15",
+      "Introduction to Pandas"
+    ]
   },
   {
     "objectID": "week-05/pandas_intro.html#group-by",
     "href": "week-05/pandas_intro.html#group-by",
     "title": "Introduction to Pandas",
     "section": "Group by",
-    "text": "Group by\n\ndf2\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\none\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\none\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\ntwo\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\nthree\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\nfour\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\nthree\n\n\n\n\n\n\n\n\ndf2.groupby(by='E').count()\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\nE\n\n\n\n\n\n\n\n\nfour\n1\n1\n1\n1\n\n\none\n2\n2\n2\n2\n\n\nthree\n2\n2\n2\n2\n\n\ntwo\n1\n1\n1\n1"
+    "text": "Group by\n\ndf2\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n2013-01-01\n0.501461\n0.130345\n0.229421\n0.465291\none\n\n\n2013-01-02\n0.939781\n0.723002\n0.000828\n0.889367\none\n\n\n2013-01-03\n0.918302\n0.127217\n0.700967\n0.384033\ntwo\n\n\n2013-01-04\n0.727648\n0.420577\n0.386597\n0.487347\nthree\n\n\n2013-01-05\n0.553077\n0.663846\n0.281396\n0.464055\nfour\n\n\n2013-01-06\n0.123874\n0.498903\n0.046609\n0.876010\nthree\n\n\n\n\n\n\n\n\n\ndf2.groupby(by='E').count()\n\n\n\n\n\n\n\n\n\nA\nB\nC\nD\n\n\nE\n\n\n\n\n\n\n\n\nfour\n1\n1\n1\n1\n\n\none\n2\n2\n2\n2\n\n\nthree\n2\n2\n2\n2\n\n\ntwo\n1\n1\n1\n1",
+    "crumbs": [
+      "Week 5 2/13, 2/15",
+      "Introduction to Pandas"
+    ]
   },
   {
     "objectID": "week-05/pandas_intro.html#plotting",
     "href": "week-05/pandas_intro.html#plotting",
     "title": "Introduction to Pandas",
     "section": "Plotting",
-    "text": "Plotting\n\nimport matplotlib.pyplot as plt\n\n\nnp.random.seed(123456)\n\n\nts = pd.Series(np.random.randn(1000), index=pd.date_range(\"1/1/2000\", periods=1000))\n\n\nts = ts.cumsum()\n\n\nts.plot()\n\n&lt;Axes: &gt;"
+    "text": "Plotting\n\nimport matplotlib.pyplot as plt\n\n\nnp.random.seed(123456)\n\n\nts = pd.Series(np.random.randn(1000), index=pd.date_range(\"1/1/2000\", periods=1000))\n\n\nts = ts.cumsum()\n\n\nts.plot()",
+    "crumbs": [
+      "Week 5 2/13, 2/15",
+      "Introduction to Pandas"
+    ]
+  },
+  {
+    "objectID": "week-06/geopandas.html",
+    "href": "week-06/geopandas.html",
+    "title": "GeoPandas",
+    "section": "",
+    "text": "import geopandas as gpd\nimport pandas as pd\ngdf = gpd.read_parquet(\"~/data/scag_region.parquet\")\ngdf.shape\n\n(4580, 194)\ntype(gdf)\n\ngeopandas.geodataframe.GeoDataFrame\ngdf.head()\n\n\n\n\n\n\n\n\n\ngeoid\nn_asian_under_15\nn_black_under_15\nn_hispanic_under_15\nn_native_under_15\nn_white_under_15\nn_persons_under_18\nn_asian_over_60\nn_black_over_60\nn_hispanic_over_60\n...\nyear\nn_total_housing_units_sample\np_nonhisp_white_persons\np_white_over_60\np_black_over_60\np_hispanic_over_60\np_native_over_60\np_asian_over_60\np_disabled\ngeometry\n\n\n\n\n0\n06037128702\n58.0\n0.0\n223.0\n0.0\n475.0\n986.0\nNaN\nNaN\nNaN\n...\n2010\n2903.0\n64.726214\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nPOLYGON ((-118.44870 34.16485, -118.43997 34.1...\n\n\n1\n06037131600\n83.0\n62.0\n777.0\n0.0\n135.0\n1355.0\nNaN\nNaN\nNaN\n...\n2010\n1487.0\n28.679979\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nPOLYGON ((-118.56229 34.22033, -118.55792 34.2...\n\n\n2\n06037134104\n287.0\n17.0\n816.0\n0.0\n61.0\n1323.0\nNaN\nNaN\nNaN\n...\n2010\n1388.0\n14.846188\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nPOLYGON ((-118.57976 34.21558, -118.57539 34.2...\n\n\n3\n06037134304\n90.0\n24.0\n298.0\n0.0\n89.0\n520.0\nNaN\nNaN\nNaN\n...\n2010\n928.0\n33.378933\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nPOLYGON ((-118.61472 34.21952, -118.61039 34.2...\n\n\n4\n06037242000\n0.0\n229.0\n681.0\n0.0\n0.0\n1164.0\nNaN\nNaN\nNaN\n...\n2010\n1054.0\n0.058565\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nPOLYGON ((-118.25416 33.93882, -118.25413 33.9...\n\n\n\n\n5 rows × 194 columns\ngdf.columns.values\n\narray(['geoid', 'n_asian_under_15', 'n_black_under_15',\n       'n_hispanic_under_15', 'n_native_under_15', 'n_white_under_15',\n       'n_persons_under_18', 'n_asian_over_60', 'n_black_over_60',\n       'n_hispanic_over_60', 'n_native_over_60', 'n_persons_over_60',\n       'n_white_over_60', 'n_asian_over_65', 'n_black_over_65',\n       'n_hispanic_over_65', 'n_native_over_65', 'n_white_over_65',\n       'n_persons_over_75', 'n_persons_over_15', 'n_civilians_over_16',\n       'n_civilians_over_18', 'n_persons_over_25', 'n_age_5_older',\n       'n_asian_age_distribution', 'n_black_age_distribution',\n       'n_hispanic_age_distribution', 'n_native_age_distribution',\n       'n_white_age_distribution', 'n_asian_persons', 'n_black_persons',\n       'n_chinese_persons', 'n_labor_force', 'n_civilians_16_64',\n       'n_edu_college_greater', 'n_cuban_pop',\n       'n_poverty_determined_asian', 'n_poverty_determined_black',\n       'n_total_pop_sample', 'n_female_over_16',\n       'n_poverty_determined_families', 'n_poverty_determined_hispanic',\n       'n_disabled', 'n_housing_units_multiunit_structures_denom',\n       'n_poverty_determined_native', 'n_poverty_determined_persons',\n       'n_poverty_determined_white', 'n_employed_over_16',\n       'n_total_families', 'n_foreign_born_pop',\n       'n_female_headed_families', 'n_filipino_persons',\n       'n_female_labor_force', 'n_german_pop', 'n_german_born_pop',\n       'n_household_recent_move', 'n_structures_30_old',\n       'n_hawaiian_persons', 'n_total_households', 'n_asian_households',\n       'n_black_households', 'n_hispanic_households',\n       'n_white_households', 'median_household_income',\n       'median_income_asianhh', 'median_income_blackhh',\n       'median_income_hispanichh', 'median_income_whitehh',\n       'n_hispanic_persons', 'n_edu_hs_less', 'n_total_housing_units',\n       'per_capita_income', 'n_asian_indian_persons', 'n_irish_pop',\n       'n_irish_born_pop', 'n_italian_pop', 'n_italian_born_pop',\n       'n_japanese_persons', 'n_korean_persons', 'n_limited_english',\n       'n_employed_manufacturing', 'n_married', 'n_mexican_pop',\n       'median_home_value', 'median_contract_rent',\n       'n_housing_units_multiunit_structures', 'n_recent_immigrant_pop',\n       'n_poverty_over_65', 'n_poverty_asian', 'n_naturalized_pop',\n       'n_poverty_black', 'n_poverty_families_children',\n       'n_nonhisp_black_persons', 'n_poverty_hispanic',\n       'n_nonhisp_white_persons', 'n_poverty_native', 'n_poverty_persons',\n       'n_native_persons', 'n_poverty_white', 'n_occupied_housing_units',\n       'n_other_language', 'n_owner_occupied_housing_units',\n       'p_recent_immigrant_pop', 'p_household_recent_move',\n       'p_asian_under_15', 'p_black_under_15', 'p_hispanic_under_15',\n       'p_native_under_15', 'p_white_under_15', 'p_persons_under_18',\n       'p_structures_30_old', 'p_persons_over_60', 'p_asian_over_65',\n       'p_black_over_65', 'p_hispanic_over_65', 'p_native_over_65',\n       'p_poverty_rate_over_65', 'p_white_over_65', 'p_persons_over_75',\n       'p_poverty_rate_asian', 'p_asian_persons', 'p_poverty_rate_black',\n       'p_chinese_persons', 'p_edu_college_greater', 'p_cuban_pop',\n       'p_foreign_born_pop', 'p_female_headed_families',\n       'p_filipino_persons', 'p_female_labor_force',\n       'p_poverty_rate_children', 'p_german_pop', 'p_german_born_pop',\n       'p_hawaiian_persons', 'p_hispanic_persons',\n       'p_poverty_rate_hispanic', 'p_edu_hs_less',\n       'p_asian_indian_persons', 'p_irish_pop', 'p_irish_born_pop',\n       'p_italian_pop', 'p_italian_born_pop', 'p_japanese_persons',\n       'p_korean_persons', 'p_limited_english',\n       'p_employed_manufacturing', 'p_married', 'p_mexican_pop',\n       'p_housing_units_multiunit_structures', 'p_poverty_rate_native',\n       'p_naturalized_pop', 'p_nonhisp_black_persons', 'p_black_persons',\n       'p_native_persons', 'p_other_language', 'n_total_pop',\n       'p_owner_occupied_units', 'p_poverty_rate', 'p_puerto_rican_pop',\n       'p_employed_professional', 'n_puerto_rican_pop',\n       'n_employed_professional', 'p_russian_pop', 'p_russian_born_pop',\n       'p_scandanavian_pop', 'p_scandanavian_born_pop',\n       'p_employed_self_employed', 'p_unemployment_rate',\n       'p_vacant_housing_units', 'p_veterans', 'p_vietnamese_persons',\n       'p_widowed_divorced', 'p_poverty_rate_white',\n       'n_renter_occupied_housing_units', 'n_russian_pop',\n       'n_russian_born_pop', 'n_scandaniavian_pop',\n       'n_scandaniavian__born_pop', 'n_employed_self_employed',\n       'n_unemployed_persons', 'n_vacant_housing_units', 'n_veterans',\n       'n_vietnamese_persons', 'n_widowed_divorced', 'n_white_persons',\n       'year', 'n_total_housing_units_sample', 'p_nonhisp_white_persons',\n       'p_white_over_60', 'p_black_over_60', 'p_hispanic_over_60',\n       'p_native_over_60', 'p_asian_over_60', 'p_disabled', 'geometry'],\n      dtype=object)\ngdf.n_total_pop\n\n0       5497.0\n1       5659.0\n2       4486.0\n3       2924.0\n4       3415.0\n         ...  \n4575    3672.0\n4576    5257.0\n4577    6765.0\n4578    2981.0\n4579    3994.0\nName: n_total_pop, Length: 4580, dtype: float64\ngdf.geometry\n\n0       POLYGON ((-118.44870 34.16485, -118.43997 34.1...\n1       POLYGON ((-118.56229 34.22033, -118.55792 34.2...\n2       POLYGON ((-118.57976 34.21558, -118.57539 34.2...\n3       POLYGON ((-118.61472 34.21952, -118.61039 34.2...\n4       POLYGON ((-118.25416 33.93882, -118.25413 33.9...\n                              ...                        \n4575    POLYGON ((-118.50373 34.42607, -118.50050 34.4...\n4576    POLYGON ((-118.20731 33.90754, -118.20641 33.9...\n4577    POLYGON ((-119.22134 34.18130, -119.21727 34.1...\n4578    POLYGON ((-116.51068 33.80502, -116.51069 33.8...\n4579    POLYGON ((-118.41379 34.17940, -118.41160 34.1...\nName: geometry, Length: 4580, dtype: geometry\ngdf.plot()",
+    "crumbs": [
+      "Week 6 2/20",
+      "GeoPandas"
+    ]
+  },
+  {
+    "objectID": "week-06/geopandas.html#projections",
+    "href": "week-06/geopandas.html#projections",
+    "title": "GeoPandas",
+    "section": "Projections",
+    "text": "Projections\n\ngdf.crs\n\n&lt;Geographic 2D CRS: EPSG:4326&gt;\nName: WGS 84\nAxis Info [ellipsoidal]:\n- Lat[north]: Geodetic latitude (degree)\n- Lon[east]: Geodetic longitude (degree)\nArea of Use:\n- name: World.\n- bounds: (-180.0, -90.0, 180.0, 90.0)\nDatum: World Geodetic System 1984 ensemble\n- Ellipsoid: WGS 84\n- Prime Meridian: Greenwich\n\n\n\ngdf1 = gdf.to_crs(3857)\n\n\ngdf1.crs\n\n&lt;Projected CRS: EPSG:3857&gt;\nName: WGS 84 / Pseudo-Mercator\nAxis Info [cartesian]:\n- X[east]: Easting (metre)\n- Y[north]: Northing (metre)\nArea of Use:\n- name: World between 85.06°S and 85.06°N.\n- bounds: (-180.0, -85.06, 180.0, 85.06)\nCoordinate Operation:\n- name: Popular Visualisation Pseudo-Mercator\n- method: Popular Visualisation Pseudo Mercator\nDatum: World Geodetic System 1984 ensemble\n- Ellipsoid: WGS 84\n- Prime Meridian: Greenwich\n\n\n\ngdf1.plot()\n\n\n\n\n\n\n\n\n\ngdf.median_home_value\n\n0       647272.659176\n1       400842.977528\n2       416741.666667\n3       406178.838951\n4       251438.857678\n            ...      \n4575    291838.951311\n4576    273871.254682\n4577    293254.588015\n4578    255794.662921\n4579    581717.790262\nName: median_home_value, Length: 4580, dtype: float64\n\n\n\ngdf.plot(column='median_home_value')\n\n\n\n\n\n\n\n\n\ngdf.plot(column='median_home_value', legend=True)\n\n\n\n\n\n\n\n\n\ngdf.plot(column='median_home_value', legend=True,\n        scheme='quantiles', k=10)\n\n\n\n\n\n\n\n\n\ngdf.plot(column='p_hispanic_persons', legend=True,\n        scheme='quantiles', k=10)\n\n\n\n\n\n\n\n\n\ngdf.explore(column='p_hispanic_persons', tooltip=['geoid', 'p_hispanic_persons'])\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook",
+    "crumbs": [
+      "Week 6 2/20",
+      "GeoPandas"
+    ]
   }
 ]

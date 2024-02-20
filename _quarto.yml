@@ -69,3 +69,7 @@ website:
       - section: "Week 5 2/13, 2/15"
         contents:
           - week-05/pandas_intro.ipynb
+
+      - section: "Week 6 2/20"
+        contents:
+          - week-06/geopandas.ipynb
