@@ -99,43 +99,43 @@ completed the readings.
 
 ## Schedule (Planned)
 
-| Week | Dates  | Topic                               | Reading           | Due        |
-|------|--------|-------------------------------------|-------------------|------------|
-| 1    | Jan-18 | Course Introduction                 |                   |            |
-| 2    | Jan-23 | Computational Environment I         |                   |            |
-|      | Jan-25 | Computational Environment II        |                   |            |
-| 3    | Jan-30 | Python: Introduction                | GDA 1  GDS 2      | Quiz 1     |
-|      | Feb-01 | Python: Programming Concepts        | GDA 2             |            |
-| 4    | Feb-06 | Python: Scripting                   | GDA 2             | Quiz 2     |
-|      | Feb-08 | Python: Functions                   | GDA 2             |            |
-| 5    | Feb-13 | Exericse 1 Collaboration            |                   | Exercise 1 |
-|      | Feb-15 | Python: Data Analysis/Visualization | GDA 3,4           | Quiz 3     |
-| 6    | Feb-20 | Geopandas                           | GDA 5             | Quiz 4     |
-|      | Feb-22 | Geoprocessing                       | GDA 6             |            |
-| 7    | Feb-27 | GeoSNAP                             |                   | Quiz 5     |
-|      | Feb-29 | PySAL                               | GDS 3             |            |
-| 8    | Mar-05 | GeoVisualization                    | GDS 5             | Quiz 6     |
-|      | Mar-07 | Spatial Weights                     | GDS 4             |            |
-| 9    | Mar-12 | Spatial Dependence                  | GDS 6             | Quiz 7     |
-|      | Mar-14 | Global Autocorrelation              | GDS 6             | Exercise 2 |
-| 10   | Mar-19 | Global Autocorrelation Tests        | GDS 6             | Quiz 8     |
-|      | Mar-21 | Local Autocorrelation               | GDS 7             |            |
-| 11   | Mar-26 | Local Autocorrelation Tests         | GDS 7             | Quiz 9     |
-|      | Mar-28 | Point Pattern Data                  | GDS 8             | Exercise 3 |
-|      | Apr-02 | Spring Break                        |                   |            |
-|      | Apr-04 | Spring Break                        |                   |            |
-| 12   | Apr-09 | Centrography                        | GDS 8             | Quiz 10    |
-|      | Apr-11 | Point Processes                     | GDS 8             |            |
-| 13   | Apr-16 | Quadrat Statistics                  | GDS 8             | Quiz 11    |
-|      | Apr-18 | Nearest Neighbor Statistics         | GDS 8             |            |
-| 14   | Apr-23 | Distance Based Statistics           | GDS 8             | Quiz 12    |
-|      | Apr-25 | Geostatistical Data                 | [DS 6.1-6.5][ds6] |            |
-| 15   | Apr-30 | Spatial Interpolation               | [DS 6.5][ds65]    | Quiz 13    |
-|      | May-02 | Kriging                             | [DS 6.7][ds67]    | Exercise 4 |
-| 16   | May-07 | *Final Exam (1-3pm)*                |                   |            |
+| Week | Dates  | Topic                                   | Reading             | Due        |
+|------|--------|-----------------------------------------|---------------------|------------|
+| 1    | Jan-18 | Course Introduction                     |                     |            |
+| 2    | Jan-23 | Computational Environment I             |                     |            |
+|      | Jan-25 | Computational Environment II            |                     |            |
+| 3    | Jan-30 | Python: Introduction                    | GDA 1  GDS 2        | Quiz 1     |
+|      | Feb-01 | Python: Programming Concepts            | GDA 2               |            |
+| 4    | Feb-06 | Python: Scripting                       | GDA 2               | Quiz 2     |
+|      | Feb-08 | Python: Functions                       | GDA 2               |            |
+| 5    | Feb-13 | Exericse 1 Collaboration                |                     | Exercise 1 |
+|      | Feb-15 | Python: Data Analysis/Visualization     | GDA 3,4             | Quiz 3     |
+| 6    | Feb-20 | Geopandas                               | GDA 5               | Quiz 4     |
+|      | Feb-22 | Geoprocessing                           | GDA 6               |            |
+| 7    | Feb-27 | Research: Intersectional Urban Dynamics | [Rey 2023][rey2023] |            |
+|      | Feb-29 | PySAL                                   | GDS 3               | Quiz 5     |
+| 8    | Mar-05 | GeoVisualization                        | GDS 5               | Quiz 6     |
+|      | Mar-07 | Spatial Weights                         | GDS 4               |            |
+| 9    | Mar-12 | Spatial Dependence                      | GDS 6               | Quiz 7     |
+|      | Mar-14 | Global Autocorrelation                  | GDS 6               | Exercise 2 |
+| 10   | Mar-19 | Global Autocorrelation Tests            | GDS 6               | Quiz 8     |
+|      | Mar-21 | Local Autocorrelation                   | GDS 7               |            |
+| 11   | Mar-26 | Local Autocorrelation Tests             | GDS 7               | Quiz 9     |
+|      | Mar-28 | Point Pattern Data                      | GDS 8               | Exercise 3 |
+|      | Apr-02 | Spring Break                            |                     |            |
+|      | Apr-04 | Spring Break                            |                     |            |
+| 12   | Apr-09 | Centrography                            | GDS 8               | Quiz 10    |
+|      | Apr-11 | Point Processes                         | GDS 8               |            |
+| 13   | Apr-16 | Quadrat Statistics                      | GDS 8               | Quiz 11    |
+|      | Apr-18 | Nearest Neighbor Statistics             | GDS 8               |            |
+| 14   | Apr-23 | Distance Based Statistics               | GDS 8               | Quiz 12    |
+|      | Apr-25 | Geostatistical Data                     | [DS 6.1-6.5][ds6]   |            |
+| 15   | Apr-30 | Spatial Interpolation                   | [DS 6.5][ds65]      | Quiz 13    |
+|      | May-02 | Kriging                                 | [DS 6.7][ds67]      | Exercise 4 |
+| 16   | May-07 | *Final Exam (1-3pm)*                    |                     |            |
 
 
-
+[rey2023]: https://csu-sdsu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=cdi_scopus_primary_2026177719&context=PC&vid=01CALS_SDL:01CALS_SDL&lang=en&search_scope=MyInst_and_CI&adaptor=Primo%20Central&tab=Everything&query=any,contains,Intersectional%20urban%20dynamics:%20a%20joint%20Markov%20chains%20approach&offset=0
 [ds6]: https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm
 [ds65]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
 [ds67]: https://www.spatialanalysisonline.com/HTML/geostatistical_interpolation_m.htm
