@@ -70,6 +70,7 @@ website:
         contents:
           - week-05/pandas_intro.ipynb
 
-      - section: "Week 6 2/20"
+      - section: "Week 6 2/20, 2/22"
         contents:
           - week-06/geopandas.ipynb
+          - week-06/geoprocessing.ipynb

@@ -115,9 +115,9 @@ completed the readings.
 | 7    | Feb-27 | GeoSNAP                             |                   | Quiz 5     |
 |      | Feb-29 | PySAL                               | GDS 3             |            |
 | 8    | Mar-05 | GeoVisualization                    | GDS 5             | Quiz 6     |
-|      | Mar-07 | Spatial Weights                     | GDS 4             | Exercise 2 |
+|      | Mar-07 | Spatial Weights                     | GDS 4             |            |
 | 9    | Mar-12 | Spatial Dependence                  | GDS 6             | Quiz 7     |
-|      | Mar-14 | Global Autocorrelation              | GDS 6             |            |
+|      | Mar-14 | Global Autocorrelation              | GDS 6             | Exercise 2 |
 | 10   | Mar-19 | Global Autocorrelation Tests        | GDS 6             | Quiz 8     |
 |      | Mar-21 | Local Autocorrelation               | GDS 7             |            |
 | 11   | Mar-26 | Local Autocorrelation Tests         | GDS 7             | Quiz 9     |
