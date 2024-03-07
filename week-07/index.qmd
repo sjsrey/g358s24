@@ -1,0 +1,5 @@
+---
+title: Spatial Research and PySAL
+---
+- [Intersectional Urban Dyanmics](https://csu-sdsu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=cdi_scopus_primary_2026177719&context=PC&vid=01CALS_SDL:01CALS_SDL&lang=en&search_scope=MyInst_and_CI&adaptor=Primo%20Central&tab=Everything&query=any,contains,Intersectional%20urban%20dynamics:%20a%20joint%20Markov%20chains%20approach&offset=0)
+- [Introduction to PySAL](http://pysal.org)

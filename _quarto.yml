@@ -74,3 +74,11 @@ website:
         contents:
           - week-06/geopandas.ipynb
           - week-06/geoprocessing.ipynb
+
+      - section: "Week 7 2/27, 2/29"
+        contents:
+          - week-07/index.qmd
+
+      - section: "Week 8 3/05, 3/07"
+        contents:
+          - week-08/01_geovisualization.ipynb
