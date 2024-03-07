@@ -82,3 +82,4 @@ website:
       - section: "Week 8 3/05, 3/07"
         contents:
           - week-08/01_geovisualization.ipynb
+          - week-08/02_spatial_weights.ipynb

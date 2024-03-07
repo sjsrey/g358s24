@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.545">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -323,6 +323,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Geovisualization with PySAL</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-08/02_spatial_weights.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spatial Weights</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -411,7 +417,6 @@ dtype: float64</code></pre>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <div>
-<div>
 
 
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -473,12 +478,10 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="88c57912-ef64-489b-926b-ac803645f7d1" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(np.random.rand(<span class="dv">6</span>,<span class="dv">4</span>),</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>                  columns<span class="op">=</span><span class="bu">list</span>(<span class="st">"ABCD"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
-<div>
 <div>
 
 
@@ -541,7 +544,6 @@ dtype: float64</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="b966926b-f793-4ac3-ac38-d66fb096aef0" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>np.random.rand(<span class="dv">3</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
@@ -590,7 +592,6 @@ array([[ 0.14022471,  0.96360618],  #random
 <div id="a208be78-ff56-4276-8718-7747ada47001" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
-<div>
 <div>
 
 
@@ -653,7 +654,6 @@ array([[ 0.14022471,  0.96360618],  #random
 </div>
 </div>
 </div>
-</div>
 <div id="9d12602f-8c47-426e-b3c2-ea54c807f80b" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
@@ -682,7 +682,6 @@ dtype: object</code></pre>
 <div id="c6c525cd-d916-4c69-b1d8-9c1e2304ea55" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
-<div>
 <div>
 
 
@@ -741,7 +740,6 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="708e762b-46b0-4247-a0e8-25cafceefd96" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df2.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
@@ -757,7 +755,6 @@ dtype: object</code></pre>
 <div id="67407a91-3045-4e6f-b9da-0a69792e607f" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
-<div>
 <div>
 
 
@@ -813,11 +810,9 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="98a2d3d2-d9ad-4fc7-b416-942ec22471ee" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
-<div>
 <div>
 
 
@@ -870,7 +865,6 @@ dtype: object</code></pre>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -892,7 +886,6 @@ dtype: object</code></pre>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <div>
-<div>
 
 
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -954,11 +947,9 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="32f29f8e-e939-44cf-a51f-03f9958f9f29" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
-<div>
 <div>
 
 
@@ -1035,11 +1026,9 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="cffdfa65-1f18-4897-ab00-1eb9c74cc08e" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>df.sort_values(by<span class="op">=</span><span class="st">'B'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
-<div>
 <div>
 
 
@@ -1099,7 +1088,6 @@ dtype: object</code></pre>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -1107,7 +1095,6 @@ dtype: object</code></pre>
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df.sort_values(by<span class="op">=</span><span class="st">'B'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
 <div>
-<div>
 
 
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -1166,7 +1153,6 @@ dtype: object</code></pre>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -1189,7 +1175,6 @@ Freq: D, Name: C, dtype: float64</code></pre>
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>df[[<span class="st">'C'</span>, <span class="st">'D'</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <div>
-<div>
 
 
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -1234,7 +1219,6 @@ Freq: D, Name: C, dtype: float64</code></pre>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -1242,7 +1226,6 @@ Freq: D, Name: C, dtype: float64</code></pre>
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>df[[<span class="st">'D'</span>, <span class="st">'C'</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
 <div>
-<div>
 
 
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -1290,11 +1273,9 @@ Freq: D, Name: C, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="4a4b2517-2428-461b-a57d-c9cebff2f674" class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="30">
-<div>
 <div>
 
 
@@ -1357,11 +1338,9 @@ Freq: D, Name: C, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="9450a871-ffcd-47cd-a91c-12bb57eb75bc" class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>df[<span class="dv">0</span>:<span class="dv">3</span>] <span class="co"># selection by location</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="32">
-<div>
 <div>
 
 
@@ -1403,12 +1382,10 @@ Freq: D, Name: C, dtype: float64</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="151d7f1a-add2-43dc-b343-6ab0dec93fa2" class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># select by label</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>df.loc[:, [<span class="st">'A'</span>, <span class="st">'C'</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="33">
-<div>
 <div>
 
 
@@ -1454,7 +1431,6 @@ Freq: D, Name: C, dtype: float64</code></pre>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -1495,7 +1471,6 @@ Name: 2013-01-01 00:00:00, dtype: float64</code></pre>
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="38">
 <div>
-<div>
 
 
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -1554,7 +1529,6 @@ Name: 2013-01-01 00:00:00, dtype: float64</code></pre>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -1598,7 +1572,6 @@ Freq: D, Name: B, dtype: bool</code></pre>
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>df[df.B <span class="op">&gt;</span> <span class="fl">.5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="42">
 <div>
-<div>
 
 
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -1632,12 +1605,10 @@ Freq: D, Name: B, dtype: bool</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="e71fdd8f-1ab1-420e-b3af-69b060991e4c" class="cell" data-execution_count="43">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> df.copy()</span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>df2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="43">
-<div>
 <div>
 
 
@@ -1700,12 +1671,10 @@ Freq: D, Name: B, dtype: bool</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="559cb3bd-93a9-43ee-a210-f69e2683ddf3" class="cell" data-execution_count="44">
 <div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'E'</span>] <span class="op">=</span> [<span class="st">'one'</span>, <span class="st">'one'</span>, <span class="st">'two'</span>, <span class="st">'three'</span>, <span class="st">'four'</span>, <span class="st">'three'</span>]</span>
 <span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>df2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="44">
-<div>
 <div>
 
 
@@ -1772,7 +1741,6 @@ Freq: D, Name: B, dtype: bool</code></pre>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -1792,7 +1760,6 @@ Freq: D, Name: E, dtype: bool</code></pre>
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>df2[df2[<span class="st">'E'</span>].isin([<span class="st">"one"</span>, <span class="st">"two"</span>])]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="46">
 <div>
-<div>
 
 
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -1837,11 +1804,9 @@ Freq: D, Name: E, dtype: bool</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="b64de524-63cd-4509-8fee-8cf2971bcef3" class="cell" data-execution_count="47">
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>df2[df2[<span class="st">'E'</span>].isin([<span class="st">"one"</span>, <span class="st">"two"</span>, <span class="st">'four'</span>])]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="47">
-<div>
 <div>
 
 
@@ -1895,11 +1860,9 @@ Freq: D, Name: E, dtype: bool</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="e6e8686a-013d-41e1-b278-d72d3710d13f" class="cell" data-execution_count="48">
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="op">~</span>df2[<span class="st">'E'</span>].isin([<span class="st">"one"</span>, <span class="st">"two"</span>, <span class="st">'four'</span>])]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="48">
-<div>
 <div>
 
 
@@ -1934,7 +1897,6 @@ Freq: D, Name: E, dtype: bool</code></pre>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -1945,7 +1907,6 @@ Freq: D, Name: E, dtype: bool</code></pre>
 <div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>df2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="49">
 <div>
-<div>
 
 
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -2014,11 +1975,9 @@ Freq: D, Name: E, dtype: bool</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="6bf8a075-c141-404d-b9c3-9c77795838c3" class="cell" data-execution_count="50">
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>df2.groupby(by<span class="op">=</span><span class="st">'E'</span>).count()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="50">
-<div>
 <div>
 
 
@@ -2071,7 +2030,6 @@ Freq: D, Name: E, dtype: bool</code></pre>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
 </div>
@@ -2638,7 +2596,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../week-04/distances.html" class="pagination-link" aria-label="distances.py">
+      <a href="../week-04/distances.html" class="pagination-link  aria-label=" distances.py"="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">distances.py</span>
       </a>          
   </div>
