@@ -87,3 +87,4 @@ website:
       - section: "Week 9 3/12, 3/14"
         contents:
           - week-09/spatial_dependence.qmd
+          - week-09/index.qmd
