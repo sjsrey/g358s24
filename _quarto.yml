@@ -88,3 +88,8 @@ website:
         contents:
           - week-09/spatial_dependence.qmd
           - week-09/index.qmd
+
+      - section: "Week 10 3/19, 3/21"
+        contents:
+          - week-10/03_spatial_autocorrelation.ipynb
+          - week-10/index.qmd
