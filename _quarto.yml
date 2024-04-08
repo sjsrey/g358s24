@@ -97,5 +97,6 @@ website:
       - section: "Week 11 3/26, 3/28"
         contents:
           - week-11/04_local_spatial_autocorrelation.ipynb
+          - week-11/index.qmd
 
  
