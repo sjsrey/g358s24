@@ -103,3 +103,8 @@ website:
       - section: "Week 12 4/09, 4/11"
         contents:
           - week-12/point-patterns.qmd
+      - section: "Week 13 4/16 4/18"
+      - section: "Week 14 4/23 4/25"
+        contents:
+          - week-14/quadrat.ipynb
+          - week-14/point-processes.qmd

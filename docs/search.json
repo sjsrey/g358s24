@@ -1653,6 +1653,83 @@
     ]
   },
   {
+    "objectID": "week-14/quadrat.html",
+    "href": "week-14/quadrat.html",
+    "title": "Quadrat Statistics",
+    "section": "",
+    "text": "Now that we have been introduced to the different statistical models than are used to represent point processes, we turn to the methods that are used to link observed point patterns back to the process that generated the pattern.\nMore specifically, the challenge that we face is as follows. Given an observed point pattern, we wish to make inferences about the process that generated the observed pattern.\nThe general approach that is used is to construct measures that characterise the observed point pattern, and then compare these against the proporties of the theoretical process models we explored previously.\nFor example, if we assume that the underlying process is CSR, we know what kinds of properties the empirical patterns from such a process should exhibit. The critical thing to keep in mind is that we never actually see the underlying process - we only see outcomes of the process (i.e., the pattern).\nThis raises a number of challenges that we will need to address later on, but for now we are going to build up an inituition of the general strategy for analyzing point patterns.",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Quadrat Statistics"
+    ]
+  },
+  {
+    "objectID": "week-14/quadrat.html#introduction",
+    "href": "week-14/quadrat.html#introduction",
+    "title": "Quadrat Statistics",
+    "section": "",
+    "text": "Now that we have been introduced to the different statistical models than are used to represent point processes, we turn to the methods that are used to link observed point patterns back to the process that generated the pattern.\nMore specifically, the challenge that we face is as follows. Given an observed point pattern, we wish to make inferences about the process that generated the observed pattern.\nThe general approach that is used is to construct measures that characterise the observed point pattern, and then compare these against the proporties of the theoretical process models we explored previously.\nFor example, if we assume that the underlying process is CSR, we know what kinds of properties the empirical patterns from such a process should exhibit. The critical thing to keep in mind is that we never actually see the underlying process - we only see outcomes of the process (i.e., the pattern).\nThis raises a number of challenges that we will need to address later on, but for now we are going to build up an inituition of the general strategy for analyzing point patterns.",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Quadrat Statistics"
+    ]
+  },
+  {
+    "objectID": "week-14/quadrat.html#example-patterns",
+    "href": "week-14/quadrat.html#example-patterns",
+    "title": "Quadrat Statistics",
+    "section": "Example Patterns",
+    "text": "Example Patterns\nTo begin we are going to create two different point patterns, one from a CSR process and one from a clustered process. We will use these two patterns to introduce the different statistical methods used to analyze the patterns. Here we are in the rare circumstance in which we actually know what process generated the pattern.\n\nCSR n=60\n\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nimport warnings\nwarnings.filterwarnings('ignore')\nnp.random.seed(12345)\nn = 60\nxy = np.random.rand(60,2)\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\nsns.scatterplot(x='x', y='y', data=df);\n\n\n\n\n\n\n\n\n\nimport pointpats as pp\n\n\ncsr = pp.PointPattern(xy)\n\n\ncsr.summary()\n\nPoint Pattern\n60 points\nBounding rectangle [(0.00838829794155349,0.024676210429265266), (0.9940145858999619,0.9613067360728214)]\nArea of window: 0.9231676681785911\nIntensity estimate for window: 64.99361066054225\n          x         y\n0  0.929616  0.316376\n1  0.183919  0.204560\n2  0.567725  0.595545\n3  0.964515  0.653177\n4  0.748907  0.653570\n\n\n\nw = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])\ndraw = pp.PoissonClusterPointProcess(w, n, 2, 0.05, 1, asPP=True, conditioning=False)\ndraw.realizations[0].plot(window=True, title='Contagion Point Process (2 parents)')\n\n\n\n\n\n\n\n\n\nclustered = draw.realizations[0]\n\n\nclustered.summary()\n\nPoint Pattern\n60 points\nBounding rectangle [(0.47331760265312733,0.023178703349462502), (0.9696584457277277,0.6150208352748628)]\nArea of window: 1.0\nIntensity estimate for window: 60.0\n          x         y\n0  0.513060  0.541971\n1  0.473318  0.578385\n2  0.508373  0.536200\n3  0.881716  0.060328\n4  0.894221  0.059273",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Quadrat Statistics"
+    ]
+  },
+  {
+    "objectID": "week-14/quadrat.html#quadrat-statistics",
+    "href": "week-14/quadrat.html#quadrat-statistics",
+    "title": "Quadrat Statistics",
+    "section": "Quadrat Statistics",
+    "text": "Quadrat Statistics\n\nimport pointpats.quadrat_statistics as qs\n\n\ncsr_qr = qs.QStatistic(csr, shape='rectangle', nx=3, ny=3)\ncsr_qr.plot()\n\n\n\n\n\n\n\n\n\ncsr_qr.chi2\n\n10.8\n\n\n\ncsr_qr.chi2_pvalue\n\n0.21329101843394052\n\n\n\nclustered_qr = qs.QStatistic(clustered, shape='rectangle', nx=3, ny=3)\nclustered_qr.plot()\n\n\n\n\n\n\n\n\n\nclustered_qr.chi2\n\n209.99999999999994\n\n\n\nclustered_qr.chi2_pvalue\n\n4.976940117448032e-41",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Quadrat Statistics"
+    ]
+  },
+  {
+    "objectID": "week-14/quadrat.html#quadrat-shape",
+    "href": "week-14/quadrat.html#quadrat-shape",
+    "title": "Quadrat Statistics",
+    "section": "Quadrat Shape",
+    "text": "Quadrat Shape\n\ncsr_qr_hex = qs.QStatistic(csr, shape='hexagon', lh=0.2)\n\n\ncsr_qr_hex.plot()\n\n\n\n\n\n\n\n\n\ncsr_qr_hex.chi2\n\n20.733333333333334\n\n\n\ncsr_qr_hex.df\n\n13\n\n\n\ncsr_qr_hex.chi2_pvalue\n\n0.07837318677184964\n\n\n\nclustered_qr_hex = qs.QStatistic(clustered, shape='hexagon', lh=0.2)\n\n\nclustered_qr_hex.plot()\n\n\n\n\n\n\n\n\n\nclustered_qr_hex.chi2_pvalue\n\n2.005280432194402e-14",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Quadrat Statistics"
+    ]
+  },
+  {
+    "objectID": "week-14/quadrat.html#simulation-inference",
+    "href": "week-14/quadrat.html#simulation-inference",
+    "title": "Quadrat Statistics",
+    "section": "Simulation Inference",
+    "text": "Simulation Inference\n\nfrom pointpats import PoissonPointProcess as poissonpp\n\n\nclustered_sim = poissonpp(clustered.window, clustered.n, 999, asPP=True)\n\n\nclustered_sim_hex = qs.QStatistic(clustered, shape='hexagon',\n                                  lh=0.2,\n                                  realizations=clustered_sim)\n\n\nclustered_sim_hex.chi2_r_pvalue\n\n0.001\n\n\n\nclustered_sim_hex.chi2_realizations\n\narray([26.8       , 18.86666667, 20.26666667, 19.8       , 15.6       ,\n       30.53333333, 15.6       , 28.2       , 23.53333333, 17.        ,\n       35.66666667, 11.4       , 19.33333333, 21.66666667, 18.4       ,\n       15.6       , 17.46666667, 24.93333333, 17.        , 20.73333333,\n       19.33333333, 15.6       , 38.        , 38.        , 16.06666667,\n       24.46666667, 21.2       , 21.2       ,  7.66666667, 18.86666667,\n       17.46666667, 24.93333333, 15.6       , 25.4       , 14.66666667,\n       26.8       , 21.2       , 18.86666667, 14.66666667, 24.        ,\n       11.86666667, 10.        , 17.        , 17.        ,  9.06666667,\n       31.93333333, 24.93333333, 31.        , 21.2       , 17.93333333,\n       11.4       , 17.        , 21.2       , 11.86666667, 21.2       ,\n       19.33333333, 19.8       , 17.        , 38.        , 31.        ,\n       34.73333333, 16.53333333, 33.8       , 17.93333333, 18.86666667,\n       10.        ,  9.53333333, 15.6       , 25.4       , 14.66666667,\n       24.46666667, 24.93333333, 18.4       , 14.2       , 24.        ,\n       21.2       , 23.06666667, 21.2       , 19.33333333, 37.06666667,\n       15.6       , 29.6       , 31.        , 20.26666667, 23.06666667,\n       20.73333333, 32.86666667, 19.33333333, 22.6       , 15.6       ,\n       13.26666667, 46.4       , 15.6       , 20.26666667, 33.33333333,\n       11.4       , 17.        , 26.33333333, 17.93333333, 22.13333333,\n       17.        , 33.33333333, 24.93333333, 12.33333333, 28.66666667,\n       42.2       , 17.        , 22.6       , 16.53333333, 22.6       ,\n       12.33333333, 15.6       , 18.4       , 17.        , 17.46666667,\n       30.06666667, 26.8       , 17.        , 24.46666667, 21.66666667,\n       21.66666667, 20.26666667, 17.93333333, 18.4       , 28.2       ,\n       29.13333333, 14.2       , 26.33333333,  9.06666667, 20.26666667,\n       21.66666667, 27.26666667, 22.6       , 22.13333333, 21.66666667,\n       21.2       , 10.93333333, 21.66666667, 22.13333333, 33.33333333,\n       11.4       , 15.13333333, 22.6       , 17.93333333, 18.86666667,\n       22.13333333, 17.        , 10.93333333, 16.53333333, 14.2       ,\n       19.33333333, 14.66666667, 16.53333333, 16.06666667, 15.13333333,\n       36.6       , 10.        , 14.66666667, 17.46666667, 12.33333333,\n       45.        , 26.33333333, 16.06666667, 21.2       , 32.4       ,\n       22.13333333, 23.53333333, 37.06666667, 22.13333333, 28.2       ,\n       27.73333333, 12.8       , 20.73333333, 18.4       , 16.06666667,\n       24.93333333, 11.4       , 20.73333333, 21.2       , 17.        ,\n       24.        , 13.73333333, 37.53333333, 18.86666667, 15.13333333,\n       15.13333333, 27.73333333, 16.06666667, 32.4       , 20.73333333,\n       33.8       , 24.46666667, 10.46666667, 27.73333333, 18.86666667,\n       15.13333333, 21.2       , 25.86666667, 15.6       , 25.4       ,\n       11.4       , 21.2       , 27.73333333, 20.73333333, 23.53333333,\n       30.06666667, 17.        , 17.46666667, 19.8       , 19.33333333,\n       22.6       , 13.26666667, 32.4       , 29.6       , 37.53333333,\n       21.2       , 20.26666667, 17.        , 23.06666667, 26.33333333,\n       26.33333333, 17.        , 39.86666667, 16.06666667, 24.93333333,\n       20.26666667, 13.26666667, 20.73333333, 28.66666667, 23.53333333,\n       19.33333333, 19.8       , 48.26666667, 19.8       , 16.06666667,\n       26.33333333, 20.26666667, 10.46666667, 15.13333333, 16.06666667,\n       23.53333333, 26.33333333, 15.6       , 23.53333333, 19.33333333,\n        6.26666667, 27.26666667, 27.73333333, 17.        , 32.4       ,\n       22.6       , 13.73333333, 28.66666667, 20.73333333, 17.46666667,\n       20.73333333, 31.        , 22.6       , 19.33333333, 23.53333333,\n       24.        , 18.4       , 16.06666667, 21.66666667, 23.53333333,\n       12.8       , 31.        , 14.2       , 16.53333333,  8.6       ,\n       14.66666667, 27.26666667, 17.46666667, 20.73333333, 31.93333333,\n       28.2       , 24.        , 27.73333333, 24.46666667, 30.53333333,\n       17.46666667, 15.13333333, 26.8       , 36.6       , 29.6       ,\n       32.86666667, 11.86666667, 15.13333333, 14.2       , 19.8       ,\n       24.46666667, 31.93333333, 35.66666667, 18.86666667, 13.73333333,\n       14.66666667, 14.2       , 23.06666667, 21.2       , 16.53333333,\n       31.93333333, 18.4       , 10.93333333, 25.4       , 21.66666667,\n       21.66666667, 20.73333333, 29.6       , 26.33333333, 33.33333333,\n       18.86666667, 13.73333333, 23.06666667, 20.26666667, 14.2       ,\n       27.73333333, 36.6       , 16.06666667, 18.86666667, 14.2       ,\n       25.4       , 27.26666667, 21.2       , 18.86666667, 24.        ,\n       28.66666667, 30.06666667, 19.8       , 24.        , 17.46666667,\n       24.        , 14.2       , 18.86666667, 24.        , 22.13333333,\n       23.53333333, 30.53333333, 37.06666667, 22.6       , 21.66666667,\n       23.53333333, 19.8       , 20.73333333, 19.8       , 21.2       ,\n       25.86666667, 27.73333333, 14.2       , 30.06666667, 17.        ,\n       17.        , 23.06666667, 30.06666667, 29.6       , 10.93333333,\n       35.2       , 30.53333333, 17.        , 17.46666667, 41.26666667,\n       21.66666667, 15.13333333, 24.46666667, 28.2       , 31.        ,\n       17.46666667, 29.13333333, 19.8       , 17.93333333, 15.13333333,\n       17.46666667, 25.4       , 17.93333333, 30.06666667, 16.06666667,\n       27.73333333, 14.2       , 15.13333333, 20.26666667, 36.13333333,\n       24.46666667, 25.4       , 25.4       , 36.13333333, 15.6       ,\n       20.73333333, 23.53333333, 14.2       , 25.86666667, 18.86666667,\n       25.4       , 18.4       , 23.53333333, 14.66666667, 17.        ,\n       22.13333333, 23.53333333, 18.4       , 20.26666667, 28.2       ,\n       20.26666667, 40.33333333, 28.2       , 37.06666667, 17.46666667,\n       31.        , 20.26666667, 26.8       , 35.2       , 14.66666667,\n       23.06666667, 23.06666667, 13.73333333, 35.2       , 23.53333333,\n       31.        , 31.93333333, 17.46666667, 38.        , 16.53333333,\n       31.46666667, 34.26666667, 22.13333333, 22.6       , 20.73333333,\n       16.53333333, 17.93333333, 29.6       , 10.46666667, 27.26666667,\n       18.86666667, 22.6       , 36.6       , 25.4       , 15.6       ,\n       15.13333333, 18.86666667, 19.8       , 29.6       , 22.6       ,\n       13.73333333, 46.86666667, 35.2       , 14.2       , 25.4       ,\n       41.73333333, 25.4       , 13.73333333, 23.53333333, 26.8       ,\n       25.4       , 16.06666667, 21.66666667, 37.53333333, 30.06666667,\n        7.2       , 15.6       , 31.46666667, 17.        , 35.66666667,\n       23.53333333, 19.33333333, 17.46666667, 24.93333333, 19.8       ,\n       13.26666667, 25.4       , 17.46666667, 24.46666667, 20.73333333,\n       33.33333333, 20.26666667, 26.33333333, 16.06666667, 21.2       ,\n       21.2       , 56.2       , 27.26666667, 26.8       , 21.66666667,\n       22.13333333,  7.66666667, 22.6       ,  8.6       , 17.93333333,\n       25.86666667, 30.53333333, 28.66666667, 24.93333333, 13.73333333,\n        9.53333333, 21.2       , 17.93333333, 32.4       , 24.        ,\n       24.46666667, 34.73333333, 31.46666667, 23.06666667, 17.93333333,\n       30.53333333, 15.13333333, 22.13333333, 19.8       , 17.        ,\n       25.4       , 18.86666667, 26.33333333, 19.33333333, 32.4       ,\n        9.53333333, 21.66666667, 11.86666667, 31.46666667, 30.06666667,\n       24.93333333, 24.46666667, 17.46666667, 21.66666667, 19.33333333,\n       23.06666667, 23.53333333, 23.53333333, 33.33333333, 22.6       ,\n       18.4       , 24.        , 23.53333333, 16.53333333, 19.8       ,\n       17.        , 24.93333333, 10.93333333, 30.53333333, 13.73333333,\n       16.06666667, 19.33333333, 17.93333333, 26.8       , 21.2       ,\n       19.8       , 40.33333333, 18.86666667, 10.46666667, 23.53333333,\n       16.53333333, 24.        , 21.2       , 19.33333333, 31.46666667,\n       12.33333333, 10.93333333, 16.53333333, 25.4       , 33.33333333,\n       33.33333333, 20.73333333, 12.8       , 20.26666667, 34.26666667,\n       33.33333333, 29.13333333, 18.4       , 16.53333333, 20.73333333,\n       22.13333333, 22.6       , 22.6       , 17.93333333, 10.        ,\n       14.66666667, 14.66666667, 16.06666667, 16.53333333, 21.2       ,\n       10.93333333, 17.46666667, 31.46666667, 14.2       , 18.86666667,\n       24.        , 10.46666667, 30.06666667, 25.4       , 25.4       ,\n       15.13333333, 24.93333333, 22.6       , 17.93333333, 12.8       ,\n       20.73333333, 10.46666667, 12.8       , 32.86666667, 23.53333333,\n       21.2       , 23.06666667, 17.        , 13.73333333, 16.53333333,\n       24.46666667, 14.2       , 38.46666667, 26.33333333, 15.6       ,\n       20.26666667, 31.93333333, 21.66666667, 18.86666667, 15.13333333,\n       20.26666667, 31.46666667, 25.4       , 17.        , 26.8       ,\n       24.46666667, 14.2       , 42.2       , 22.6       , 17.46666667,\n       20.26666667, 35.66666667, 26.8       , 24.93333333, 31.46666667,\n       16.53333333, 24.        , 23.06666667, 17.93333333, 31.46666667,\n       30.06666667, 20.26666667, 11.2       , 23.06666667, 38.93333333,\n       13.73333333, 17.93333333, 24.        , 25.4       , 25.86666667,\n       24.        , 18.86666667, 22.13333333, 21.2       , 11.86666667,\n       18.86666667, 14.2       , 22.6       , 32.4       , 18.4       ,\n       24.93333333, 18.86666667, 24.93333333, 10.46666667, 24.93333333,\n       23.06666667, 15.6       , 21.66666667, 23.53333333, 20.73333333,\n       24.93333333, 25.86666667, 12.8       , 20.73333333, 25.4       ,\n       19.8       , 34.73333333, 30.53333333, 33.8       , 17.        ,\n       25.4       , 28.66666667, 18.4       , 30.06666667, 19.8       ,\n       52.93333333, 19.33333333, 25.86666667, 19.33333333, 10.93333333,\n       18.4       , 28.66666667,  7.66666667, 20.73333333, 43.13333333,\n       22.6       , 24.46666667, 23.53333333, 25.4       , 12.33333333,\n       26.8       , 22.6       , 22.13333333, 26.33333333, 31.        ,\n       29.13333333, 18.86666667, 20.26666667, 22.13333333, 16.53333333,\n       22.6       , 12.8       , 37.06666667, 23.06666667, 31.93333333,\n       10.        , 16.53333333, 14.2       , 26.8       , 18.4       ,\n       16.06666667, 22.6       , 13.26666667, 19.33333333, 21.66666667,\n       15.6       , 16.06666667, 19.8       , 26.33333333, 21.66666667,\n       25.86666667, 23.06666667, 16.53333333,  8.6       , 14.66666667,\n       23.06666667, 15.13333333, 15.6       , 14.66666667, 29.6       ,\n       13.73333333, 19.8       , 17.        , 19.8       , 39.86666667,\n       31.        , 12.8       , 24.93333333, 31.        , 23.06666667,\n       21.66666667, 21.66666667, 17.46666667, 20.73333333, 19.8       ,\n       25.4       , 21.2       , 19.8       , 11.86666667, 31.        ,\n       19.8       , 19.33333333, 13.26666667, 33.8       , 18.86666667,\n       46.4       , 24.        , 16.53333333, 16.53333333, 31.46666667,\n       23.53333333, 26.33333333, 25.86666667, 31.93333333, 21.2       ,\n       21.66666667, 20.73333333, 29.6       , 24.        , 38.46666667,\n        7.66666667, 17.        , 13.73333333,  6.26666667, 20.26666667,\n       36.13333333, 21.66666667, 23.53333333, 25.86666667, 18.4       ,\n       14.2       , 15.6       , 20.73333333, 34.73333333, 26.8       ,\n       21.66666667, 24.93333333, 29.13333333, 31.93333333, 25.86666667,\n       14.2       , 12.33333333, 17.46666667, 24.        , 17.        ,\n       27.26666667, 17.46666667, 17.        , 34.26666667, 12.8       ,\n       29.6       , 24.93333333, 15.13333333, 13.73333333, 34.26666667,\n       18.86666667, 30.06666667, 19.8       , 37.53333333, 26.8       ,\n       19.33333333, 17.93333333, 22.6       , 16.53333333, 12.33333333,\n       20.73333333, 17.46666667, 32.4       , 10.46666667, 33.8       ,\n       21.66666667, 18.86666667, 26.8       , 32.86666667, 41.26666667,\n       27.73333333, 16.06666667, 24.46666667, 15.6       , 19.33333333,\n       23.53333333, 19.33333333, 12.8       , 21.66666667, 12.8       ,\n       24.46666667, 36.13333333, 17.        , 18.86666667, 16.06666667,\n       17.93333333, 33.33333333, 10.93333333, 14.66666667, 11.4       ,\n       18.4       , 31.46666667, 24.46666667, 20.73333333, 40.8       ,\n       16.06666667, 20.73333333, 15.6       , 26.8       , 14.66666667,\n       31.46666667, 20.26666667, 24.46666667, 11.86666667, 17.46666667,\n       24.93333333,  6.73333333, 17.93333333, 24.46666667, 18.4       ,\n       14.2       , 26.8       , 24.        , 40.33333333, 16.53333333,\n       47.33333333, 23.53333333, 20.73333333, 14.2       , 23.53333333,\n       18.86666667, 13.73333333, 31.        , 21.66666667, 22.6       ,\n       11.4       , 24.46666667, 32.86666667, 43.13333333, 22.6       ,\n       19.8       , 36.6       , 28.2       , 23.06666667, 29.13333333,\n       15.13333333, 17.        , 28.2       , 34.26666667, 25.86666667,\n       13.26666667, 32.4       ,  8.6       , 29.13333333, 26.33333333,\n       28.66666667, 15.6       , 19.8       , 17.        , 12.8       ,\n       23.06666667, 16.06666667, 30.06666667, 20.26666667, 19.8       ,\n       22.6       , 21.66666667, 25.86666667, 36.6       , 15.6       ,\n       24.46666667, 15.13333333, 19.33333333, 10.46666667, 26.33333333,\n       18.86666667, 23.06666667, 24.46666667, 22.13333333, 29.6       ,\n       17.46666667, 23.06666667, 16.        , 23.06666667, 28.66666667,\n       20.26666667, 17.93333333, 17.        , 26.33333333, 21.66666667,\n       13.73333333, 17.93333333, 16.06666667, 21.66666667, 26.8       ,\n       18.86666667, 24.93333333, 21.66666667, 34.26666667, 23.06666667,\n       23.06666667, 12.8       , 15.6       , 13.73333333, 35.2       ,\n       26.8       , 25.4       , 19.33333333, 25.4       , 22.6       ,\n       18.86666667, 23.06666667, 29.6       , 13.73333333, 13.26666667,\n       30.06666667, 31.93333333, 12.8       , 33.8       , 11.4       ,\n       15.13333333, 15.6       , 36.13333333, 16.06666667, 13.73333333,\n       42.2       , 14.2       , 30.06666667, 24.46666667, 45.93333333,\n       29.6       , 17.93333333, 29.13333333, 29.6       , 38.46666667,\n       17.93333333, 19.33333333, 12.8       , 22.13333333, 17.93333333,\n       19.33333333, 14.2       , 24.46666667, 14.66666667, 21.2       ,\n       29.6       , 18.4       , 20.73333333, 20.26666667, 22.6       ,\n       17.        , 33.33333333, 29.6       , 31.46666667])",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Quadrat Statistics"
+    ]
+  },
+  {
+    "objectID": "week-14/quadrat.html#influence-of-bounding-extent",
+    "href": "week-14/quadrat.html#influence-of-bounding-extent",
+    "title": "Quadrat Statistics",
+    "section": "Influence of Bounding Extent",
+    "text": "Influence of Bounding Extent\n\nimport libpysal\nfrom libpysal.cg import shapely_ext\nimport geopandas\nimport numpy as np\n\n\nfrom pointpats import Window\n\n\nva = libpysal.io.open(libpysal.examples.get_path(\"vautm17n.shp\"))\n\n\npolys = [shp for shp in va]\nstate = shapely_ext.cascaded_union(polys)\n\n\nwindow = Window(state.parts)\n\n\nnp.random.seed(5)\n\n\nsamples = poissonpp(window, 200, 1, conditioning=False, asPP=False)\n\n\nsamples.realizations[0]\n\narray([[ 414659.62831296, 4098843.62306827],\n       [ 944877.32665295, 4064524.51881247],\n       [ 624464.14012849, 4135522.50140932],\n       [ 716322.44071544, 4158399.44765818],\n       [ 831143.93926953, 4237580.13537067],\n       [ 400509.95328193, 4096900.41002516],\n       [ 810686.07255281, 4283013.52195582],\n       [ 589382.5482221 , 4207114.63468694],\n       [ 464834.86653763, 4099680.23066161],\n       [ 729016.86342122, 4295967.88710233],\n       [ 692558.78034025, 4104007.16031022],\n       [ 707522.86530594, 4083889.38215422],\n       [ 368068.7091872 , 4091422.04350303],\n       [ 781939.22465452, 4097373.59625561],\n       [ 690938.87384332, 4295945.27613892],\n       [ 737215.08721821, 4168650.77104844],\n       [ 610370.4068341 , 4121670.2849925 ],\n       [ 557829.48604931, 4085935.58930553],\n       [ 866763.76550655, 4111032.57384731],\n       [ 834827.89687458, 4166256.04344958],\n       [ 621872.14784085, 4116134.29168132],\n       [ 731234.98798312, 4131270.48035054],\n       [ 682313.43606906, 4223967.01711812],\n       [ 733908.93745755, 4275494.4664081 ],\n       [ 529604.21979282, 4140192.20505708],\n       [ 667623.24339624, 4231046.01435233],\n       [ 852876.94714772, 4144452.31221088],\n       [ 736531.73670527, 4298186.25041488],\n       [ 628191.02243473, 4102712.26100424],\n       [ 695286.19214258, 4089811.49187367],\n       [ 335791.24699685, 4071456.16300708],\n       [ 976525.54090453, 4190170.9356442 ],\n       [ 269907.7423385 , 4053819.55125621],\n       [ 901005.55219154, 4135790.38279535],\n       [ 343450.39084153, 4069350.54999132],\n       [ 616962.39647439, 4060407.85366255],\n       [ 856890.64094909, 4088171.88687401],\n       [ 784246.96302866, 4158561.00287435],\n       [ 506667.94859104, 4057344.67213736],\n       [ 652994.7682644 , 4222285.369847  ],\n       [ 752892.56374042, 4051208.83003112],\n       [ 925790.59890195, 4067279.1569195 ],\n       [ 979545.31057954, 4216138.61394589],\n       [ 834141.62958798, 4078931.40609538],\n       [ 826072.78416898, 4141338.71410948],\n       [ 789540.24165872, 4134439.70394346],\n       [ 832204.18186126, 4197953.71447929],\n       [ 425655.57604877, 4089467.13633862],\n       [ 864217.85281509, 4188693.47802216],\n       [ 862328.44401525, 4076592.74052587],\n       [ 867441.18732928, 4116652.71820767],\n       [ 699661.2534777 , 4307801.55307259],\n       [ 751829.65031639, 4319968.92400562],\n       [ 693363.69978698, 4164890.1129782 ],\n       [ 746506.9340749 , 4128752.07645258],\n       [ 732083.67983923, 4248326.90577783],\n       [ 653338.32075661, 4156598.67265619],\n       [ 976606.02276802, 4197597.40929845],\n       [ 848350.52448247, 4064866.02614159],\n       [ 630634.31029898, 4214285.994748  ],\n       [ 710542.99205501, 4142311.94640686],\n       [ 818235.01391031, 4101202.27810456],\n       [ 823663.1391133 , 4155899.63963564],\n       [ 664444.47776103, 4236228.98363075],\n       [ 360769.23263894, 4085354.33832084],\n       [ 766550.94064044, 4292018.87615081],\n       [ 708574.49400057, 4316489.95362822],\n       [ 678464.74663622, 4157026.01869247],\n       [ 669386.8193962 , 4168943.73102981],\n       [ 739117.58013062, 4238904.58741115],\n       [ 802008.45139164, 4058821.42801494],\n       [ 719353.5399807 , 4310434.15086711],\n       [ 699010.43647616, 4235885.22615002],\n       [ 711302.81748723, 4189425.14715171],\n       [ 711004.15283455, 4307013.13265628],\n       [ 443641.20854179, 4112502.92242971],\n       [ 549017.70273327, 4122109.33477415],\n       [ 633880.98332554, 4180721.53522785],\n       [ 761505.3618409 , 4337608.44051833],\n       [ 628113.51741034, 4248999.17523924],\n       [ 612085.42234894, 4193531.31241006],\n       [ 773003.9526705 , 4191729.03945972],\n       [ 869260.59923287, 4095817.64598321],\n       [ 429695.78427436, 4083168.63837101],\n       [ 411407.60297276, 4095291.64838574],\n       [ 774204.90698235, 4114220.83806725],\n       [ 592778.43642512, 4048923.19755613],\n       [ 384376.48425827, 4088331.25454645],\n       [ 947440.38984378, 4151004.37886308],\n       [ 767483.69263252, 4178399.29510034],\n       [ 690935.63144369, 4235036.15530389],\n       [ 576980.01519074, 4070580.86201211],\n       [ 712493.43738419, 4089094.16426798],\n       [ 519079.03725716, 4062389.09073365],\n       [ 594894.13977775, 4126627.3577412 ],\n       [ 802962.14790058, 4255158.21686279],\n       [ 641802.18696761, 4198983.48922481],\n       [ 726954.63054571, 4344401.63706861],\n       [ 821460.13878318, 4132750.73296464],\n       [ 837220.98889414, 4222136.55345996],\n       [ 563543.98825404, 4153613.9629347 ],\n       [ 814038.74000601, 4093096.42208192],\n       [ 697273.58284353, 4163467.0010079 ],\n       [ 629072.6884094 , 4213295.94973238],\n       [ 819817.84709794, 4102394.60580934],\n       [ 526160.27728639, 4104037.23601285],\n       [ 836763.95559331, 4129516.28447547],\n       [ 736374.59850277, 4352644.80670343],\n       [ 841168.99204432, 4138747.2216095 ],\n       [ 751403.55221945, 4199922.61169574],\n       [ 557689.70136621, 4058695.77127365],\n       [ 878737.13093459, 4069134.69802166],\n       [ 645585.19035458, 4215659.45070671],\n       [ 848301.94947934, 4240704.72062012],\n       [ 811185.54323789, 4246760.16720487],\n       [ 802385.39914521, 4152499.83940512],\n       [ 967083.70536616, 4187628.68689018],\n       [ 566173.41485163, 4171863.51737594],\n       [ 695607.47904146, 4288180.87390924],\n       [ 677616.25847172, 4050830.91542181],\n       [ 861869.68527996, 4210372.43779312],\n       [ 654780.64776662, 4111656.98283347],\n       [ 585233.58031201, 4074992.10261737],\n       [ 781434.81304468, 4058413.05158421],\n       [ 822682.84769376, 4213417.77129642],\n       [ 768900.63289125, 4088226.44858065],\n       [ 791899.72825801, 4245563.76587488],\n       [ 831576.99118498, 4312162.65433444],\n       [ 878388.72674408, 4062578.7934681 ],\n       [ 823191.58958438, 4196021.45946538],\n       [ 378156.77607172, 4068466.52709272],\n       [ 862070.43546301, 4193252.59919724],\n       [ 817515.77267352, 4251166.78629974],\n       [ 690730.22340288, 4134039.36745731],\n       [ 582428.37056692, 4142295.17500245],\n       [ 701803.27707921, 4257761.15121192],\n       [ 794450.97333767, 4082458.53574423],\n       [ 683956.9175291 , 4263206.01583531],\n       [ 810304.08829204, 4189035.31606198],\n       [ 626831.94796862, 4183736.79813135],\n       [ 447925.51227984, 4053619.31963374],\n       [ 720176.25306412, 4080228.49511975],\n       [ 671706.30020031, 4057219.61544144],\n       [ 737091.10397116, 4186517.38432557],\n       [ 621943.7767598 , 4230899.1177717 ],\n       [ 781727.00521532, 4188771.47311895],\n       [ 533270.55041969, 4101228.87129633],\n       [ 422275.11061901, 4061412.90318906],\n       [ 623274.94414034, 4137159.04830485],\n       [ 613396.83788472, 4098031.58804004],\n       [ 918485.80482483, 4066117.04895843],\n       [ 835277.63162857, 4216987.74937433],\n       [ 840905.06186863, 4119589.82676569],\n       [ 776734.80434232, 4130379.65381659],\n       [ 822926.36295514, 4212704.28173775],\n       [ 577183.29908505, 4173970.73377266],\n       [ 844670.36825708, 4169964.16925377],\n       [ 726945.33864164, 4247843.41173161],\n       [ 522700.79684074, 4133457.24989219],\n       [ 781400.95255701, 4075836.20334854],\n       [ 807851.53178381, 4155393.2584169 ],\n       [ 528527.53915051, 4128711.54607999],\n       [ 733715.04344501, 4324209.51951477],\n       [ 761959.58353421, 4278337.10568371],\n       [ 462416.02583551, 4055426.72279291],\n       [ 783784.3588985 , 4219065.00137999],\n       [ 656981.17357128, 4081038.36317257],\n       [ 752519.5579292 , 4122287.87050136],\n       [ 785998.97275375, 4180386.72063339],\n       [ 515218.38308205, 4058619.31300199],\n       [ 665460.74168329, 4220305.65172169],\n       [ 635096.17082896, 4088479.03653079],\n       [ 525676.09274115, 4094679.99674041],\n       [ 652994.1969737 , 4196544.93157394],\n       [ 684221.48776759, 4279076.50535586],\n       [ 841203.32727666, 4091321.7151704 ],\n       [ 658966.29762168, 4152432.0546778 ],\n       [ 746057.91004075, 4159150.20681748],\n       [ 713023.65348106, 4313845.48665105],\n       [ 389367.77238998, 4131872.44048721],\n       [ 964384.90536381, 4177830.49754845],\n       [ 861956.74790132, 4163047.64826283],\n       [ 652335.83396067, 4066521.74757694],\n       [ 970927.39251655, 4191911.74445852],\n       [ 723112.44351288, 4066723.92870727],\n       [ 617299.64641549, 4215686.04441991],\n       [ 733460.51785091, 4209610.5745427 ],\n       [ 774366.73041553, 4083740.25237318],\n       [ 773520.40251126, 4336421.17625672],\n       [ 410898.72636993, 4079437.47953348],\n       [ 673646.58115341, 4145523.97371361],\n       [ 817877.62652755, 4319656.3622249 ],\n       [ 592810.59894755, 4136791.36885295],\n       [ 552979.14353052, 4059233.18378104],\n       [ 812842.56890396, 4121182.53606018],\n       [ 767558.36215433, 4227759.98274924],\n       [ 844106.62271791, 4069246.81629651],\n       [ 801080.39465864, 4189486.98256327],\n       [ 781265.07995516, 4324246.416531  ],\n       [ 628867.42811353, 4070282.90463193]])\n\n\n\nfrom pointpats import PointPattern\npp_csr = PointPattern(samples.realizations[0])\n\n\npp_csr.plot()\n\n\n\n\n\n\n\n\n\npp_csr.plot(window=True, hull=True, title='Random Point Pattern')\n\n\n\n\n\n\n\n\n\ncsr_qr = qs.QStatistic(pp_csr, shape='rectangle', nx=3, ny=3)\ncsr_qr.plot()\n\n\n\n\n\n\n\n\n\ncsr_qr.chi2_pvalue\n\n7.295335713511762e-19\n\n\nThe low p-value is an artifact of the shape of the window, since we will never see points in the top two cells in the first column. We did infact generate a CSR sample, so our test is incorrect here because of the shape of the window.\nTo correct for this, we can simulate other CSR samples in the same window and compare the value of our original statistic to this distribution to develop an alternative approach to inference.\n\nnp.random.seed(12345)\ncsr_samples = poissonpp(window, 200, 99, conditioning=False, asPP=True)\n\n\ncsr_samples.realizations[0]\n\n&lt;pointpats.pointpattern.PointPattern at 0x7f2c0119f0d0&gt;\n\n\n\nstats = []\nfor key in csr_samples.realizations:\n    realization = csr_samples.realizations[key]\n    test = qs.QStatistic(realization, shape='rectangle', nx=3, ny=3)\n    stats.append(test.chi2)\n\n\nstats = np.array(stats)\nnum = 1 + (stats &gt;= csr_qr.chi2).sum()\nden = 99 +1\np_value = num / den\np_value\n\n0.31\n\n\n\nimport seaborn as sns\n\n\nax =sns.distplot(stats)\nax.axvline(x = csr_qr.chi2, ymin=0, ymax=.25, color='r')\n\n\n\n\n\n\n\n\n\ncsr_qr.chi2\n\n103.75000000000001",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Quadrat Statistics"
+    ]
+  },
+  {
     "objectID": "week-04/import_demo.html",
     "href": "week-04/import_demo.html",
     "title": "Importing",
@@ -1760,6 +1837,303 @@
     "crumbs": [
       "Week 4 2/06, 2/08",
       "distances.py"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html",
+    "href": "week-14/point-processes.html",
+    "title": "Point Processes",
+    "section": "",
+    "text": "Thus far we have been looking at a collection of points as a point pattern.\nNow we want to take a different view of that pattern, one that sees the pattern as the outcome of a process.\nA point process is a statistical model that will generate point patterns with particular characteristics.\nFrom a scientific point of view we are interested in making inferences about the process that may have generated our point pattern.",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#introduction",
+    "href": "week-14/point-processes.html#introduction",
+    "title": "Point Processes",
+    "section": "",
+    "text": "Thus far we have been looking at a collection of points as a point pattern.\nNow we want to take a different view of that pattern, one that sees the pattern as the outcome of a process.\nA point process is a statistical model that will generate point patterns with particular characteristics.\nFrom a scientific point of view we are interested in making inferences about the process that may have generated our point pattern.",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#first-order-properties",
+    "href": "week-14/point-processes.html#first-order-properties",
+    "title": "Point Processes",
+    "section": "First Order Properties",
+    "text": "First Order Properties\n\nFirst Order Properties: Spatial Analysis\nMean value of the process in space\n\nVariation in mean value of the process in space\nGlobal, large scale spatial trend\n\nFirst Order Property of Point Patterns, Intensity: \\(\\lambda\\)\n\nIntensity: \\(\\lambda\\) = number of events expected per unit area\nEstimation of \\(\\lambda\\)\nSpatial variation of \\(\\lambda\\), \\(\\lambda(s)\\), \\(s\\) is a location\n\n\\[\\lambda(s) = \\lim_{ds\\rightarrow 0}\\left\\{ \\frac{E(Y(ds))}{ds} \\right\\}\\]",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#second-order-property",
+    "href": "week-14/point-processes.html#second-order-property",
+    "title": "Point Processes",
+    "section": "Second Order Property",
+    "text": "Second Order Property\n\nSecond Order Properties: Spatial Analysis\nSpatial Correlation Structure\n\nDeviations in values from process mean\nLocal or small scale effects\n\nSecond Order Property of Point Patterns\n\nRelationship between number of events in pairs of areas\nSecond order intensity \\(\\gamma(s_i,s_j)\\)\n\n\\[\\gamma(s_i,s_j) = \\lim_{ds_i\\rightarrow 0,ds_j\\rightarrow 0}\\left\\{\n       \\frac{E(Y(ds_i)Y(ds_j))}{ds_ids_j} \\right\\}\\]",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#spatial-stationarity",
+    "href": "week-14/point-processes.html#spatial-stationarity",
+    "title": "Point Processes",
+    "section": "Spatial Stationarity",
+    "text": "Spatial Stationarity\nFirst Order Stationarity \\[\\lambda(s) = \\lambda \\forall s \\in A\\] \\[E(Y(A)) = \\lambda \\times A\\]\nSecond Order Stationarity \\[\\gamma(s_i,s_j) = \\gamma(s_i - s_j) = \\gamma(h)\\]\n\n\\(h\\) is the vector difference between locations \\(s_i\\) and \\(s_j\\)\n\\(h\\) encompasses direction and distance (relative location)\nSecond order intensity only depends on \\(h\\) for second order stationarity",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#spatial-isotropy-and-stationarity",
+    "href": "week-14/point-processes.html#spatial-isotropy-and-stationarity",
+    "title": "Point Processes",
+    "section": "Spatial Isotropy and Stationarity",
+    "text": "Spatial Isotropy and Stationarity\nIsotropic Process\n\nWhen a stationary process is invariant to rotation about the origin.\nRelationship between two events depend only on the distance separating their locations and not on their orientation to each other.\nDepends only on distance, not direction\n\nUsefulness\n\nTwo pairs of events from a stationary process separated by same distance and relative direction should have same “relatedness”\nTwo pairs of events from a stationary and isotropic process separated by the same distance (irrespective of direction) should have the same “relatedness”\nBoth allow for replication and the ability to carry out estimation of the underlying DGP.",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#invariance",
+    "href": "week-14/point-processes.html#invariance",
+    "title": "Point Processes",
+    "section": "Invariance",
+    "text": "Invariance\n\n\n\n\n\n\n\n\nUnder Translation\n\n\n\n\n\n\n\nUnder Rotation\n\n\n\n\n\n\nFigure 1: Invariance",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#complete-spatial-randomness",
+    "href": "week-14/point-processes.html#complete-spatial-randomness",
+    "title": "Point Processes",
+    "section": "Complete Spatial Randomness",
+    "text": "Complete Spatial Randomness\n\nCSR\n\nStandard of Reference\nUniform: each location has equal probability\nIndependent: location of points independent\nHomogeneous Planar Poisson Point Process\n\n\n\nPoisson Point Process\n\nIntensity\n\nnumber of points in region \\(A: N(A)\\)\nintensity: \\(\\lambda = N/|A|\\)\nimplies: \\(\\lambda |A|\\) points randomly scattered in a region with area \\(|A|\\)\ne.g., \\(10\\times 1\\) (points per \\(km^2\\))\n\n\n\nPoisson Distribution \\(N(A) \\sim Poi(\\lambda |A|)\\)",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#poisson-distribution",
+    "href": "week-14/point-processes.html#poisson-distribution",
+    "title": "Point Processes",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\n\nSingle Parameter Distribution: \\(\\lambda |A|\\)\n\nGenerally, \\(\\lambda\\) is the number of events in some well defined interval\n\nTime: phone calls to operator in one hour\nTime: accidents at an intersection per week\nSpace: trees in a quadrat\n\nLet \\(x\\) be a Poisson random variable\n\n\\(E[x] = V[x]= \\lambda |A|\\)\n\n\n\n\nPoisson Distribution \\[P(x) =  \\frac{e^{-\\lambda |A|} (\\lambda |A|)^x}{x!}\\]",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#spatial-example",
+    "href": "week-14/point-processes.html#spatial-example",
+    "title": "Point Processes",
+    "section": "Spatial Example",
+    "text": "Spatial Example\n\nCSR with \\(\\lambda = 5/km^2\\)\n\nRegion = Circle\n\narea = \\(|A| = \\pi r^2\\)\n\\(r=0.1\\ km\\) then area \\(\\approx 0.03 \\ km^2\\)\n\nProbability of Zero Points in Circle \\[\\begin{aligned}\n         P[N(A) = 0] &= &  e^{-\\lambda |A|} (\\lambda |A|)^x /x!\\\\\n                     &\\approx&e^{-5 \\times 0.03} (5 \\times 0.03)^0 /0!\\\\\n                     &\\approx&e^{-5 \\times 0.03} \\\\\n                     &\\approx&0.86\n       \\end{aligned}\\]",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#complete-spatial-randomness-csr",
+    "href": "week-14/point-processes.html#complete-spatial-randomness-csr",
+    "title": "Point Processes",
+    "section": "Complete Spatial Randomness (CSR)",
+    "text": "Complete Spatial Randomness (CSR)\n\nHomogeneous spatial Poisson point process\n\nThe number of events occurring within a finite region \\(A\\) is a random variable following a Poisson distribution with mean \\(\\lambda|A|\\), with \\(|A|\\) denoting area of \\(A\\).\nGiven the total number of events \\(N\\) occurring within an area \\(A\\), the locations of the \\(N\\) events represent an independent random sample of \\(N\\) locations where each location is equally likely to be chosen as an event.\n\n\n\n\nCriterion 2 is the general concept of CSR (uniform (random)) distribution in \\(A\\).\nCriterion 1 pertains to the intensity \\(\\lambda\\).",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#homogeneous-poisson-process",
+    "href": "week-14/point-processes.html#homogeneous-poisson-process",
+    "title": "Point Processes",
+    "section": "Homogeneous Poisson Process",
+    "text": "Homogeneous Poisson Process\n\nImplications\n\nThe number of events in nonoverlapping regions in \\(A\\) are statistically independent.\nFor any region \\(R \\subset A\\): \\[\\lim_{|R| \\rightarrow 0} \\frac{Pr[exactly\\ one\\ event\\ in\\ R]}{|R|}\n      = \\lambda &gt; 0\\]\n\\[\\lim_{|R| \\rightarrow 0} \\frac{Pr[more\\ than\\ one\\ event\\ in\\\n       R]}{|R|} = 0\\]\n\n\n:::",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#homogeneous-poisson-process-1",
+    "href": "week-14/point-processes.html#homogeneous-poisson-process-1",
+    "title": "Point Processes",
+    "section": "Homogeneous Poisson process",
+    "text": "Homogeneous Poisson process\n\nImplications\n\n\\(\\lambda\\) is the intensity of the spatial point pattern.\nFor a Poisson random variable, \\(Y\\): \\[E[Y] = \\lambda = V[Y]\\]\nProvides the motivation for some quadrat tests of CSR hypothesis.\n\nIf \\(Y_R\\) is the count in quadrat \\(R\\)\nIf \\(\\widehat{E[Y]}&lt; \\widehat{V[Y]}\\): overdispersion = spatial clustering\nIf \\(\\widehat{E[Y]}&gt; \\widehat{V[Y]}\\): underdispersion = spatial uniformity",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#poisson-distribution-lambda20",
+    "href": "week-14/point-processes.html#poisson-distribution-lambda20",
+    "title": "Point Processes",
+    "section": "Poisson Distribution \\(\\lambda=20\\)",
+    "text": "Poisson Distribution \\(\\lambda=20\\)\n\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\nnp.random.seed(12345)\nxy = np.random.rand(20,2)\ndf = pd.DataFrame(data=xy, columns=['x','y'])\nsns.scatterplot(x='x', y='y', data=df);\ndf.shape\n\n\n\n\n\n\n\n\nThe example we just did is known as \\(n-conditioning\\) where we will always get \\(n\\) points for the CSR process.\nA slightly different approach to generating a random point process is to use \\(\\lambda-conditioning\\)\n\nfrom scipy.stats import poisson\nlam=20\nn = poisson.rvs(lam, 1)\nxy = np.random.rand(n,2)\ndf = pd.DataFrame(data=xy, columns=['x','y'])\nsns.scatterplot(x='x', y='y', data=df);\ndf.shape\n\n\n\n\n\n\n\n\nThe difference is the number of points in the pattern will always be \\(n\\) with \\(n-conditioning\\) but may not be \\(n\\) with \\(\\lambda-conditioning\\). The latter allows the intensity to be drawn from a Poisson distribution, then that becomes the parameter for the draw of the point pattern.",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#limitations-of-csr",
+    "href": "week-14/point-processes.html#limitations-of-csr",
+    "title": "Point Processes",
+    "section": "Limitations of CSR",
+    "text": "Limitations of CSR\n\nStationary Poisson Process\n\nhomogeneous\ntranslation invaratiant\n\n\n\nRare in practice - very few actual processes are CSR\n\n\nStrawman\n\npurely a benchmark\nnull hypothesis",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#inhomogeneous-poisson-process-ipp",
+    "href": "week-14/point-processes.html#inhomogeneous-poisson-process-ipp",
+    "title": "Point Processes",
+    "section": "Inhomogeneous Poisson Process (IPP)",
+    "text": "Inhomogeneous Poisson Process (IPP)\n\nCriteria\n\nThe number of events occurring within a finite region \\(A\\) is a random variable following a Poisson Distribution with mean \\(\\int_{A}\\lambda(s) ds\\).\nGiven the total number of events \\(N\\) occurring within \\(A\\), the \\(N\\) events represent an independent sample of \\(N\\) locations, with the probability of sampling a particular point \\(s\\) proportional to \\(\\lambda(s)\\).\n\n\n\nSpatially Variable Intensity \\(\\lambda(s)\\)\n\nUseful for constant risk hypothesis\nUnderlying population at risk is spatially clustered\nWant to control for that since with individual constant risk apparent clusters would be generated.\nCompare pattern against constant risk, not CSR.",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#inhomogeneous-poisson-process",
+    "href": "week-14/point-processes.html#inhomogeneous-poisson-process",
+    "title": "Point Processes",
+    "section": "Inhomogeneous Poisson Process",
+    "text": "Inhomogeneous Poisson Process\n\nImplications\n\nApparent clusters can occur solely due to heterogeneities in the intensity function \\(\\lambda(s)\\).\nIndividual event locations still remain independent of one another.\nProcess is not stationary due to intensity heterogeneity\n\n\n\nHPP vs. IPP HPP is a special case of IPP with a constant intensity",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#csr-vs.-constant-risk-hypotheses",
+    "href": "week-14/point-processes.html#csr-vs.-constant-risk-hypotheses",
+    "title": "Point Processes",
+    "section": "CSR vs. Constant Risk Hypotheses",
+    "text": "CSR vs. Constant Risk Hypotheses\n\nCSR\n\nIntensity is spatially constant\nPopulation at risk assumed spatially uniform\nUseful null hypothesis if these conditions are met\n\n\n\nConstant Risk Hypothesis\n\nPopulation density variable\nIndividual risk constant\nExpected number of events should vary with population density\nClusters due to deviation from CSR\nClusters due to deviation from CSR and Constant Risk",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#contagion-process-of-size-20-with-10-parents-and-2-children",
+    "href": "week-14/point-processes.html#contagion-process-of-size-20-with-10-parents-and-2-children",
+    "title": "Point Processes",
+    "section": "Contagion process of size 20 with 10 parents and 2 children",
+    "text": "Contagion process of size 20 with 10 parents and 2 children\n\nimport pointpats as pp\nnp.random.seed(12345)\nw = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])\ndraw = pp.PoissonClusterPointProcess(w, 20, 10, 0.05, 1, asPP=True, conditioning=False)\ndraw.realizations[0].plot(window=True, title='Contagion Point Process (10 parents)')",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#contagion-process-of-size-20-with-2-parents-and-10-children",
+    "href": "week-14/point-processes.html#contagion-process-of-size-20-with-2-parents-and-10-children",
+    "title": "Point Processes",
+    "section": "Contagion process of size 20 with 2 parents and 10 children",
+    "text": "Contagion process of size 20 with 2 parents and 10 children\n\nimport pointpats as pp\nnp.random.seed(12345)\nw = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])\ndraw = pp.PoissonClusterPointProcess(w, 20, 2, 0.05, 1, asPP=True, conditioning=False)\ndraw.realizations[0].plot(window=True, title='Contagion Point Process (2 parents)')",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#inhomogenous-poisson-process",
+    "href": "week-14/point-processes.html#inhomogenous-poisson-process",
+    "title": "Point Processes",
+    "section": "Inhomogenous Poisson Process",
+    "text": "Inhomogenous Poisson Process\n\nIntensity varies with a covariate\n\ntrend surface\n\\(\\lambda(s) = exp(\\alpha + \\beta s)\\)\n\n\n\nIntensity varies with distance to a focus\n\n\\(\\lambda(s) = \\lambda 0(s). f( || s-s_0||, \\theta)\\)",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#simulating-an-inhomogeneous-poisson-point-process",
+    "href": "week-14/point-processes.html#simulating-an-inhomogeneous-poisson-point-process",
+    "title": "Point Processes",
+    "section": "Simulating An Inhomogeneous Poisson Point Process",
+    "text": "Simulating An Inhomogeneous Poisson Point Process\nIntensity function:\n\\(\\lambda(s) = 100 e^{-(x^2 + y^2) / \\sigma}\\)\n\\(\\sigma\\) is a scale parameter here, equal to 0.5\n\n\nCode\nimport numpy as np;  # NumPy package for arrays, random number generation, etc\nimport matplotlib.pyplot as plt  # For plotting\nfrom scipy.optimize import minimize  # For optimizing\nfrom scipy import integrate  # For integrating\n\nplt.close('all');  # close all figures\n\n# Simulation window parameters\nxMin = 0;\nxMax = 1;\nyMin = 0;\nyMax = 1;\nxDelta = xMax - xMin;\nyDelta = yMax - yMin;  # rectangle dimensions\nareaTotal = xDelta * yDelta;\n\nnumbSim = 10 ** 3;  # number of simulations\ns = 0.5;  # scale parameter\n# Point process parameters\ndef fun_lambda(x, y):\n    return 100 * np.exp(-(x ** 2 + y ** 2) / s ** 2);  # intensity function\n#fun_lambda = lambda x,y: 100 * np.exp(-(x ** 2 + y ** 2) / s ** 2);\n\n###START -- find maximum lambda -- START ###\n# For an intensity function lambda, given by function fun_lambda,\n# finds the maximum of lambda in a rectangular region given by\n# [xMin,xMax,yMin,yMax].\ndef fun_Neg(x):\n    return -fun_lambda(x[0], x[1]);  # negative of lambda\n#fun_Neg = lambda x: -fun_lambda(x[0], x[1]);  # negative of lambda\n\nxy0 = [(xMin + xMax) / 2, (yMin + yMax) / 2];  # initial value(ie centre)\n# Find largest lambda value\nresultsOpt = minimize(fun_Neg, xy0, bounds=((xMin, xMax), (yMin, yMax)));\nlambdaNegMin = resultsOpt.fun;  # retrieve minimum value found by minimize\nlambdaMax = -lambdaNegMin;\n\n\n###END -- find maximum lambda -- END ###\n\n# define thinning probability function\ndef fun_p(x, y):\n    return fun_lambda(x, y) / lambdaMax;\n#fun_p = lambda x, y: fun_lambda(x, y) / lambdaMax;\n\n# for collecting statistics -- set numbSim=1 for one simulation\nnumbPointsRetained = np.zeros(numbSim);  # vector to record number of points\nfor ii in range(numbSim):\n    # Simulate a Poisson point process\n    numbPoints = np.random.poisson(areaTotal * lambdaMax);  # Poisson number of points\n    xx = np.random.uniform(0, xDelta, ((numbPoints, 1))) + xMin;  # x coordinates of Poisson points\n    yy = np.random.uniform(0, yDelta, ((numbPoints, 1))) + yMin;  # y coordinates of Poisson points\n\n    # calculate spatially-dependent thinning probabilities\n    p = fun_p(xx, yy);\n\n    # Generate Bernoulli variables (ie coin flips) for thinning\n    booleRetained = np.random.uniform(0, 1, ((numbPoints, 1))) &lt; p;  # points to be retained\n\n    # x/y locations of retained points\n    xxRetained = xx[booleRetained];\n    yyRetained = yy[booleRetained];\n    numbPointsRetained[ii] = xxRetained.size;\n\n# Plotting\nplt.scatter(xxRetained, yyRetained, edgecolor='b', facecolor='none', alpha=0.5);\nplt.xlabel('x');\nplt.ylabel('y');\nplt.xlim([xMin, xMax]);\nplt.ylim([xMin, xMax]);\n\n\n\n\n\n\n\n\n\nsource\nThat pattern comes from a spatially-explicit thinning of a CSR pattern:\n\n\nCode\n# Plotting\nplt.scatter(xx, yy, edgecolor='b', facecolor='none', alpha=0.5);\nplt.xlabel('x');\nplt.ylabel('y');",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#regular-processes",
+    "href": "week-14/point-processes.html#regular-processes",
+    "title": "Point Processes",
+    "section": "Regular Processes",
+    "text": "Regular Processes\n\nLess grouped than CSR\n\nfewer high densities\ndispersed\nrepulsion, competition\n\n\n\nUnderdispersion\n\nvariance &lt; mean\nless variation in densities than CSR",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#inhibition-process",
+    "href": "week-14/point-processes.html#inhibition-process",
+    "title": "Point Processes",
+    "section": "Inhibition Process",
+    "text": "Inhibition Process\n\nMinimum Permissible Distance\n\nno two points closer than \\(\\delta\\)\npacking intensity \\(\\tau = \\lambda \\pi \\delta^2 / 4\\)\n\n\n\nMatern Process\n\nthinned Poisson process using \\(\\delta\\)\nsequential inhibition process, generate points conditional on previous points and distance (denser than the thinned approach)",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#matern-thinning",
+    "href": "week-14/point-processes.html#matern-thinning",
+    "title": "Point Processes",
+    "section": "Matern (Thinning)",
+    "text": "Matern (Thinning)\n\nnp.random.seed(12345)\ndelta = 0.1\nn = 20\nxy = np.random.random((n,2))\nxy\nfrom scipy.spatial import distance_matrix\n\nd = distance_matrix(xy, xy) # 20 x 20 distance matrix\nd[0] # first row\n\narray([0.        , 0.75403388, 0.4570564 , 0.33860475, 0.38256491,\n       0.67009276, 0.94484483, 0.716711  , 0.56856568, 0.40881349,\n       0.49326812, 0.46210886, 0.64101492, 0.36620498, 0.20105384,\n       1.02432357, 0.29284635, 0.4855703 , 0.42540863, 0.41333518])\n\n\nDetermine which observations to thin\n\nijs = np.where(d&lt;delta)\ni,j = ijs\npairs = list(zip(i[i!=j], j[i!=j]))\nprint(\"The pairs within delta of one another:\")\nprint(pairs)\ndrop = []\n\nfor left, right in pairs:\n    if left in drop or right in drop:\n        continue\n    else:\n        drop.append(left)\n        \nprint(\"Observations to drop:\")\nprint(drop)\n\nThe pairs within delta of one another:\n[(3, 9), (3, 13), (9, 3), (9, 13), (9, 19), (13, 3), (13, 9), (19, 9)]\nObservations to drop:\n[3, 9]\n\n\n\nimport pandas as pd\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\ndf['thin'] = False\ndf.iloc[drop, df.columns.get_loc('thin')] = True\ndf.head()\n\n\n\n\n\n\n\n\n\nx\ny\nthin\n\n\n\n\n0\n0.929616\n0.316376\nFalse\n\n\n1\n0.183919\n0.204560\nFalse\n\n\n2\n0.567725\n0.595545\nFalse\n\n\n3\n0.964515\n0.653177\nTrue\n\n\n4\n0.748907\n0.653570\nFalse\n\n\n\n\n\n\n\n\n\nimport seaborn as sns\nsns.scatterplot(x='x', y='y', hue='thin', data=df);",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#matern-sequential",
+    "href": "week-14/point-processes.html#matern-sequential",
+    "title": "Point Processes",
+    "section": "Matern (Sequential)",
+    "text": "Matern (Sequential)\n\ndelta = 0.1\nN = 20\nn = 1\nxy = np.zeros((N,2))\nxy[0,:] = np.random.rand(1,2)\nwhile n &lt; N:\n    candidate = np.random.rand(1,2)\n    d = distance_matrix(xy[:n,:], candidate)\n    if d.min() &gt; delta:\n        xy[n,:] = candidate\n        n += 1\n\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\nsns.scatterplot(x='x', y='y', data=df);",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
+    ]
+  },
+  {
+    "objectID": "week-14/point-processes.html#csr-n20",
+    "href": "week-14/point-processes.html#csr-n20",
+    "title": "Point Processes",
+    "section": "CSR n=20",
+    "text": "CSR n=20\n\ndelta = 0.1\nxy = np.random.rand(20,2)\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\nsns.scatterplot(x='x', y='y', data=df);",
+    "crumbs": [
+      "Week 14 4/23 4/25",
+      "Point Processes"
     ]
   },
   {
@@ -1963,7 +2337,7 @@
     "href": "index.html#schedule-planned",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\nQuiz 3\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nResearch: Intersectional Urban Dynamics\nRey 2023\n\n\n\n\nFeb-29\nPySAL\nGDS 3\nQuiz 5\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\n\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\nExercise 2\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-18\nNearest Neighbor Statistics\nGDS 8\n\n\n\n14\nApr-23\nDistance Based Statistics\nGDS 8\nQuiz 12\n\n\n\nApr-25\nGeostatistical Data\nDS 6.1-6.5\n\n\n\n15\nApr-30\nSpatial Interpolation\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nKriging\nDS 6.7\nExercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)"
+    "text": "Schedule (Planned)\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nJan-18\nCourse Introduction\n\n\n\n\n2\nJan-23\nComputational Environment I\n\n\n\n\n\nJan-25\nComputational Environment II\n\n\n\n\n3\nJan-30\nPython: Introduction\nGDA 1 GDS 2\nQuiz 1\n\n\n\nFeb-01\nPython: Programming Concepts\nGDA 2\n\n\n\n4\nFeb-06\nPython: Scripting\nGDA 2\nQuiz 2\n\n\n\nFeb-08\nPython: Functions\nGDA 2\n\n\n\n5\nFeb-13\nExericse 1 Collaboration\n\nExercise 1\n\n\n\nFeb-15\nPython: Data Analysis/Visualization\nGDA 3,4\nQuiz 3\n\n\n6\nFeb-20\nGeopandas\nGDA 5\nQuiz 4\n\n\n\nFeb-22\nGeoprocessing\nGDA 6\n\n\n\n7\nFeb-27\nResearch: Intersectional Urban Dynamics\nRey 2023\n\n\n\n\nFeb-29\nPySAL\nGDS 3\nQuiz 5\n\n\n8\nMar-05\nGeoVisualization\nGDS 5\nQuiz 6\n\n\n\nMar-07\nSpatial Weights\nGDS 4\n\n\n\n9\nMar-12\nSpatial Dependence\nGDS 6\nQuiz 7\n\n\n\nMar-14\nGlobal Autocorrelation\nGDS 6\nExercise 2\n\n\n10\nMar-19\nGlobal Autocorrelation Tests\nGDS 6\nQuiz 8\n\n\n\nMar-21\nLocal Autocorrelation\nGDS 7\n\n\n\n11\nMar-26\nLocal Autocorrelation Tests\nGDS 7\nQuiz 9\n\n\n\nMar-28\nPoint Pattern Data\nGDS 8\nExercise 3\n\n\n\nApr-02\nSpring Break\n\n\n\n\n\nApr-04\nSpring Break\n\n\n\n\n12\nApr-09\nCentrography\nGDS 8\nQuiz 10\n\n\n\nApr-11\nPoint Processes\nGDS 8\n\n\n\n13\nApr-16\nAAG (No Class)\nGDS 8\n\n\n\n\nApr-18\nExercise 3\nGDS 8\n\n\n\n14\nApr-23\nQuadrat Statistics\nGDS 8\nQuiz 11\n\n\n\nApr-25\nDistance Based Statistics\nDS 6.1-6.5\nQuiz 12\n\n\n15\nApr-30\nGeostatistical Data\nDS 6.5\nQuiz 13\n\n\n\nMay-02\nSpatial Interpolation\nDS 6.7\nQuiz 14, Exercise 4\n\n\n16\nMay-07\nFinal Exam (1-3pm)"
   },
   {
     "objectID": "index.html#grading",
