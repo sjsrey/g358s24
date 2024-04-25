@@ -779,7 +779,7 @@ Figure&nbsp;1: Invariance
 </section>
 <section id="poisson-distribution-lambda20" class="level2">
 <h2 class="anchored" data-anchor-id="poisson-distribution-lambda20">Poisson Distribution <span class="math inline">\(\lambda=20\)</span></h2>
-<div id="1c9e58a7" class="cell" data-execution_count="2">
+<div id="110bf32d" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -798,7 +798,7 @@ Figure&nbsp;1: Invariance
 </div>
 <p>The example we just did is known as <span class="math inline">\(n-conditioning\)</span> where we will always get <span class="math inline">\(n\)</span> points for the CSR process.</p>
 <p>A slightly different approach to generating a random point process is to use <span class="math inline">\(\lambda-conditioning\)</span></p>
-<div id="99915d30" class="cell" data-execution_count="3">
+<div id="b925820b" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> poisson</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>lam<span class="op">=</span><span class="dv">20</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> poisson.rvs(lam, <span class="dv">1</span>)</span>
@@ -902,7 +902,7 @@ Figure&nbsp;1: Invariance
 <p>Second, n offspring events for each parent event are simulated within a circle of radius r centered on the parent. Offspring events are independently and identically distributed.</p>
 <section id="contagion-process-of-size-20-with-10-parents-and-2-children" class="level2">
 <h2 class="anchored" data-anchor-id="contagion-process-of-size-20-with-10-parents-and-2-children">Contagion process of size 20 with 10 parents and 2 children</h2>
-<div id="78598cca" class="cell" data-execution_count="4">
+<div id="f0c431d8" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pointpats <span class="im">as</span> pp</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">12345</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> pp.Window([(<span class="dv">0</span>,<span class="dv">0</span>), (<span class="dv">0</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">0</span>), (<span class="dv">0</span>,<span class="dv">0</span>)])</span>
@@ -919,7 +919,7 @@ Figure&nbsp;1: Invariance
 </section>
 <section id="contagion-process-of-size-20-with-2-parents-and-10-children" class="level2">
 <h2 class="anchored" data-anchor-id="contagion-process-of-size-20-with-2-parents-and-10-children">Contagion process of size 20 with 2 parents and 10 children</h2>
-<div id="0ba2dd82" class="cell" data-execution_count="5">
+<div id="964109af" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pointpats <span class="im">as</span> pp</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">12345</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> pp.Window([(<span class="dv">0</span>,<span class="dv">0</span>), (<span class="dv">0</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">0</span>), (<span class="dv">0</span>,<span class="dv">0</span>)])</span>
@@ -955,7 +955,7 @@ Figure&nbsp;1: Invariance
 <p>Intensity function:</p>
 <p><span class="math inline">\(\lambda(s) = 100 e^{-(x^2 + y^2) / \sigma}\)</span></p>
 <p><span class="math inline">\(\sigma\)</span> is a scale parameter here, equal to 0.5</p>
-<div id="fcab1098" class="cell" data-execution_count="6">
+<div id="f5108fa1" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np<span class="op">;</span>  <span class="co"># NumPy package for arrays, random number generation, etc</span></span>
@@ -1039,7 +1039,7 @@ Figure&nbsp;1: Invariance
 </div>
 <p><a href="https://hpaulkeeler.com/simulating-an-inhomogeneous-poisson-point-process/">source</a></p>
 <p>That pattern comes from a spatially-explicit thinning of a CSR pattern:</p>
-<div id="670f3c02" class="cell" data-execution_count="7">
+<div id="eef223a9" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting</span></span>
@@ -1096,7 +1096,7 @@ Figure&nbsp;1: Invariance
 </section>
 <section id="matern-thinning" class="level2">
 <h2 class="anchored" data-anchor-id="matern-thinning">Matern (Thinning)</h2>
-<div id="3b90190c" class="cell" data-execution_count="8">
+<div id="5b707ad3" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">12345</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>delta <span class="op">=</span> <span class="fl">0.1</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">20</span></span>
@@ -1114,7 +1114,7 @@ Figure&nbsp;1: Invariance
 </div>
 </div>
 <p>Determine which observations to thin</p>
-<div id="22a5e7e3" class="cell" data-execution_count="9">
+<div id="ad5d5dd7" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ijs <span class="op">=</span> np.where(d<span class="op">&lt;</span>delta)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>i,j <span class="op">=</span> ijs</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>pairs <span class="op">=</span> <span class="bu">list</span>(<span class="bu">zip</span>(i[i<span class="op">!=</span>j], j[i<span class="op">!=</span>j]))</span>
@@ -1137,7 +1137,7 @@ Observations to drop:
 [3, 9]</code></pre>
 </div>
 </div>
-<div id="8875036a" class="cell" data-execution_count="10">
+<div id="e050a7cd" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data<span class="op">=</span>xy, columns<span class="op">=</span>[<span class="st">'x'</span>, <span class="st">'y'</span>])</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'thin'</span>] <span class="op">=</span> <span class="va">False</span></span>
@@ -1195,7 +1195,7 @@ Observations to drop:
 </div>
 </div>
 </div>
-<div id="d40d697f" class="cell" data-execution_count="11">
+<div id="aedffce0" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span><span class="st">'x'</span>, y<span class="op">=</span><span class="st">'y'</span>, hue<span class="op">=</span><span class="st">'thin'</span>, data<span class="op">=</span>df)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
@@ -1209,7 +1209,7 @@ Observations to drop:
 </section>
 <section id="matern-sequential" class="level2">
 <h2 class="anchored" data-anchor-id="matern-sequential">Matern (Sequential)</h2>
-<div id="67e683ef" class="cell" data-execution_count="12">
+<div id="e58ac32c" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>delta <span class="op">=</span> <span class="fl">0.1</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">20</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">1</span></span>
@@ -1235,7 +1235,7 @@ Observations to drop:
 </section>
 <section id="csr-n20" class="level2">
 <h2 class="anchored" data-anchor-id="csr-n20">CSR n=20</h2>
-<div id="f3629266" class="cell" data-execution_count="13">
+<div id="347efc79" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>delta <span class="op">=</span> <span class="fl">0.1</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>xy <span class="op">=</span> np.random.rand(<span class="dv">20</span>,<span class="dv">2</span>)</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data<span class="op">=</span>xy, columns<span class="op">=</span>[<span class="st">'x'</span>, <span class="st">'y'</span>])</span>
