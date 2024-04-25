@@ -127,13 +127,14 @@ completed the readings.
 |      | Apr-04 | Spring Break                        |                   |            |
 | 12   | Apr-09 | Centrography                        | GDS 8             | Quiz 10    |
 |      | Apr-11 | Point Processes                     | GDS 8             |            |
-| 13   | Apr-16 | Quadrat Statistics                  | GDS 8             | Quiz 11    |
-|      | Apr-18 | Nearest Neighbor Statistics         | GDS 8             |            |
-| 14   | Apr-23 | Distance Based Statistics           | GDS 8             | Quiz 12    |
-|      | Apr-25 | Geostatistical Data                 | [DS 6.1-6.5][ds6] |            |
-| 15   | Apr-30 | Spatial Interpolation               | [DS 6.5][ds65]    | Quiz 13    |
-|      | May-02 | Kriging                             | [DS 6.7][ds67]    | Exercise 4 |
-| 16   | May-07 | *Final Exam (1-3pm)*                |                   |            |
+| 13   | Apr-16 | AAG (No Class)                          | GDS 8               |            |
+|      | Apr-18 | Exercise 3                              | GDS 8               |            |
+| 14   | Apr-23 | Quadrat Statistics                      | GDS 8               | Quiz 11    |
+|      | Apr-25 | Distance Based Statistics               | [DS 6.1-6.5][ds6]   |            |
+| 15   | Apr-30 | Distance Based Statistics                     | [DS 6.5][ds65]      |            |
+|      | May-02 | Wrap up/Review                          |                     |            |
+| 16   | May-07 | *Final Exam (1-3pm)*                    |                     |            |
+
 
 
 			  				  
