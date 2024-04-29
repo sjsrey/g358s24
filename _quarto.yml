@@ -110,3 +110,6 @@ website:
         contents:
           - week-14/quadrat.ipynb
           - week-14/point-processes.qmd
+      - section: "Week 15 4/30 5/02"
+        contents:
+          - week-15/distancebased.ipynb
