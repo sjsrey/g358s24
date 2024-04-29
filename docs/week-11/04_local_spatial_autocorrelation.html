@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Spatial Data Analysis - Local Spatial Autocorrelation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../week-11/index.html" rel="next">
+<link href="../week-10/index.html" rel="prev">
+<link href="../assets/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../week-11/04_local_spatial_autocorrelation.html">Week 11 3/26, 3/28</a></li><li class="breadcrumb-item"><a href="../week-11/04_local_spatial_autocorrelation.html">Local Spatial Autocorrelation</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../assets/logo.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sjsrey/g358s24" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <div id="quarto-search" class="quarto-navigation-tool px-1" title="Search"></div>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Syllabus</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Geography 385 Spatial Data Analysis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Week 1 1/18</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-01/01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Introduction</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Week 2 1/23, 1/25</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-02/files-dirs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Unix File System with Jupyter Lab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Week 3 1/30, 2/01</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-03/python_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Python</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-03/python_concepts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Programming Concepts</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Week 4 2/06, 2/08</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-04/scripts_and_functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-04/import_demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Importing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-04/distances.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">distances.py</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Week 5 2/13, 2/15</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-05/pandas_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Pandas</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text">Week 6 2/20, 2/22</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-06/geopandas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GeoPandas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-06/geoprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Geoprocessing</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+ <span class="menu-text">Week 7 2/27, 2/29</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-07/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spatial Research and PySAL</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+ <span class="menu-text">Week 8 3/05, 3/07</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-08/01_geovisualization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Geovisualization with PySAL</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-08/02_spatial_weights.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spatial Weights</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
+ <span class="menu-text">Week 9 3/12, 3/14</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-09/spatial_dependence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spatial Autocorrelation Concepts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-09/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise 2 collaboration</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">
+ <span class="menu-text">Week 10 3/19, 3/21</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-10/03_spatial_autocorrelation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spatial Autocorrelation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-10/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Autocorrelation Tests</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="true">
+ <span class="menu-text">Week 11 3/26, 3/28</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-11/04_local_spatial_autocorrelation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Local Spatial Autocorrelation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-11/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise Two</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">
+ <span class="menu-text">Week 12 4/09, 4/11</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-12/point-patterns.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Point Pattern Basics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-12/centrography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Centrography for Point Patterns</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">
+ <span class="menu-text">Week 13 4/16 4/18</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-13/aag.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AAG (no class)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-13/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exericse 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">
+ <span class="menu-text">Week 14 4/23 4/25</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-14/quadrat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quadrat Statistics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../week-14/point-processes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Point Processes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#exploratory-analysis-of-spatial-data-spatial-autocorrelation" id="toc-exploratory-analysis-of-spatial-data-spatial-autocorrelation" class="nav-link active" data-scroll-target="#exploratory-analysis-of-spatial-data-spatial-autocorrelation">Exploratory Analysis of Spatial Data: Spatial Autocorrelation</a>
+  <ul class="collapse">
+  <li><a href="#imports" id="toc-imports" class="nav-link" data-scroll-target="#imports">Imports</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
+  <ul class="collapse">
+  <li><a href="#census-polygons" id="toc-census-polygons" class="nav-link" data-scroll-target="#census-polygons">Census Polygons</a></li>
+  </ul></li>
+  <li><a href="#spatial-autocorrelation" id="toc-spatial-autocorrelation" class="nav-link" data-scroll-target="#spatial-autocorrelation">Spatial Autocorrelation</a>
+  <ul class="collapse">
+  <li><a href="#spatial-similarity" id="toc-spatial-similarity" class="nav-link" data-scroll-target="#spatial-similarity">Spatial Similarity</a></li>
+  <li><a href="#attribute-similarity" id="toc-attribute-similarity" class="nav-link" data-scroll-target="#attribute-similarity">Attribute Similarity</a></li>
+  </ul></li>
+  <li><a href="#global-spatial-autocorrelation" id="toc-global-spatial-autocorrelation" class="nav-link" data-scroll-target="#global-spatial-autocorrelation">Global Spatial Autocorrelation</a></li>
+  <li><a href="#join-counts" id="toc-join-counts" class="nav-link" data-scroll-target="#join-counts">Join counts</a>
+  <ul class="collapse">
+  <li><a href="#polygon-data" id="toc-polygon-data" class="nav-link" data-scroll-target="#polygon-data">Polygon Data</a></li>
+  <li><a href="#continuous-case" id="toc-continuous-case" class="nav-link" data-scroll-target="#continuous-case">Continuous Case</a></li>
+  </ul></li>
+  <li><a href="#local-autocorrelation-hot-spots-cold-spots-and-spatial-outliers" id="toc-local-autocorrelation-hot-spots-cold-spots-and-spatial-outliers" class="nav-link" data-scroll-target="#local-autocorrelation-hot-spots-cold-spots-and-spatial-outliers">Local Autocorrelation: Hot Spots, Cold Spots, and Spatial Outliers</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/sjsrey/g358s24/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Local Spatial Autocorrelation</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="exploratory-analysis-of-spatial-data-spatial-autocorrelation" class="level1">
+<h1>Exploratory Analysis of Spatial Data: Spatial Autocorrelation</h1>
+<p>In this notebook we introduce methods of <em>exploratory spatial data analysis</em> that are intended to complement geovizualization through formal univariate and multivariate statistical tests for spatial clustering.</p>
+<section id="imports" class="level2">
+<h2 class="anchored" data-anchor-id="imports">Imports</h2>
+<div class="cell" data-execution_count="100">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> esda</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> libpysal <span class="im">as</span> lps</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> contextily <span class="im">as</span> cx</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="101">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sns.set_context(<span class="st">'notebook'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>warnings.simplefilter(<span class="st">"ignore"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>For this exercise, we’ll use two datasets:</p>
+<ol type="1">
+<li>a set of polygons (census tracts) for the city of San Diego from the US Census American Community Survey 5-year estimates.</li>
+</ol>
+<section id="census-polygons" class="level3">
+<h3 class="anchored" data-anchor-id="census-polygons">Census Polygons</h3>
+<div class="cell" data-execution_count="102">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>scag <span class="op">=</span> gpd.read_parquet(<span class="st">"~/data/scag_region.parquet"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="103">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>san_diego <span class="op">=</span> scag[scag.geoid.<span class="bu">str</span>[:<span class="dv">5</span>]<span class="op">==</span><span class="st">'06073'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="104">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>san_diego.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'geopandas.geodataframe.GeoDataFrame'&gt;
+Index: 627 entries, 158 to 4567
+Columns: 194 entries, geoid to geometry
+dtypes: float64(191), geometry(1), int64(1), object(1)
+memory usage: 955.2+ KB</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="105">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>san_diego <span class="op">=</span> san_diego.dropna(subset<span class="op">=</span>[<span class="st">'median_home_value'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="106">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>san_diego <span class="op">=</span> san_diego.to_crs(epsg<span class="op">=</span><span class="dv">3857</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="107">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">10</span>))</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>san_diego.plot(<span class="st">'median_home_value'</span>, ax<span class="op">=</span>ax, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>cx.add_basemap(ax, crs<span class="op">=</span>san_diego.crs.to_string(), source<span class="op">=</span>cx.providers.CartoDB.Positron)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>ax.axis(<span class="st">'off'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="107">
+<pre><code>(-13099175.999157175, -12913655.059545828, 3827188.049586126, 3968975.95342782)</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-9-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="108">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>san_diego.median_home_value.hist()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="108">
+<pre><code>&lt;Axes: &gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-10-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="109">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">12</span>))</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>san_diego.dropna(subset<span class="op">=</span>[<span class="st">'median_home_value'</span>]).to_crs(epsg<span class="op">=</span><span class="dv">3857</span>).plot(<span class="st">'median_home_value'</span>, legend<span class="op">=</span><span class="va">True</span>, scheme<span class="op">=</span><span class="st">'quantiles'</span>, cmap<span class="op">=</span><span class="st">'GnBu'</span>, k<span class="op">=</span><span class="dv">5</span>, ax<span class="op">=</span>ax, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>cx.add_basemap(ax, crs<span class="op">=</span>san_diego.crs.to_string(), source<span class="op">=</span>cx.providers.CartoDB.Positron)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>ax.axis(<span class="st">'off'</span>)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Median Home Value (Quintiles)"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-11-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="spatial-autocorrelation" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-autocorrelation">Spatial Autocorrelation</h2>
+<p>Visual inspection of the map pattern for the prices allows us to search for spatial structure. If the spatial distribution of the prices was random, then we should not see any clustering of similar values on the map. However, our visual system is drawn to the darker clusters along the coast, and a concentration of the lighter hues (lower prices) in the north central and south east. In the point data, the trees are too dense to make any sense of the pattern</p>
+<p>Our brains are very powerful pattern recognition machines. However, sometimes they can be too powerful and lead us to detect false positives, or patterns where there are no statistical patterns. This is a particular concern when dealing with visualization of irregular polygons of differning sizes and shapes.</p>
+<p>The concept of <em>spatial autocorrelation</em> relates to the combination of two types of similarity: spatial similarity and attribute similarity. Although there are many different measures of spatial autocorrelation, they all combine these two types of simmilarity into a summary measure.</p>
+<p>Let’s use PySAL to generate these two types of similarity measures.</p>
+<section id="spatial-similarity" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-similarity">Spatial Similarity</h3>
+<p>We have already encountered spatial weights in a previous notebook. In spatial autocorrelation analysis, the spatial weights are used to formalize the notion of spatial similarity. As we have seen there are many ways to define spatial weights, here we will use queen contiguity:</p>
+<div class="cell" data-execution_count="110">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>wq <span class="op">=</span>  lps.weights.Queen.from_dataframe(san_diego)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>wq.transform <span class="op">=</span> <span class="st">'r'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="attribute-similarity" class="level3">
+<h3 class="anchored" data-anchor-id="attribute-similarity">Attribute Similarity</h3>
+<p>So the spatial weight between neighborhoods <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> indicates if the two are neighbors (i.e., geographically similar). What we also need is a measure of attribute similarity to pair up with this concept of spatial similarity. The <strong>spatial lag</strong> is a derived variable that accomplishes this for us. For neighborhood <span class="math inline">\(i\)</span> the spatial lag is defined as: <span class="math display">\[ylag_i = \sum_j w_{i,j} y_j\]</span></p>
+<div class="cell" data-execution_count="111">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> san_diego[<span class="st">'median_home_value'</span>]</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>ylag <span class="op">=</span> lps.weights.lag_spatial(wq, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="112">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">12</span>))</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>san_diego.assign(cl<span class="op">=</span>ylag).plot(column<span class="op">=</span><span class="st">'cl'</span>, scheme<span class="op">=</span><span class="st">'quantiles'</span>, <span class="op">\</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>        k<span class="op">=</span><span class="dv">5</span>, cmap<span class="op">=</span><span class="st">'GnBu'</span>, linewidth<span class="op">=</span><span class="fl">0.1</span>, ax<span class="op">=</span>ax, <span class="op">\</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>        edgecolor<span class="op">=</span><span class="st">'white'</span>, legend<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>cx.add_basemap(ax, crs<span class="op">=</span>san_diego.crs.to_string(), source<span class="op">=</span>cx.providers.CartoDB.Positron)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>ax.axis(<span class="st">'off'</span>)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Spatial Lag Median Home Val (Quintiles)"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The quintile map for the spatial lag tends to enhance the impression of value similarity in space. It is, in effect, a local smoother.</p>
+<div class="cell" data-execution_count="113">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>san_diego[<span class="st">'lag_median_pri'</span>] <span class="op">=</span> ylag</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>f,ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>,<span class="dv">2</span>,figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">4</span>))</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>san_diego.plot(column<span class="op">=</span><span class="st">'median_home_value'</span>, ax<span class="op">=</span>ax[<span class="dv">0</span>],</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>        scheme<span class="op">=</span><span class="st">"quantiles"</span>,  k<span class="op">=</span><span class="dv">5</span>, cmap<span class="op">=</span><span class="st">'GnBu'</span>)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="co">#ax[0].axis(san_diego.total_bounds[np.asarray([0,2,1,3])])</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">"Price"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>san_diego.plot(column<span class="op">=</span><span class="st">'lag_median_pri'</span>, ax<span class="op">=</span>ax[<span class="dv">1</span>],</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>        scheme<span class="op">=</span><span class="st">'quantiles'</span>, cmap<span class="op">=</span><span class="st">'GnBu'</span>, k<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>cx.add_basemap(ax[<span class="dv">0</span>], crs<span class="op">=</span>san_diego.crs.to_string(), source<span class="op">=</span>cx.providers.CartoDB.Positron)</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>cx.add_basemap(ax[<span class="dv">1</span>], crs<span class="op">=</span>san_diego.crs.to_string(), source<span class="op">=</span>cx.providers.CartoDB.Positron)</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">"Spatial Lag Price"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].axis(<span class="st">'off'</span>)</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].axis(<span class="st">'off'</span>)</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>However, we still have the challenge of visually associating the value of the prices in a neighborhod with the value of the spatial lag of values for the focal unit. The latter is a weighted average of home prices in the focal county’s neighborhood.</p>
+<p>To complement the geovisualization of these associations we can turn to formal statistical measures of spatial autocorrelation.</p>
+</section>
+</section>
+<section id="global-spatial-autocorrelation" class="level2">
+<h2 class="anchored" data-anchor-id="global-spatial-autocorrelation">Global Spatial Autocorrelation</h2>
+</section>
+<section id="join-counts" class="level2">
+<h2 class="anchored" data-anchor-id="join-counts">Join counts</h2>
+<p>One way to formalize a test for spatial autocorrelation in a binary attribute is to consider the so-called <em>joins</em>. A join exists for each neighbor pair of observations, and the joins are reflected in our binary spatial weights object <code>wq</code>.</p>
+<p>Each unit can take on one of two values “Black” or “White”, analogous to the layout of a chessboard</p>
+<div class="cell" data-execution_count="114">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>nrows, ncols <span class="op">=</span> <span class="dv">9</span>,<span class="dv">9</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>image <span class="op">=</span> np.zeros(nrows<span class="op">*</span>ncols)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Set every other cell to 1</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>image[::<span class="dv">2</span>] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Reshape things into a 9x9 grid.</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>image <span class="op">=</span> image.reshape((nrows, ncols))</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>plt.matshow(image, cmap<span class="op">=</span><span class="st">'Greys'</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>and so for a given pair of neighboring locations there are three different types of joins that can arise:</p>
+<ul>
+<li>Black Black (BB)</li>
+<li>White White (WW)</li>
+<li>Black White (or White Black) (BW)</li>
+</ul>
+<p>We can use the <code>esda</code> package from PySAL to carry out join count analysis. In the case of our point data, the join counts can help us determine whether different varieties of trees tend to grow together, spread randomly through space, or compete with one another for precious resources</p>
+<section id="polygon-data" class="level3">
+<h3 class="anchored" data-anchor-id="polygon-data">Polygon Data</h3>
+<p>With polygon data, we can conduct an analysis using a contiguity matrix. For our housing price data, we need to first discretize the variable we’re using; to keep things simple, we’ll binarize our price data using the median so that “high” values are tracts whose median home price is above the city’s median and “low” values are those below</p>
+<div class="cell" data-execution_count="115">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>y.median()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="115">
+<pre><code>405416.57303370786</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="116">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>san_diego.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="116">
+<pre><code>(627, 195)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="117">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>yb <span class="op">=</span> y <span class="op">&gt;</span> y.median()</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="bu">sum</span>(yb)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="117">
+<pre><code>313</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="118">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>yb <span class="op">=</span> y <span class="op">&gt;</span> y.median()</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> [<span class="st">"0 Low"</span>, <span class="st">"1 High"</span>]</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>yb <span class="op">=</span> [labels[i] <span class="cf">for</span> i <span class="kw">in</span> <span class="dv">1</span><span class="op">*</span>yb] </span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>san_diego[<span class="st">'yb'</span>] <span class="op">=</span> yb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="119">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">12</span>))</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>san_diego.plot(column<span class="op">=</span><span class="st">'yb'</span>, cmap<span class="op">=</span><span class="st">'binary'</span>, edgecolor<span class="op">=</span><span class="st">'grey'</span>, legend<span class="op">=</span><span class="va">True</span>, ax<span class="op">=</span>ax)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="119">
+<pre><code>&lt;Axes: &gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-21-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The spatial distribution of the binary variable immediately raises questions about the juxtaposition of the “black” and “white” areas.</p>
+<p>Given that we have 308 Black polygons on our map, what is the number of Black Black (BB) joins we could expect if the process were such that the Black polygons were randomly assigned on the map?</p>
+<div class="cell" data-execution_count="120">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>yb <span class="op">=</span> <span class="dv">1</span> <span class="op">*</span> (y <span class="op">&gt;</span> y.median()) <span class="co"># convert back to binary</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>wq <span class="op">=</span>  lps.weights.Queen.from_dataframe(san_diego)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>wq.transform <span class="op">=</span> <span class="st">'b'</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">12345</span>)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>jc <span class="op">=</span> esda.join_counts.Join_Counts(yb, wq)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The resulting object stores the observed counts for the different types of joins:</p>
+<div class="cell" data-execution_count="121">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>jc.bb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="121">
+<pre><code>754.0</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="122">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>jc.ww</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="122">
+<pre><code>745.0</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="123">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>jc.bw</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="123">
+<pre><code>475.0</code></pre>
+</div>
+</div>
+<p>Note that the three cases exhaust all possibilities:</p>
+<div class="cell" data-execution_count="124">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>jc.bb <span class="op">+</span> jc.ww <span class="op">+</span> jc.bw</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="124">
+<pre><code>1974.0</code></pre>
+</div>
+</div>
+<p>and</p>
+<div class="cell" data-execution_count="125">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>wq.s0 <span class="op">/</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="125">
+<pre><code>1974.0</code></pre>
+</div>
+</div>
+<p>which is the unique number of joins in the spatial weights object.</p>
+<p>Our object tells us we have observed 736 BB joins:</p>
+<div class="cell" data-execution_count="126">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>jc.bb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="126">
+<pre><code>754.0</code></pre>
+</div>
+</div>
+<p>The critical question for us, is whether this is a departure from what we would expect if the process generating the spatial distribution of the Black polygons were a completely random one? To answer this, PySAL uses random spatial permutations of the observed attribute values to generate a realization under the null of <em>complete spatial randomness</em> (CSR). This is repeated a large number of times (999 default) to construct a reference distribution to evaluate the statistical significance of our observed counts.</p>
+<p>The average number of BB joins from the synthetic realizations is:</p>
+<div class="cell" data-execution_count="127">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>jc.mean_bb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="127">
+<pre><code>490.03103103103103</code></pre>
+</div>
+</div>
+<p>which is less than our observed count. The question is whether our observed value is so different from the expectation that we would reject the null of CSR?</p>
+<div class="cell" data-execution_count="128">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sbn</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>sbn.kdeplot(jc.sim_bb, shade<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>plt.vlines(jc.bb, <span class="dv">0</span>, <span class="fl">0.005</span>, color<span class="op">=</span><span class="st">'r'</span>)</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>plt.vlines(jc.mean_bb, <span class="dv">0</span>,<span class="fl">0.005</span>)</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'BB Counts'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="128">
+<pre><code>Text(0.5, 0, 'BB Counts')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-30-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The density portrays the distribution of the BB counts, with the black vertical line indicating the mean BB count from the synthetic realizations and the red line the observed BB count for our prices. Clearly our observed value is extremely high. A pseudo p-value summarizes this:</p>
+<div class="cell" data-execution_count="129">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>jc.p_sim_bb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="129">
+<pre><code>0.001</code></pre>
+</div>
+</div>
+<p>Since this is below conventional significance levels, we would reject the null of complete spatial randomness in favor of spatial autocorrelation in market prices.</p>
+</section>
+<section id="continuous-case" class="level3">
+<h3 class="anchored" data-anchor-id="continuous-case">Continuous Case</h3>
+<p>The join count analysis is based on a binary attribute, which can cover many interesting empirical applications where one is interested in presence and absence type phenomena. In our case, we artificially created the binary variable, and in the process we throw away a lot of information in our originally continuous attribute. Turning back to the original variable, we can explore other tests for spatial autocorrelation for the continuous case.</p>
+<p>First, we transform our weights to be row-standardized, from the current binary state:</p>
+<div class="cell" data-execution_count="130">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>wq.transform <span class="op">=</span> <span class="st">'r'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="131">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> san_diego[<span class="st">'median_home_value'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Moran’s I is a test for global autocorrelation for a continuous attribute:</p>
+<div class="cell" data-execution_count="132">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">12345</span>)</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>mi <span class="op">=</span> esda.moran.Moran(y, wq)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>mi.I</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="132">
+<pre><code>0.660917168991019</code></pre>
+</div>
+</div>
+<p>Again, our value for the statistic needs to be interpreted against a reference distribution under the null of CSR. PySAL uses a similar approach as we saw in the join count analysis: random spatial permutations.</p>
+<div class="cell" data-execution_count="133">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> splot.esda <span class="im">import</span> plot_moran</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>plot_moran(mi, zstandard<span class="op">=</span><span class="va">True</span>, figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">4</span>))</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-35-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="134">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>mi.p_sim</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="134">
+<pre><code>0.001</code></pre>
+</div>
+</div>
+<p>On the left, we have the reference distribution versus the observed statistic; on the right, we have a plot of the focal value against its spatial lag, for which the Moran I statistic serves as the slope</p>
+<p>Here our observed value is again in the upper tail</p>
+<div class="cell" data-execution_count="135">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>mi.p_sim</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="135">
+<pre><code>0.001</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="local-autocorrelation-hot-spots-cold-spots-and-spatial-outliers" class="level2">
+<h2 class="anchored" data-anchor-id="local-autocorrelation-hot-spots-cold-spots-and-spatial-outliers">Local Autocorrelation: Hot Spots, Cold Spots, and Spatial Outliers</h2>
+<p>In addition to the Global autocorrelation statistics, PySAL has many local autocorrelation statistics. Let’s compute a local Moran statistic for the same data</p>
+<div class="cell" data-execution_count="139">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">12345</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="140">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>wq.transform <span class="op">=</span> <span class="st">'r'</span></span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>lag_price <span class="op">=</span> lps.weights.lag_spatial(wq, san_diego[<span class="st">'median_home_value'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="141">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>li <span class="op">=</span> esda.moran.Moran_Local(y, wq)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now, instead of a single <span class="math inline">\(I\)</span> statistic, we have an <em>array</em> of local <span class="math inline">\(I_i\)</span> statistics, stored in the <code>.Is</code> attribute, and p-values from the simulation are in <code>p_sim</code>.</p>
+<div class="cell" data-execution_count="142">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> splot.esda <span class="im">import</span> moran_scatterplot</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> moran_scatterplot(li)</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'Price'</span>)</span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Spatial Lag of Price'</span>)</span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-41-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>li.q</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="40">
+<pre><code>array([4, 1, 2, 3, 3, 3, 3, 4, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+       3, 2, 3, 2, 2, 1, 1, 2, 3, 3, 3, 3, 3, 2, 1, 3, 3, 3, 2, 1, 1, 1,
+       3, 1, 3, 3, 4, 3, 1, 1, 3, 3, 3, 1, 3, 3, 1, 3, 3, 3, 3, 3, 1, 2,
+       2, 1, 2, 4, 3, 3, 4, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 3, 3, 3, 1, 1,
+       3, 3, 2, 2, 2, 1, 4, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 3, 3, 2,
+       2, 4, 3, 3, 1, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 1, 3, 3, 1, 1, 1, 3,
+       1, 3, 3, 3, 1, 1, 3, 3, 3, 1, 1, 3, 3, 3, 3, 1, 3, 3, 1, 3, 3, 1,
+       1, 3, 3, 3, 3, 1, 1, 3, 3, 4, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1, 1,
+       1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 3, 3, 2, 3, 4, 4, 2, 3, 3, 3, 3, 3,
+       3, 3, 3, 3, 3, 1, 3, 3, 2, 1, 1, 2, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 3, 3, 3, 4, 1, 3, 3, 1, 2, 4, 3, 3, 3, 3, 3, 3, 1, 2, 3, 2,
+       2, 2, 3, 3, 3, 3, 3, 3, 1, 1, 1, 2, 4, 3, 3, 1, 3, 3, 3, 3, 3, 1,
+       3, 3, 3, 2, 1, 1, 1, 3, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 4,
+       1, 1, 1, 1, 3, 1, 3, 4, 4, 4, 3, 2, 1, 1, 2, 3, 3, 2, 3, 4, 3, 3,
+       3, 3, 3, 4, 3, 3, 4, 1, 3, 3, 3, 4, 1, 3, 3, 3, 3, 3, 4, 4, 3, 2,
+       3, 3, 1, 1, 4, 4, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 1, 1, 2, 3, 4,
+       1, 1, 3, 3, 1, 3, 3, 3, 2, 3, 3, 3, 4, 3, 1, 3, 3, 2, 1, 2, 3, 3,
+       4, 3, 3, 3, 3, 1, 1, 1, 3, 3, 3, 1, 1, 3, 3, 4, 1, 1, 1, 1, 2, 1,
+       1, 2, 3, 3, 3, 3, 4, 2, 1, 1, 1, 1, 1, 3, 3, 3, 1, 1, 2, 4, 1, 3,
+       3, 3, 2, 1, 2, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 4, 2, 1, 1, 3, 3, 1,
+       3, 3, 3, 3, 3, 2, 3, 2, 1, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 1, 2, 1,
+       1, 1, 1, 3, 3, 3, 3, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 3, 3, 1, 1,
+       1, 1, 3, 1, 3, 3, 2, 3, 1, 1, 3, 3, 3, 3, 4, 2, 1, 1, 1, 2, 3, 1,
+       3, 3, 1, 1, 3, 3, 1, 2, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 1, 1, 1,
+       3, 3, 1, 4, 1, 3, 1, 2, 1, 3, 1, 3, 3, 3, 3, 4, 3, 3, 4, 1, 4, 3,
+       3, 3, 3, 2, 3, 1, 1, 4, 1, 1, 1, 1, 3, 3, 1, 3, 3, 2, 2, 3, 2, 4,
+       1, 1, 1, 1, 3, 3, 4, 1, 3, 1, 2, 3, 1, 1, 1, 1, 2, 2, 3, 3, 3, 1,
+       3, 2, 1, 1, 3, 1, 1, 3, 3, 1, 3, 1, 1, 1, 3, 3, 3, 3, 1, 3, 1, 4,
+       4, 3, 3, 3, 3, 3, 1, 3, 4, 3, 3])</code></pre>
+</div>
+</div>
+<p>We can again test for local clustering using permutations, but here we use conditional random permutations (different distributions for each focal location)</p>
+<div class="cell" data-execution_count="143">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>(li.p_sim <span class="op">&lt;</span> <span class="fl">0.05</span>).<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="143">
+<pre><code>246</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="42">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> moran_scatterplot(li, p<span class="op">=</span><span class="fl">0.05</span>)</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'Price'</span>)</span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Spatial Lag of Price'</span>)</span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-44-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>We can distinguish the specific type of local spatial association reflected in the four quadrants of the Moran Scatterplot above: - High-High (upper right) - Low-Low (bottom left) - High-Low (lower right) - Low-High (upper left)</p>
+<p>Using <code>splot</code>, we can also plot these hotspots on the original geodataframe</p>
+<div class="cell" data-execution_count="43">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> splot.esda <span class="im">import</span> lisa_cluster</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>lisa_cluster(li, san_diego, p<span class="op">=</span><span class="fl">0.05</span>, figsize <span class="op">=</span> (<span class="dv">9</span>,<span class="dv">9</span>))</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-45-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="44">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> splot.esda <span class="im">import</span> plot_local_autocorrelation</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>plot_local_autocorrelation(li, san_diego, <span class="st">'median_home_value'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="44">
+<pre><code>(&lt;Figure size 1500x400 with 3 Axes&gt;,
+ array([&lt;Axes: title={'center': 'Moran Local Scatterplot'}, xlabel='Attribute', ylabel='Spatial Lag'&gt;,
+        &lt;Axes: &gt;, &lt;Axes: &gt;], dtype=object))</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-46-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="144">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>li.Is.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="144">
+<pre><code>(627,)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="145">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="bu">dir</span>(li)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="145">
+<pre><code>['EI',
+ 'EI_sim',
+ 'EIc',
+ 'Is',
+ 'VI',
+ 'VI_sim',
+ 'VIc',
+ '_Moran_Local__calc',
+ '_Moran_Local__moments',
+ '_Moran_Local__quads',
+ '__class__',
+ '__delattr__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ '__weakref__',
+ '_statistic',
+ 'by_col',
+ 'den',
+ 'geoda_quads',
+ 'n',
+ 'n_1',
+ 'p_sim',
+ 'p_z_sim',
+ 'permutations',
+ 'q',
+ 'quads',
+ 'rlisas',
+ 'seI_sim',
+ 'sim',
+ 'w',
+ 'y',
+ 'z',
+ 'z_sim']</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="146">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">12345</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="147">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>li <span class="op">=</span> esda.moran.Moran_Local(y, wq, keep_simulations<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="148">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>sig <span class="op">=</span> np.where(li.p_sim<span class="op">&lt;</span><span class="fl">0.05</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="149">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="bu">dir</span>(li)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="149">
+<pre><code>['EI',
+ 'EI_sim',
+ 'EIc',
+ 'Is',
+ 'VI',
+ 'VI_sim',
+ 'VIc',
+ '_Moran_Local__calc',
+ '_Moran_Local__moments',
+ '_Moran_Local__quads',
+ '__class__',
+ '__delattr__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ '__weakref__',
+ '_statistic',
+ 'by_col',
+ 'den',
+ 'geoda_quads',
+ 'n',
+ 'n_1',
+ 'p_sim',
+ 'p_z_sim',
+ 'permutations',
+ 'q',
+ 'quads',
+ 'rlisas',
+ 'seI_sim',
+ 'sim',
+ 'w',
+ 'y',
+ 'z',
+ 'z_sim']</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="150">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>li.rlisas.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="150">
+<pre><code>(627, 999)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="151">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>li.rlisas[sig[<span class="dv">0</span>][<span class="op">-</span><span class="dv">1</span>],:]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="151">
+<pre><code>array([ 3.42798494e-01, -4.45389092e-02,  6.44999365e-01,  1.01595189e-01,
+        5.57418460e-02, -9.65445924e-02, -5.18269142e-01, -1.46339409e-01,
+        7.45014339e-01,  1.78287038e-02,  4.44180655e-01, -3.04512933e-01,
+       -3.15555070e-01, -1.76574745e-01,  1.14373127e-01,  3.18195714e-04,
+        1.73582307e-01,  5.62915572e-01, -2.63419473e-02,  3.00282170e-02,
+        5.59182100e-01, -1.74789220e-01,  1.55283563e-01, -3.12980257e-01,
+        2.44676548e-01, -1.70737909e-01,  5.17219982e-01, -4.43597899e-01,
+       -1.74552329e-02,  1.29990607e-01, -8.35037335e-02, -3.71612590e-01,
+       -4.82192709e-02,  4.67159910e-01, -6.86726804e-02, -2.59765665e-01,
+        1.54093090e-02, -1.90459810e-01,  1.67164711e-01,  2.80294950e-02,
+        6.73604594e-01, -8.76417696e-01,  1.27280453e-02, -8.95977933e-01,
+        1.12422846e-01, -6.19964999e-01, -8.18470009e-01, -8.77104622e-02,
+        6.84672003e-02, -5.20740069e-01,  2.41837006e-01,  2.38471623e-01,
+       -1.70214403e-01, -5.94699356e-02, -8.28698638e-02,  2.93632353e-01,
+       -3.11796852e-02,  3.59415072e-01, -3.10717332e-01, -4.33553283e-01,
+       -1.74261570e-01, -2.65915145e-01, -9.77115738e-01,  3.02465957e-01,
+       -5.16532058e-01,  8.90796449e-02,  4.74048429e-01,  3.79134113e-01,
+        9.51936301e-03, -6.54197254e-01,  6.84122816e-02, -3.71556619e-01,
+       -3.86808345e-01, -2.49879853e-01, -3.46421415e-01, -2.12385049e-01,
+       -2.83320485e-01, -1.87196735e-01, -1.73898150e-01,  5.57026152e-01,
+       -3.91014317e-01, -5.49817798e-01,  1.58333442e-01,  2.33475607e-01,
+        1.07955444e+00, -2.08737258e-02,  3.63253712e-01,  5.01679305e-02,
+       -4.94763520e-01,  9.62836678e-02,  2.27271208e-01,  1.29909658e-02,
+        1.56545056e-01, -2.92838735e-01,  1.93564794e-01,  8.56177145e-01,
+        2.88266439e-01,  3.53104979e-01,  1.15687204e-01,  6.92534873e-01,
+        1.44292959e-01,  1.32041387e-01, -5.36618136e-01, -1.01644725e-01,
+       -1.35401388e-01,  1.18527271e-01, -5.43875794e-01, -8.65321923e-01,
+        2.82692523e-01, -1.92087583e-01,  2.49619454e-01,  1.16897164e-01,
+        1.70480371e-01,  2.89760090e-02, -8.46568495e-03,  2.47779010e-01,
+        4.30876876e-01,  2.43990620e-01, -4.61159940e-01, -3.19501212e-01,
+        4.44020568e-01, -1.33298024e-01, -5.84627952e-01, -3.01093914e-01,
+       -3.06195098e-01, -2.09071724e-01,  6.30328399e-01, -3.27175632e-01,
+        1.07379441e-01,  2.27847298e-01,  1.81628202e-01, -9.76985824e-02,
+       -3.95640667e-01,  2.35997835e-01, -3.56498603e-02, -2.07494201e-01,
+       -1.20573195e-01,  5.17427984e-01,  1.45684891e-02, -7.46165808e-01,
+       -2.20584149e-03,  3.85549374e-01, -1.03009577e-01,  3.33648859e-01,
+        9.00792688e-02, -1.27409130e-01, -5.03017416e-01, -1.97924419e-01,
+        5.55553797e-01, -2.49667707e-01, -3.46736920e-01, -1.87617934e-01,
+        5.27421299e-01, -1.34454874e-01,  6.98338612e-02,  1.13531781e-01,
+        1.36931709e-01,  7.19903355e-02, -4.11836046e-01,  3.76241987e-01,
+        1.30961341e-02,  4.91874441e-01, -1.97188241e-01,  2.94578867e-01,
+        2.06973742e-01, -1.84305135e-01,  2.33212686e-01,  7.04128123e-02,
+        1.65692882e-01,  4.02007674e-01,  6.53833495e-01, -3.49208899e-01,
+        2.38419039e-01, -5.61571368e-02,  3.60677091e-01, -2.78143023e-02,
+        4.76835386e-01, -3.46264189e-01, -8.71822866e-02,  4.36398207e-01,
+        1.79839816e-01,  4.13524120e-01, -1.14000708e-01,  1.68377006e-01,
+       -6.69894631e-02, -4.71126701e-02, -3.79656149e-01, -1.40765493e-01,
+        4.76940555e-01,  4.50806253e-01, -2.55768747e-01, -5.97460809e-01,
+       -3.65246526e-01, -2.93206823e-01, -1.25989359e-01,  1.04905653e-01,
+        1.41664279e-01, -4.90588080e-02, -2.85634186e-01,  6.68873424e-02,
+       -4.62159564e-01,  6.11766209e-01, -1.05008299e-01, -1.61937402e-02,
+       -3.14876145e-01, -5.36095155e-01,  6.23542714e-01, -5.47663659e-01,
+        1.95244625e-01, -2.06021846e-01,  9.25749415e-03,  1.03329938e-01,
+        2.54299439e-01, -6.56246108e-02,  5.23764631e-02, -5.14904285e-01,
+       -8.83911952e-02,  7.05705646e-02, -1.48810336e-01,  2.41363749e-01,
+        1.43581527e-02,  6.05666452e-01, -2.67285193e-01,  1.42505099e-01,
+       -2.13962046e-01,  1.84305322e-01, -2.03077662e-01,  1.62222331e-01,
+        8.95534277e-02,  2.69809417e-01, -2.01289802e-01, -1.32983045e-01,
+       -7.45219294e-01, -1.14000182e-01, -2.93837833e-01, -4.19829357e-01,
+       -1.62902877e-01,  4.73732924e-01,  2.93106512e-01,  4.23147012e-01,
+        2.81064751e-01, -1.94348700e-01, -4.99178776e-01, -3.18638045e-02,
+        3.47607867e-02, -1.55015261e-01, -6.62874914e-01, -4.20637216e-03,
+        5.64254394e-02,  1.55861988e-01, -1.86646674e-02,  5.42145723e-02,
+       -1.70738435e-01,  1.31831051e-01, -8.66559196e-02, -5.21842001e-01,
+        6.93271577e-01,  2.60136276e-01, -6.91481195e-01, -2.31107326e-01,
+       -3.62196648e-01,  2.16752052e-01, -2.31209634e-01,  1.37718137e-01,
+        3.29336962e-01, -3.31172550e-01, -6.82514817e-02, -6.19911889e-01,
+       -2.73540367e-01, -4.71626512e-01,  1.69796777e-01,  4.14888972e-01,
+       -4.99565963e-03, -2.13856878e-01, -7.40067103e-01, -1.75838568e-01,
+       -3.54046637e-01, -3.28385066e-01,  7.78261199e-02, -2.43464591e-01,
+        4.44334023e-02, -1.49389287e-01, -2.92790820e-01,  5.90101556e-01,
+       -2.28741041e-01, -2.91263546e-01,  1.22891752e-01, -5.57389384e-01,
+       -6.90795267e-01, -7.14142086e-01, -1.82308747e-01, -1.48918364e-01,
+        4.61110403e-01,  1.38351480e-01, -3.24967625e-01, -3.99847395e-01,
+       -2.15325738e-03, -1.35401388e-01,  4.89505822e-01,  3.64434782e-02,
+       -4.30188426e-01,  3.72322398e-02,  3.83130505e-01,  5.23754114e-02,
+        2.40785324e-01,  3.01151880e-01, -3.75079754e-01, -6.11550490e-01,
+       -5.23316691e-01, -3.28017503e-01, -2.59344992e-01,  4.69210691e-01,
+        1.19155420e-01,  5.42775858e-01,  2.63709660e-01, -1.15577179e-01,
+       -1.95978281e-01,  1.97193098e-01, -3.62197174e-01, -3.87227209e-01,
+       -2.50718864e-01,  9.55474903e-02, -8.30281420e-02,  5.42986195e-01,
+        2.31215016e-01, -5.26865856e-02, -6.56616649e-01, -5.77319813e-01,
+        3.54945423e-01,  3.26497420e-01,  3.56417778e-01, -1.12264906e-01,
+        4.38554155e-01, -3.46106437e-01,  2.00137808e-01,  5.09016861e-01,
+       -5.59440690e-01, -3.21549132e-01,  7.48298774e-02, -1.01171468e-01,
+        2.83981096e-02, -8.88249120e-01,  5.46244075e-01,  2.92422918e-01,
+       -7.70330278e-02,  1.80050678e-01,  2.19173255e-01,  5.18955257e-01,
+       -1.96820153e-01, -1.72454223e-02, -2.52562168e-01,  3.80553884e-01,
+        6.06981055e-01, -6.85380156e-01,  7.73357174e-01,  1.31094873e-01,
+        5.50056685e-02, -1.45392369e-01, -5.15006593e-01,  3.62094527e-01,
+        1.77156218e-01,  3.64147642e-01, -7.61390980e-02, -1.44995362e+00,
+       -7.12512504e-01, -5.04332019e-01, -1.21992966e-01, -3.79104511e-02,
+        4.73785508e-01,  4.30140698e-01,  5.46404162e-01, -4.59165130e-01,
+       -1.29774889e-01, -3.30120868e-01,  8.01934564e-02, -4.86189976e-01,
+        4.66968535e-02,  4.11263003e-01, -7.33486455e-04, -2.23269959e-01,
+        1.43502388e-01, -1.32929935e-01, -5.36461435e-01,  2.73492639e-01,
+       -1.88778643e-02,  3.64515731e-01,  1.21472856e-02,  1.96165635e-02,
+        9.20248808e-02,  3.77819510e-01, -3.37274641e-01,  2.34580399e-01,
+        2.01820499e-01,  1.55230979e-01,  3.13561730e-01,  1.34933513e-01,
+       -1.42765498e-01,  1.69060074e-01, -3.53257349e-01,  3.48582746e-01,
+        4.29299352e-01,  2.28480642e-01, -2.39236041e-02, -4.64420155e-01,
+        2.23486026e-02, -2.90209529e-01, -1.06219543e-01,  5.51452236e-01,
+        7.82999027e-02, -2.21324347e-01,  4.69315859e-01, -1.77521785e-01,
+       -7.73405428e-01, -9.56187789e-01, -5.55601525e-01, -3.41952292e-01,
+        6.85646881e-01,  6.00302873e-01,  1.08641459e-01,  7.93521107e-02,
+       -4.62527127e-01,  3.05200856e-01,  2.04081616e-01, -5.06382799e-01,
+        9.89659831e-02,  6.07454312e-01, -4.53248104e-02, -6.16258840e-02,
+        4.69602999e-02,  3.35224048e-01, -2.59605578e-01,  3.01202130e-01,
+       -4.44598280e-01, -5.30020902e-02,  2.11705786e-01,  3.81027141e-01,
+        2.06079812e-01, -1.15892684e-01,  1.42029508e-01,  4.56982813e-02,
+       -4.12520165e-01, -1.10003264e-01, -3.14137633e-01, -4.40126822e-01,
+        3.54261830e-01,  1.65482546e-01, -1.60694870e-01, -3.10615024e-01,
+        3.35171464e-01, -8.00380549e-01, -3.87962861e-01,  4.96184004e-01,
+       -3.94851379e-01, -8.36140603e-01,  1.64380614e-01, -1.84304609e-01,
+       -1.82148661e-01, -1.58383504e-01, -2.66758826e-01, -1.06140912e+00,
+        3.64883820e-01, -7.44038224e-02,  1.79735174e-01,  3.25708659e-01,
+        3.00468287e-01,  7.14616340e-02,  4.33874170e-01, -1.78233217e-02,
+       -2.03605311e-01,  2.01399301e-01,  1.24361773e-01, -4.19829357e-01,
+        4.78675830e-01, -5.84182534e-02, -1.10897719e-01,  1.64117694e-01,
+        3.90965537e-01,  2.70863434e-01,  4.55749159e-01,  6.76779128e-02,
+        1.38561817e-01, -8.36666970e-01, -2.83932533e-02, -1.20257165e-01,
+       -1.02512789e+00, -1.31300354e-01,  4.98339952e-01, -1.17580570e-01,
+        7.90401008e-04, -3.02777131e-01, -2.20324723e-01, -3.46895198e-01,
+        4.65424635e-01, -7.33388921e-01, -6.78648864e-01,  1.45871008e-01,
+        1.65274544e-01,  1.03540275e-01, -6.90164784e-01, -6.40104713e-01,
+        3.55997105e-01,  5.40987999e-01,  2.41836480e-01,  2.72651293e-01,
+        1.35196434e-01,  3.33175602e-01,  6.74709386e-01,  1.11636419e-01,
+       -5.02596217e-01,  1.16160987e-01, -7.36229746e-01,  3.33543691e-01,
+        6.82037539e-02,  1.57439512e-01, -1.49496790e-01, -7.62151903e-01,
+        1.21209061e-01,  4.01482359e-01,  6.33693782e-01, -3.39163934e-02,
+        2.46779912e-01, -5.25786335e-01, -1.65006241e-01, -4.77303787e-01,
+        5.82476860e-01,  5.10092763e-02, -3.37430059e-01,  1.36668789e-01,
+        1.84152239e-01,  2.05395693e-01,  9.65471142e-02,  4.76887971e-01,
+        3.04254343e-01,  1.66852067e-01,  5.22181849e-02, -3.04459297e-01,
+       -6.67658260e-01,  6.13711821e-01, -5.74321467e-01,  2.40890492e-01,
+       -3.29857947e-01, -2.77119945e-02, -3.36535603e-01, -5.21736833e-01,
+       -4.07787596e-01,  3.61991694e-01, -1.32929935e-01,  1.59170118e-01,
+       -1.89405793e-01,  2.28164612e-01,  4.69053812e-02, -1.31667916e-01,
+       -2.01920285e-01,  2.81852986e-01, -9.98568654e-02, -6.22067838e-01,
+        1.48184709e-01, -6.15207158e-02,  2.68654375e-01,  1.85122972e-02,
+        7.75093324e-02, -1.23199144e+00, -2.42938224e-01, -1.51755572e-01,
+        3.76003286e-02,  6.97583474e-01, -4.65683225e-01, -2.75854068e-01,
+        1.42137536e-01, -4.52063415e-01, -2.71489587e-01, -1.98607487e-01,
+        3.53523318e-01, -3.88124000e-01, -2.01079991e-01, -1.96137085e-01,
+       -5.33989982e-01, -7.04992977e-01,  1.64615170e-02, -2.88684064e-01,
+       -4.95864577e-02, -2.17327955e-01, -6.56563539e-01, -6.37319038e-01,
+       -2.62129090e-01,  8.40846805e-02, -1.64848489e-01, -7.83481564e-02,
+       -1.16103546e-01,  7.89267687e-02, -8.17130135e-02,  2.50355631e-01,
+       -2.03392640e-01,  2.08756932e-01, -2.57663825e-02,  1.18790192e-01,
+       -3.41268699e-01, -1.87617408e-01, -4.28715545e-01,  5.81688099e-01,
+        4.38186067e-01,  5.92678177e-01, -1.85514569e-01, -7.58787571e-01,
+       -2.67598363e-01, -3.90152432e-02,  8.31515198e-01, -9.03899172e-02,
+        3.78187073e-01,  3.12825026e-01,  1.24645989e-02, -5.68594468e-01,
+        4.33188242e-01,  4.25460712e-01, -7.91178330e-01,  2.86954171e-01,
+        4.57905107e-01, -1.24622172e-01, -5.77581682e-01,  1.02489118e-01,
+        3.85601432e-01,  5.20269860e-01, -4.25350162e-01,  5.65595027e-01,
+        3.18160767e-02, -9.82244235e-02, -4.19146289e-01,  4.00483261e-01,
+        4.52015687e-01,  1.35617107e-01, -1.17627960e-01,  2.49796167e-02,
+        3.16033183e-01, -6.73049677e-02,  6.66267565e-02,  2.21749876e-01,
+        2.51775402e-01,  1.76945881e-01, -8.28150679e-01, -3.49136828e-02,
+       -1.29617136e-01,  4.67633167e-01, -3.16238663e-01,  4.04058980e-01,
+       -8.57329665e-01, -1.10161542e-01,  1.66192693e-02,  2.20327771e-01,
+       -3.57674415e-01, -1.44393271e-01, -4.86927731e-01,  2.65447270e-01,
+       -2.83401434e-02, -3.57781917e-01, -1.21887272e-01,  1.97193098e-01,
+        1.52178766e-01,  3.67721027e-01,  1.26151441e-01, -4.03583727e-01,
+        2.97050320e-01,  1.80471351e-01,  3.75137721e-01, -2.05391362e-01,
+       -1.58590980e-01, -3.05512031e-01,  3.55484967e-02,  2.49408592e-01,
+       -5.72637376e-02,  3.81290061e-01, -3.49944551e-01, -7.95599254e-02,
+       -6.42785976e-01,  5.66491291e-01,  2.45202389e-01,  7.16669170e-01,
+        1.96667257e-01,  3.74420504e-02,  7.21996203e-02, -2.09808427e-01,
+        1.02699455e-01, -6.06766914e-01,  2.12284211e-01,  2.47673842e-01,
+        1.03751137e-01, -3.39378005e-01,  5.14433024e-01,  3.11931622e-01,
+        8.08244657e-02,  3.82815001e-01,  4.85669517e-01, -1.65689835e-01,
+        1.43576268e-02,  1.23943435e-01, -9.25211202e-03, -1.41296003e-01,
+       -3.48262385e-01, -4.70309575e-01, -5.92200590e-01,  2.92422918e-01,
+        2.41574085e-01,  1.47921788e-01,  2.90264109e-01,  2.76435015e-01,
+        3.59677993e-01,  8.62648485e-03,  1.31305210e-01,  2.63764579e-01,
+       -1.38766771e-01,  6.32852436e-01,  1.84099655e-01, -5.98354213e-01,
+       -4.66997302e-01,  1.69165242e-01,  8.25597413e-02,  1.49393617e-01,
+       -1.64953657e-01, -9.16593764e-01, -1.38714713e-01,  3.72245595e-01,
+        6.82544419e-01, -1.72210264e-01,  3.26129332e-01,  3.42349457e-02,
+        2.59452682e-01,  4.86424655e-02,  4.15683563e-03,  3.66564176e-01,
+       -5.32937774e-01, -1.06743575e-01,  9.34972359e-02,  4.61189542e-02,
+       -3.55571576e-01, -2.41465869e-01, -8.50811570e-01, -8.15209794e-01,
+        7.33603588e-01,  2.96311808e-01,  2.27586712e-01,  7.05179805e-02,
+        7.28316813e-02, -3.68067107e-02,  1.24627028e-01,  1.29727161e-01,
+        3.37645251e-01,  7.79351762e-01, -3.61565639e-01, -2.93942475e-01,
+       -1.23572298e-01, -1.79574374e-01,  1.16265629e-01,  2.44098122e-01,
+        4.77043388e-01,  5.62151030e-02,  2.02764679e-01, -1.64112837e-01,
+        9.34446518e-02,  3.41483891e-01, -2.83639376e-01,  1.06800489e-01,
+        7.28293467e-02,  1.96982761e-01, -7.46061165e-01,  5.17903575e-01,
+       -1.79572039e-01, -3.78971504e-01,  3.03936503e-01,  5.34046896e-01,
+       -7.85656999e-01,  5.78977945e-02,  1.06169480e-01,  1.74424179e-01,
+       -3.86648784e-01,  7.35969873e-01, -1.93772083e-01,  4.96078836e-01,
+       -4.97967942e-02, -6.05793968e-02,  1.05907085e-01,  3.02361315e-01,
+        2.58558752e-01,  5.90942902e-01, -6.58718961e-01,  7.35601784e-01,
+        2.39628473e-01,  4.59061958e-01, -1.96138368e-01, -4.55954639e-01,
+       -4.09259951e-01, -5.08909171e-01,  1.35141515e-01,  2.43467113e-01,
+       -4.29613859e-02, -3.37643255e-01,  1.81733370e-01,  1.07063936e-01,
+       -2.45197007e-01, -2.26900071e-01, -1.05218110e-01, -3.49734214e-01,
+       -1.83674651e-01, -6.11445322e-01,  2.14335517e-01, -4.51800495e-01,
+       -5.26345273e-02,  7.22876430e-01, -3.20129361e-01, -4.65892510e-01,
+       -8.32036183e-01,  4.84407498e-01, -3.34958080e-01,  7.51974403e-02,
+       -7.40749645e-01,  4.66371149e-01, -3.81213134e-02,  2.39786226e-01,
+        1.37773055e-01,  1.96351752e-01,  3.88651837e-01,  7.02550599e-02,
+       -4.74990086e-01, -2.02867325e-01, -2.44460829e-01,  1.37667361e-01,
+        4.63005766e-01, -4.79039589e-01,  4.06109761e-01, -6.13629635e-02,
+       -6.69603346e-01,  2.16281129e-01, -1.13158310e-01,  6.22177862e-01,
+        1.21892654e-01, -1.67530278e-01, -3.24021111e-01, -2.63393443e-01,
+        5.03916202e-01, -8.01360160e-02, -2.12122654e-01,  3.22921701e-01,
+        4.25618465e-01, -2.87527740e-01, -8.38689619e-02, -2.98152064e-01,
+        5.19165594e-01,  1.06012254e-01, -2.66338153e-01, -6.14495200e-01,
+        2.40101730e-01, -5.12639782e-01,  1.67233859e-02,  7.39861971e-02,
+        7.10045907e-01,  3.34987681e-02, -2.70595657e-01,  2.11127886e-01,
+        6.39952165e-02,  6.33586279e-01,  1.66589147e-01,  1.82099124e-01,
+        2.15124279e-01, -2.36047898e-01, -2.61290604e-01, -2.89527745e-01,
+       -3.14871476e-01,  3.53419958e-01,  1.74075051e-02, -2.10228574e-01,
+       -1.50809058e-01, -2.57640479e-02,  8.65035494e-02,  2.45988816e-01,
+       -2.44829444e-01, -1.01734311e+00,  7.75828627e-01,  4.74411322e-01,
+       -1.74051234e-01, -8.61903430e-01,  3.33017850e-01,  3.87337234e-01,
+       -2.46071975e-02,  1.44135732e-01,  2.47774341e-01,  1.51129419e-01,
+        3.90176776e-01, -1.64561349e-02,  4.53804421e-02,  2.72178036e-01,
+        1.51970764e-01, -1.40081374e-01, -3.67087496e-01,  4.03007298e-01,
+        1.76178416e-02,  2.54562360e-01, -2.25167656e-01, -1.40819886e-01,
+       -3.22313674e-02, -2.00872988e-02,  9.85973685e-02,  4.96449259e-01,
+        5.70485349e-01, -1.74471381e-01, -1.75365836e-01,  1.34723177e-01,
+        7.62738679e-03,  1.10797408e-01,  2.25220428e-01,  2.63869747e-01,
+        4.52278608e-01, -1.48390715e-01,  5.92467841e-01,  3.12036791e-01,
+        6.74681022e-02, -5.74794198e-01,  7.86159332e-02, -3.35957178e-01,
+       -2.91681358e-01,  2.38103008e-01,  4.91348600e-01, -1.46444051e-01,
+       -2.38150736e-01, -5.34883912e-01,  2.39628473e-01, -9.46492300e-02,
+        4.73154499e-01, -4.90765319e-01,  1.05591581e-01, -4.65342449e-02,
+       -3.16974315e-01,  3.95380268e-01,  5.61863890e-01,  1.49131223e-01,
+       -4.06472467e-01,  6.40496093e-02, -1.29775414e-01,  7.49168484e-01,
+       -2.68544351e-01, -3.26023976e-01,  6.36848828e-01,  3.95750691e-01,
+        2.05133298e-01,  3.74033454e-01, -2.74696691e-01,  5.41198335e-01,
+       -1.39240028e-01, -7.06254995e-01, -6.22910235e-01, -4.18304943e-01,
+        3.00203032e-01, -6.08764584e-01,  4.82356718e-01, -3.35641673e-01,
+        2.13914844e-01,  6.65215882e-02,  4.63584191e-01,  2.57033287e-01,
+       -2.10386327e-01,  1.45500585e-01,  1.63279843e-03,  7.71961623e-02,
+       -3.11453509e-01,  1.46396849e-01,  3.09775674e-01, -5.26942660e-01,
+       -2.53820800e-01, -5.27786866e-01, -2.97097522e-01,  5.10593858e-01,
+       -4.35657173e-01, -1.23360153e-01, -1.37820783e-01, -2.23112207e-01,
+        2.58611336e-01,  1.57965353e-01, -5.15795354e-01, -1.31930837e-01,
+       -1.36085507e-01, -6.39262315e-01,  2.12387571e-01,  4.05426167e-01,
+       -1.83253453e-01,  1.51128893e-01,  5.02338679e-01, -1.39240028e-01,
+        4.72758046e-02,  4.37526693e-02,  3.28072609e-01, -3.29149608e-02,
+       -5.77266177e-01,  4.73572837e-01, -3.12322694e-02,  2.12337321e-01,
+        3.60834317e-01, -1.61431048e-01,  2.41205996e-01,  3.70981242e-01,
+        2.24957507e-01,  5.41117386e-02, -4.32239206e-01])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="152">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>sig[<span class="dv">0</span>][<span class="op">-</span><span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="152">
+<pre><code>626</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="153">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>li.Is[<span class="dv">626</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="153">
+<pre><code>1.1256660313590514</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="154">
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>observed <span class="op">=</span> li.Is[<span class="dv">626</span>]</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>null <span class="op">=</span> li.rlisas[<span class="dv">626</span>,:]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="155">
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>(null <span class="op">&gt;=</span> observed).<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="155">
+<pre><code>0</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="156">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>li.p_sim[<span class="dv">626</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="156">
+<pre><code>0.001</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="157">
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sbn</span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>sbn.kdeplot(null, shade<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a>plt.vlines(observed,<span class="dv">0</span>, <span class="fl">0.2</span>, color<span class="op">=</span><span class="st">'r'</span>)</span>
+<span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Local I for tract 626"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="157">
+<pre><code>Text(0.5, 0, 'Local I for tract 626')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-60-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="59">
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>nsig <span class="op">=</span> np.where(li.p_sim <span class="op">&gt;</span> <span class="fl">0.05</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="60">
+<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a>nsig[<span class="dv">0</span>][<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="60">
+<pre><code>0</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="61">
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>observed <span class="op">=</span> li.Is[<span class="dv">0</span>]</span>
+<span id="cb95-2"><a href="#cb95-2" aria-hidden="true" tabindex="-1"></a>null <span class="op">=</span> li.rlisas[<span class="dv">0</span>,:]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="62">
+<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sbn</span>
+<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a>sbn.kdeplot(null, shade<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a>plt.vlines(observed,<span class="dv">0</span>, <span class="fl">2.0</span>, color<span class="op">=</span><span class="st">'r'</span>)</span>
+<span id="cb96-4"><a href="#cb96-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Local I for tract 0"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="62">
+<pre><code>Text(0.5, 0, 'Local I for tract 0')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="04_local_spatial_autocorrelation_files/figure-html/cell-64-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="63">
+<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a>li.p_sim[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="63">
+<pre><code>0.46</code></pre>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../week-10/index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Global Autocorrelation Tests</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../week-11/index.html" class="pagination-link">
+        <span class="nav-page-text">Exercise Two</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">Course material by <a href="https://sergerey.org">Sergio Rey</a>. Available under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
